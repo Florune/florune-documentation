@@ -167,43 +167,249 @@
                 <div id="content" class="content">
                     <main>
                         <h2 id="use-cases"><a class="header" href="#use-cases">Use Cases</a></h2>
-<h3 id="1-accelerating-college-applications-with-degree-verification"><a class="header" href="#1-accelerating-college-applications-with-degree-verification">1. Accelerating College Applications with Degree Verification</a></h3>
-<p><strong>Problem:</strong>
-Academic fraud is widespread—roughly 40% of job candidates falsify qualifications—and traditional degree verification channels can take days or even weeks, delaying admissions and complicating background checks.</p>
-<p><strong>Solution:</strong>
-Contract Foundry's on‑chain document verification enables universities and students to validate degrees instantly. The process is tamper-proof, audit-ready, and legally reliable.</p>
+<h2 id="1-escrow"><a class="header" href="#1-escrow">1. Escrow</a></h2>
+<p><strong>Context</strong>
+In peer-to-peer transactions, freelancers, clients, and small businesses often exchange funds without an intermediary. Traditionally, this requires trust in centralized escrow services, which may charge high fees and hold custody of funds.</p>
+<p><strong>Problem</strong>
+How can users securely transfer funds in a P2P environment while minimizing fees and avoiding custodial risk?</p>
+<p><strong>Solution</strong>
+Contract Foundry’s Escrow service uses smart contracts to hold funds securely until predefined conditions are met. Funds can be time-bound, revocable, or rolled back automatically if conditions are unmet.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>A freelance developer delivers a project milestone. The client deposits funds in an escrow smart contract. Upon milestone approval, funds are released automatically.</li>
+<li>Small B2B transactions where no traditional bank-based escrow is available.</li>
+</ul>
+<p><strong>Resulting Context / Benefits &amp; Drawbacks</strong></p>
+<ul>
+<li>
 <p><strong>Benefits:</strong></p>
 <ul>
-<li>Admissions decisions happen faster</li>
-<li>Reduced risk of fraud</li>
-<li>Secure, verifiable credentials accepted globally</li>
-<li>Lower administrative workload</li>
+<li>Full control over funds; trustless execution</li>
+<li>Low fees (flat deposit + 1% withdrawal)</li>
+<li>Transparent and automated</li>
+</ul>
+</li>
+<li>
+<p><strong>Drawbacks:</strong></p>
+<ul>
+<li>Users must manage their private keys</li>
+<li>Gas fees may fluctuate depending on network usage</li>
+</ul>
+</li>
+</ul>
+<p><strong>Related Services / Patterns</strong></p>
+<ul>
+<li>Pledge Contract for milestone-based agreements with document binding</li>
+<li>Asset Paywall for monetized content delivery</li>
 </ul>
 <hr />
-<h3 id="2-streamlining-cross-border-freelance-payments"><a class="header" href="#2-streamlining-cross-border-freelance-payments">2. Streamlining Cross-Border Freelance Payments</a></h3>
-<p><strong>Problem:</strong>
-Cross-border payments are plagued by high fees, slow settlement times, regulatory complexity, and lack of transparency—often resulting in 4–6% revenue loss through hidden charges and reconciliation delays.</p>
-<p><strong>Solution:</strong>
-Using Contract Foundry’s pledge contracts, payments for international freelance or business agreements are managed securely on-chain. Funds are released based on milestone completion, with built-in rollback and expiration logic, eliminating reliance on intermediaries.</p>
+<h2 id="2-pledge-contract"><a class="header" href="#2-pledge-contract">2. Pledge Contract</a></h2>
+<p><strong>Context</strong>
+Businesses and enterprises often require milestone-based payments with enforceable conditions. Traditional escrow solutions may lack flexibility for multi-stage projects and document-linked obligations.</p>
+<p><strong>Problem</strong>
+How can large, conditional agreements be executed securely, automatically, and without intermediaries?</p>
+<p><strong>Solution</strong>
+Pledge Contracts extend escrow functionality by supporting milestones, revocation, rollback, and document binding. Smart contracts enforce conditions, automating payments and compliance.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>A supplier delivers components in multiple phases. Each milestone triggers a partial release of funds, while terms are enforceable onchain.</li>
+<li>Legal or compliance agreements where signed documents need to be verified before payment release.</li>
+</ul>
+<p><strong>Resulting Context / Benefits &amp; Drawbacks</strong></p>
+<ul>
+<li>
 <p><strong>Benefits:</strong></p>
 <ul>
-<li>Faster, predictable settlements</li>
-<li>Lower transaction and FX costs</li>
-<li>Greater transparency and fewer disputes</li>
-<li>Simplified, risk-free global collaboration</li>
+<li>Flexible milestone management</li>
+<li>Reduced risk of disputes</li>
+<li>Automates complex multi-party agreements</li>
+</ul>
+</li>
+<li>
+<p><strong>Drawbacks:</strong></p>
+<ul>
+<li>Requires CFGT token to deploy</li>
+<li>Slightly higher complexity than simple escrow</li>
+</ul>
+</li>
+</ul>
+<p><strong>Related Services / Patterns</strong></p>
+<ul>
+<li>Escrow for simpler, small-value agreements</li>
+<li>Verifiable Documents for contract-linked verification</li>
 </ul>
 <hr />
-<h3 id="3-empowering-authors-with-direct-book-monetization"><a class="header" href="#3-empowering-authors-with-direct-book-monetization">3. Empowering Authors with Direct Book Monetization</a></h3>
-<p><strong>Problem:</strong>
-Authors often lose revenue to gatekeeping platforms like Amazon and face distribution limitations. Traditional publishing channels take large commissions and limit creative control, making it harder to connect directly with readers.</p>
-<p><strong>Solution:</strong>
-Contract Foundry’s asset paywall lets authors sell books directly to their audience through customizable, on-chain payment systems. Authors self-host digital content and define access rules.</p>
+<h2 id="3-verifiable-documents"><a class="header" href="#3-verifiable-documents">3. Verifiable Documents</a></h2>
+<p><strong>Context</strong>
+Organizations and individuals often need tamper-proof documents for legal, compliance, or IP purposes. Centralized storage risks modification or loss of data.</p>
+<p><strong>Problem</strong>
+How can documents be verified, shared selectively, and bound to contracts without relying on a central authority?</p>
+<p><strong>Solution</strong>
+Contract Foundry allows users to create verifiable, wallet-first documents. Documents can be stored locally or on decentralized networks (IPFS, Arweave), with hashes anchored onchain. Selective disclosure ensures privacy while proving authenticity.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>Issuing a diploma or certificate that can be verified by employers.</li>
+<li>Attaching signed documents to a pledge contract to enforce payment milestones.</li>
+</ul>
+<p><strong>Resulting Context / Benefits &amp; Drawbacks</strong></p>
+<ul>
+<li>
 <p><strong>Benefits:</strong></p>
 <ul>
-<li>Full revenue retention with no platform fees</li>
-<li>Direct engagement and stronger reader relationships</li>
-<li>Complete control over pricing, distribution, and marketing</li>
-<li>True independence and creative autonomy</li>
+<li>Tamper-proof and auditable</li>
+<li>Privacy-preserving with selective disclosure</li>
+<li>Integrates with contracts for enforcement</li>
+</ul>
+</li>
+<li>
+<p><strong>Drawbacks:</strong></p>
+<ul>
+<li>Users must manage decentralized storage options</li>
+<li>Requires CFGT token for deployment</li>
+</ul>
+</li>
+</ul>
+<p><strong>Related Services / Patterns</strong></p>
+<ul>
+<li>Document Registry for lightweight timestamping</li>
+<li>Pledge Contract for contract-bound enforcement</li>
+</ul>
+<hr />
+<h2 id="4-document-registry"><a class="header" href="#4-document-registry">4. Document Registry</a></h2>
+<p><strong>Context</strong>
+Proof of existence for intellectual property, research, or legal documents often requires notarization or expensive intermediaries.</p>
+<p><strong>Problem</strong>
+How can lightweight, cost-effective proof of document existence be implemented onchain?</p>
+<p><strong>Solution</strong>
+The Document Registry provides a public, onchain record of document hashes. It is low-cost, lightweight, and designed for proofs without storing the full document.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>Timestamping research papers to prove authorship.</li>
+<li>Recording IP rights for digital assets or creative works.</li>
+</ul>
+<p><strong>Resulting Context / Benefits &amp; Drawbacks</strong></p>
+<ul>
+<li>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>Cost-effective and public proof</li>
+<li>Immutable onchain record</li>
+</ul>
+</li>
+<li>
+<p><strong>Drawbacks:</strong></p>
+<ul>
+<li>Does not store full documents</li>
+<li>Limited to proof-of-existence functionality</li>
+</ul>
+</li>
+</ul>
+<p><strong>Related Services / Patterns</strong></p>
+<ul>
+<li>Verifiable Documents for full document proofs and selective disclosure</li>
+</ul>
+<hr />
+<h2 id="5-decentralized-identity-did"><a class="header" href="#5-decentralized-identity-did">5. Decentralized Identity (DID)</a></h2>
+<p><strong>Context</strong>
+Digital identity is traditionally controlled by centralized authorities, which limits portability and privacy.</p>
+<p><strong>Problem</strong>
+How can users maintain a portable, self-sovereign digital identity usable across multiple agreements?</p>
+<p><strong>Solution</strong>
+Contract Foundry implements ERC-1056 DIDs, enabling users to control their identity without reliance on central authorities. DIDs are portable, privacy-preserving, and compatible with verifiable credentials.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>Individuals prove identity for freelance work without exposing full personal data.</li>
+<li>Enterprises validate employee credentials for compliance.</li>
+</ul>
+<p><strong>Resulting Context / Benefits &amp; Drawbacks</strong></p>
+<ul>
+<li>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>Full control over digital identity</li>
+<li>Compatible with verifiable credentials and selective disclosure</li>
+</ul>
+</li>
+<li>
+<p><strong>Drawbacks:</strong></p>
+<ul>
+<li>Users are responsible for private key security</li>
+</ul>
+</li>
+</ul>
+<p><strong>Related Services / Patterns</strong></p>
+<ul>
+<li>Verifiable Credentials for proof of skills, licenses, or certifications</li>
+</ul>
+<hr />
+<h2 id="6-verifiable-credentials-vcs"><a class="header" href="#6-verifiable-credentials-vcs">6. Verifiable Credentials (VCs)</a></h2>
+<p><strong>Context</strong>
+Organizations and individuals often need to prove facts about themselves without exposing unnecessary data.</p>
+<p><strong>Problem</strong>
+How can credentials be shared securely and selectively, while remaining tamper-proof and portable?</p>
+<p><strong>Solution</strong>
+Verifiable Credentials (VCs) are blockchain-backed and wallet-first. They support verifiable presentations, revocation, and selective disclosure while being compliant with W3C VC v2.0 standards.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>Educational institutions issuing degrees or certificates.</li>
+<li>Compliance verification for enterprise onboarding.</li>
+</ul>
+<p><strong>Resulting Context / Benefits &amp; Drawbacks</strong></p>
+<ul>
+<li>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>Tamper-proof, verifiable, and portable</li>
+<li>Supports selective disclosure for privacy</li>
+</ul>
+</li>
+<li>
+<p><strong>Drawbacks:</strong></p>
+<ul>
+<li>It's wallet-first, user is responsible about losing it</li>
+</ul>
+</li>
+</ul>
+<p><strong>Related Services / Patterns</strong></p>
+<ul>
+<li>DID for identity management</li>
+<li>Requires dapp/wallet for issuance, verification and loading</li>
+</ul>
+<hr />
+<h2 id="7-asset-paywall"><a class="header" href="#7-asset-paywall">7. Asset Paywall</a></h2>
+<p><strong>Context</strong>
+Content creators need secure ways to distribute paid digital content directly to users. Traditional platforms take high fees and control access.</p>
+<p><strong>Problem</strong>
+How can creators monetize digital content securely without relying on centralized intermediaries?</p>
+<p><strong>Solution</strong>
+The Asset Paywall allows files to be distributed behind a wallet-access smart contract. Payment is automated, and access is granted only to verified users.</p>
+<p><strong>Examples</strong></p>
+<ul>
+<li>Selling research papers, tutorials, or digital media directly to customers.</li>
+<li>Monetized distribution of confidential datasets.</li>
+</ul>
+<p><strong>Resulting Context / Benefits &amp; Drawbacks</strong></p>
+<ul>
+<li>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>Direct monetization for creators</li>
+<li>Automated access and payments</li>
+<li>Trustless and decentralized</li>
+</ul>
+</li>
+<li>
+<p><strong>Drawbacks:</strong></p>
+<ul>
+<li>Users must manage wallets and keys</li>
+<li>Requires understanding of token payments</li>
+</ul>
+</li>
+</ul>
+<p><strong>Related Services / Patterns</strong></p>
+<ul>
+<li>Escrow and Pledge Contracts for payment handling</li>
+<li>Verifiable Documents for access verification</li>
 </ul>
 
                     </main>

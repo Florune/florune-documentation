@@ -166,31 +166,151 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="platform-services"><a class="header" href="#platform-services">Platform Services</a></h1>
-<h3 id="self-sovereign-identity"><a class="header" href="#self-sovereign-identity">Self-Sovereign Identity</a></h3>
-<p><strong>What it is:</strong> Manage your digital identity securely and privately, giving you full control over your personal data without relying on centralized providers. This aligns with global standards such as the W3C’s Self-Sovereign Identity framework, which empowers users to own and control their identity independently.</p>
-<p><strong>Use Case:</strong> A person applying for financial services can securely share verified identity attributes—such as name, address, and creditworthiness—directly with banks or service providers without exposing unnecessary information or depending on a central authority. This streamlines verification while protecting privacy.</p>
+                        <h1 id="services"><a class="header" href="#services">Services</a></h1>
+<p>Contract Foundry offers a suite of <strong>trustless, non-custodial services</strong> that allow individuals, businesses, and enterprises to manage agreements, payments, and documents securely.</p>
+<p>Each service is powered by <strong>onchain smart contracts</strong>, designed to be <strong>transparent, automated, and censorship-resistant</strong>.</p>
 <hr />
-<h3 id="verifiable-document-verification"><a class="header" href="#verifiable-document-verification">Verifiable Document Verification</a></h3>
-<p><strong>What it is:</strong> Securely validate important documents such as degrees, patents, and legal agreements. Verified documents are tamper-proof, auditable, and legally admissible.</p>
-<p><strong>Use Case:</strong> A student applying to a university can use Contract Foundry to provide instantly verifiable proof of their previous degrees, speeding up admissions. Similarly, patent holders can register and verify intellectual property documents, ensuring authenticity and protection against fraud.</p>
+<h2 id="1-escrow"><a class="header" href="#1-escrow">1️⃣ Escrow</a></h2>
+<p><strong>Purpose:</strong> Protect both parties in low- to mid-value peer-to-peer transactions.</p>
+<ul>
+<li>Flat deposit fee + <strong>1% withdrawal fee</strong>.</li>
+<li>Secure holding of funds until conditions are met.</li>
+<li>Supports <strong>revocable, time-bound, and rollback</strong> agreements.</li>
+<li>Ideal for freelance work, gig payments, and small B2B contracts.</li>
+</ul>
 <hr />
-<h3 id="pledge-contract"><a class="header" href="#pledge-contract">Pledge Contract</a></h3>
-<p><strong>What it is:</strong> Enables secure, automated payment transfers, supporting partial or full payments, milestone releases, rollback, and dispute prevention, especially suited for complex transactions.</p>
-<p><strong>Use Case:</strong> A multinational corporation working with freelancers across borders uses pledge contracts to manage large payments safely. Funds are held and released upon milestone completion, reducing risk from cross-border transaction delays, currency fluctuations, or trust issues, streamlining international freelance and business deals.</p>
+<h2 id="2-pledge-contracts"><a class="header" href="#2-pledge-contracts">2️⃣ Pledge Contracts</a></h2>
+<p><strong>Purpose:</strong> Advanced escrow for larger or milestone-based agreements.</p>
+<ul>
+<li>Flexible <strong>milestones &amp; partial payouts</strong>.</li>
+<li><strong>Revocable</strong> and <strong>rollback</strong> options.</li>
+<li><strong>Document &amp; signature binding</strong> for enforceability.</li>
+<li>One-time creation fee (<strong>0% ongoing fees</strong>).</li>
+<li>Example: <strong>33 CFGT</strong> per contract deployment.</li>
+</ul>
 <hr />
-<h3 id="asset-paywall"><a class="header" href="#asset-paywall">Asset Paywall</a></h3>
-<p><strong>What it is:</strong> Monetize your digital assets, such as e-books or exclusive written content, using a decentralized paywall controlled entirely by you.</p>
-<p><strong>Use Case:</strong> An independent book author distributes exclusive chapters or early releases directly to readers. Using Contract Foundry’s asset paywall, readers pay securely through blockchain-based payments, allowing the author to earn revenue directly without platform fees or intermediaries.</p>
+<h2 id="3-verifiable-documents"><a class="header" href="#3-verifiable-documents">3️⃣ Verifiable Documents</a></h2>
+<p><strong>Purpose:</strong> Secure, tamper-proof, wallet-first documents.</p>
+<ul>
+<li><strong>Revocable</strong> and linked to contracts (e.g., pledges).</li>
+<li>Stored locally or in decentralized storage.</li>
+<li>Onchain <strong>proof of authenticity</strong> with selective disclosure.</li>
+<li>Example: Deploy a document for <strong>9 CFGT</strong>.</li>
+</ul>
 <hr />
-<h3 id="verifiable-credentials"><a class="header" href="#verifiable-credentials">Verifiable Credentials</a></h3>
-<p><strong>What it is:</strong> Issue and manage W3C-compliant verifiable credentials that users hold directly in their wallets. These credentials are portable, instantly verifiable, reusable, and revocable.</p>
-<p><strong>Use Case:</strong> Many institutions—from universities to professional associations—issue digital certificates or licenses as verifiable credentials. For example, a professional license holder can instantly prove their qualifications to employers or regulatory bodies without the need for paper documents or centralized databases.</p>
+<h2 id="4-document-registry"><a class="header" href="#4-document-registry">4️⃣ Document Registry</a></h2>
+<p><strong>Purpose:</strong> Low-cost onchain proof of document existence.</p>
+<ul>
+<li><strong>Lightweight</strong> and public registry.</li>
+<li>Ideal for timestamping, authorship claims, and IP verification.</li>
+<li>Cheaper than full verifiable document deployment.</li>
+<li>Pay-per-use with native chain tokens.</li>
+</ul>
 <hr />
-<h3 id="decentralized-identity-management"><a class="header" href="#decentralized-identity-management">Decentralized Identity Management</a></h3>
-<p><strong>What it is:</strong> Authenticate and manage permissions for individuals and organizations in a decentralized manner, removing reliance on centralized identity providers.</p>
-<p><strong>Use Case:</strong> Enterprises use decentralized identity management to control employee access to sensitive systems. Employees authenticate via their self-sovereign digital identities, enhancing security and reducing risks associated with traditional password-based systems and centralized data breaches.</p>
-
+<h2 id="5-decentralized-identity-did"><a class="header" href="#5-decentralized-identity-did">5️⃣ Decentralized Identity (DID)</a></h2>
+<p><strong>Purpose:</strong> Lightweight, self-sovereign digital identity.</p>
+<ul>
+<li>Based on <strong>ERC-1056</strong> standard.</li>
+<li>Fully user-controlled, portable, and privacy-preserving.</li>
+<li>Compatible with verifiable credentials.</li>
+<li>No dependency on centralized identity providers.</li>
+</ul>
+<hr />
+<h2 id="6-verifiable-credentials-vcs"><a class="header" href="#6-verifiable-credentials-vcs">6️⃣ Verifiable Credentials (VCs)</a></h2>
+<p><strong>Purpose:</strong> Wallet-first digital credentials for secure verification.</p>
+<ul>
+<li>Built on <strong>W3C VC v2.0</strong> standards.</li>
+<li>Blockchain-backed and tamper-proof.</li>
+<li>Support <strong>verifiable presentations</strong> with selective disclosure.</li>
+<li>Example: Education certificates, compliance documents, licenses.</li>
+</ul>
+<hr />
+<h2 id="7-asset-paywall"><a class="header" href="#7-asset-paywall">7️⃣ Asset Paywall</a></h2>
+<p><strong>Purpose:</strong> Enable secure file distribution contracts.</p>
+<ul>
+<li>Register files behind a <strong>wallet-access paywall</strong>.</li>
+<li>Issuers monetize files while customers access them securely.</li>
+<li>Payments processed through escrow-like agreements.</li>
+<li>Suitable for content creators, educators, and researchers.</li>
+</ul>
+<hr />
+<h1 id="service-structures--features"><a class="header" href="#service-structures--features">Service Structures &amp; Features</a></h1>
+<p>Contract Foundry offers a suite of <strong>trustless, non-custodial services</strong>.
+This page breaks down the <strong>structure, purpose, and benefits</strong> of each service in the ecosystem.</p>
+<hr />
+<h2 id="service-structure-overview"><a class="header" href="#service-structure-overview">Service Structure Overview</a></h2>
+<p>Contract Foundry’s services can be grouped into three <strong>main layers</strong>:</p>
+<ol>
+<li><strong>Payment &amp; Agreement Layer</strong> – Escrows and Pledge Contracts</li>
+<li><strong>Document &amp; Verification Layer</strong> – Verifiable Documents, Document Registry</li>
+<li><strong>Identity Layer</strong> – Decentralized Identity (DID), Verifiable Credentials</li>
+<li><strong>Content Access Layer</strong> – Asset Paywall</li>
+</ol>
+<p>Each layer interacts with smart contracts onchain, while maintaining <strong>user control and transparency</strong>.</p>
+<hr />
+<h2 id="1-payment--agreement-layer"><a class="header" href="#1-payment--agreement-layer">1. Payment &amp; Agreement Layer</a></h2>
+<h3 id="escrow"><a class="header" href="#escrow"><strong>Escrow</strong></a></h3>
+<ul>
+<li>Low- to mid-value P2P payments.</li>
+<li>Flat deposit + <strong>1% withdrawal fee</strong>.</li>
+<li>Supports <strong>time-bound, revocable, and rollback agreements</strong>.</li>
+<li>Ensures trustless transactions for freelancers, small businesses, and individuals.</li>
+</ul>
+<h3 id="pledge-contract"><a class="header" href="#pledge-contract"><strong>Pledge Contract</strong></a></h3>
+<ul>
+<li>Advanced escrow with <strong>milestones, revocation, and document binding</strong>.</li>
+<li>0% ongoing fees after creation.</li>
+<li>Ideal for larger B2B agreements or projects with phased deliverables.</li>
+<li>Uses <strong>CFGT token</strong> to deploy contracts securely.</li>
+</ul>
+<hr />
+<h2 id="2-document--verification-layer"><a class="header" href="#2-document--verification-layer">2. Document &amp; Verification Layer</a></h2>
+<h3 id="verifiable-documents"><a class="header" href="#verifiable-documents"><strong>Verifiable Documents</strong></a></h3>
+<ul>
+<li>Wallet-first, tamper-proof, and revocable documents.</li>
+<li>Can be linked to contracts (pledge or escrow) for automatic enforcement.</li>
+<li>Supports <strong>selective disclosure</strong> to protect sensitive information.</li>
+</ul>
+<h3 id="document-registry"><a class="header" href="#document-registry"><strong>Document Registry</strong></a></h3>
+<ul>
+<li>Lightweight onchain registry for proofs of existence.</li>
+<li>Cost-effective solution for timestamping, authorship verification, or IP rights.</li>
+<li>Public and immutable proof, without storing full content onchain.</li>
+</ul>
+<hr />
+<h2 id="3-identity-layer"><a class="header" href="#3-identity-layer">3. Identity Layer</a></h2>
+<h3 id="decentralized-identity-did"><a class="header" href="#decentralized-identity-did"><strong>Decentralized Identity (DID)</strong></a></h3>
+<ul>
+<li>Ethereum-based identity standard (ERC-1056).</li>
+<li>Fully <strong>self-sovereign</strong>, portable, and private.</li>
+<li>Enables trustless verification across contracts and services.</li>
+</ul>
+<h3 id="verifiable-credentials-vcs"><a class="header" href="#verifiable-credentials-vcs"><strong>Verifiable Credentials (VCs)</strong></a></h3>
+<ul>
+<li>Blockchain-backed credentials compliant with <strong>W3C VC v2.0</strong>.</li>
+<li>Supports verifiable presentations for selective data sharing.</li>
+<li>Use cases: education certificates, compliance verification, licenses.</li>
+</ul>
+<hr />
+<h2 id="4-content-access-layer"><a class="header" href="#4-content-access-layer">4. Content Access Layer</a></h2>
+<h3 id="asset-paywall"><a class="header" href="#asset-paywall"><strong>Asset Paywall</strong></a></h3>
+<ul>
+<li>Wallet-access file registry for monetized content.</li>
+<li>Issuers control distribution; customers pay securely via smart contracts.</li>
+<li>Supports secure, automated file access without intermediaries.</li>
+</ul>
+<hr />
+<h2 id="benefits-of-service-structure"><a class="header" href="#benefits-of-service-structure">Benefits of Service Structure</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Layer</th><th>Service</th><th>Key Benefits</th></tr></thead><tbody>
+<tr><td>Payment &amp; Agreement</td><td>Escrow</td><td>Low-fee, trustless P2P transactions</td></tr>
+<tr><td>Payment &amp; Agreement</td><td>Pledge Contract</td><td>Milestone-based agreements, revocable, document-linked</td></tr>
+<tr><td>Document &amp; Verification</td><td>Verifiable Documents</td><td>Tamper-proof, selective disclosure, contract binding</td></tr>
+<tr><td>Document &amp; Verification</td><td>Document Registry</td><td>Lightweight onchain proof, cost-effective</td></tr>
+<tr><td>Identity</td><td>DID</td><td>Self-sovereign, portable, secure identity</td></tr>
+<tr><td>Identity</td><td>VCs</td><td>Blockchain-backed credentials, selective disclosure</td></tr>
+<tr><td>Content Access</td><td>Asset Paywall</td><td>Secure file distribution and monetization</td></tr>
+</tbody></table>
+</div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
