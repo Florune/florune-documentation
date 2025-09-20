@@ -354,7 +354,7 @@ A DID is a portable, self-sovereign identity that you fully control.</p>
 <p>Contract Foundry offers a suite of <strong>trustless, non-custodial services</strong>.
 This page breaks down the <strong>structure, purpose, and benefits</strong> of each service in the ecosystem.</p>
 <hr />
-<h2 id="-service-structure-overview"><a class="header" href="#-service-structure-overview">🏗️ Service Structure Overview</a></h2>
+<h2 id="service-structure-overview"><a class="header" href="#service-structure-overview">Service Structure Overview</a></h2>
 <p>Contract Foundry’s services can be grouped into three <strong>main layers</strong>:</p>
 <ol>
 <li><strong>Payment &amp; Agreement Layer</strong> – Escrows and Pledge Contracts</li>
@@ -364,7 +364,7 @@ This page breaks down the <strong>structure, purpose, and benefits</strong> of e
 </ol>
 <p>Each layer interacts with smart contracts onchain, while maintaining <strong>user control and transparency</strong>.</p>
 <hr />
-<h2 id="-1-payment--agreement-layer"><a class="header" href="#-1-payment--agreement-layer">💼 1. Payment &amp; Agreement Layer</a></h2>
+<h2 id="1-payment--agreement-layer"><a class="header" href="#1-payment--agreement-layer">1. Payment &amp; Agreement Layer</a></h2>
 <h3 id="escrow"><a class="header" href="#escrow"><strong>Escrow</strong></a></h3>
 <ul>
 <li>Low- to mid-value P2P payments.</li>
@@ -380,7 +380,7 @@ This page breaks down the <strong>structure, purpose, and benefits</strong> of e
 <li>Uses <strong>CFGT token</strong> to deploy contracts securely.</li>
 </ul>
 <hr />
-<h2 id="-2-document--verification-layer"><a class="header" href="#-2-document--verification-layer">📄 2. Document &amp; Verification Layer</a></h2>
+<h2 id="2-document--verification-layer"><a class="header" href="#2-document--verification-layer">2. Document &amp; Verification Layer</a></h2>
 <h3 id="verifiable-documents"><a class="header" href="#verifiable-documents"><strong>Verifiable Documents</strong></a></h3>
 <ul>
 <li>Wallet-first, tamper-proof, and revocable documents.</li>
@@ -394,7 +394,7 @@ This page breaks down the <strong>structure, purpose, and benefits</strong> of e
 <li>Public and immutable proof, without storing full content onchain.</li>
 </ul>
 <hr />
-<h2 id="-3-identity-layer"><a class="header" href="#-3-identity-layer">🪪 3. Identity Layer</a></h2>
+<h2 id="3-identity-layer"><a class="header" href="#3-identity-layer">3. Identity Layer</a></h2>
 <h3 id="decentralized-identity-did-1"><a class="header" href="#decentralized-identity-did-1"><strong>Decentralized Identity (DID)</strong></a></h3>
 <ul>
 <li>Ethereum-based identity standard (ERC-1056).</li>
@@ -408,7 +408,7 @@ This page breaks down the <strong>structure, purpose, and benefits</strong> of e
 <li>Use cases: education certificates, compliance verification, licenses.</li>
 </ul>
 <hr />
-<h2 id="-4-content-access-layer"><a class="header" href="#-4-content-access-layer">🔒 4. Content Access Layer</a></h2>
+<h2 id="4-content-access-layer"><a class="header" href="#4-content-access-layer">4. Content Access Layer</a></h2>
 <h3 id="asset-paywall"><a class="header" href="#asset-paywall"><strong>Asset Paywall</strong></a></h3>
 <ul>
 <li>Wallet-access file registry for monetized content.</li>
@@ -416,7 +416,7 @@ This page breaks down the <strong>structure, purpose, and benefits</strong> of e
 <li>Supports secure, automated file access without intermediaries.</li>
 </ul>
 <hr />
-<h2 id="-benefits-of-service-structure"><a class="header" href="#-benefits-of-service-structure">📊 Benefits of Service Structure</a></h2>
+<h2 id="benefits-of-service-structure"><a class="header" href="#benefits-of-service-structure">Benefits of Service Structure</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Layer</th><th>Service</th><th>Key Benefits</th></tr></thead><tbody>
 <tr><td>Payment &amp; Agreement</td><td>Escrow</td><td>Low-fee, trustless P2P transactions</td></tr>
 <tr><td>Payment &amp; Agreement</td><td>Pledge Contract</td><td>Milestone-based agreements, revocable, document-linked</td></tr>
@@ -1098,9 +1098,6 @@ The Asset Paywall allows files to be distributed behind a wallet-access smart co
 </ul>
 <h3 id="ongoing-commitment"><a class="header" href="#ongoing-commitment">Ongoing Commitment</a></h3>
 <p>We regularly review and update our privacy practices to stay aligned with evolving technology and regulations. Any updates will be communicated clearly, and continued use means acceptance of the current policy.</p>
-<hr />
-<p>If you have any questions or concerns about how your data is handled, please contact us anytime at:
-📧 <a href="mailto:contractfoundry@gmail.com">contractfoundry@gmail.com</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="legal-information"><a class="header" href="#legal-information">Legal Information</a></h1>
 <h3 id="privacy-and-data-protection"><a class="header" href="#privacy-and-data-protection">Privacy and Data Protection</a></h3>
 <p>Contract Foundry is committed to respecting your privacy and ensuring the security of your data. We operate under strict principles of data minimalism: we <strong>do not collect, store, or process sensitive personal information</strong> such as names, government IDs, private keys, or biometric data.</p>
@@ -1157,22 +1154,6 @@ The Asset Paywall allows files to be distributed behind a wallet-access smart co
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
