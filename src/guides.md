@@ -6,261 +6,288 @@ This section provides step-by-step instructions for using Contract Foundry’s f
 
 ---
 
-## 🔐 1. Setting Up Your Wallet & Private Key
+## Overview
 
-Before using any service, funded EOA required.
-
-### Steps:
-
-1. **Open the Contract Foundry wallet app**.
-2. Tap **“Wallet”** and choose:
-   * **Generate New Key** or
-   * **Import Existing Private Key**.
-3. Your key will be securely stored in **encrypted local storage**.
-4. Embalance EOA to cover network gas fees.
-5. (Optional) Set up passcode protection for local access.
+This documentation explains how to create and manage **Verifiable Documents**, **Pledge Contracts**, **Escrow Deposits**, **Document Registries**, and **Asset Paywalls** on the platform.
 
 ---
 
-## 🆔 2. Creating and Managing a Decentralized Identity (DID)
+## 📑 Verifiable Document
 
-Use this process to register a new blockchain-based identity compliant with ERC-1056 and W3C standards.
+### Steps
 
-### Steps:
-1. Navigate to **“DID”**, Tap **“Create DID”** and choose DID type to create *(example is for Ether DID)*.
-2. Fill in the **DID name**, **network**, and public informations.
-3. Tap **“Continue”** and confirm the transaction with your private key as identity.
-4. Manage controllers, delegates, and services from the DID dashboard.
+1. Navigate to **Create** → tap **Create** button.
+2. Upload file to:
 
----
+   * IPFS
+   * Arweave
+   * Centralized host with direct download link
+3. Copy the file link.
+4. Fill the form:
 
-## 📜 3. Issuing a Verifiable Credential
-
-Create tamper-proof credentials for yourself or others using a visual editor.
-
-### Steps:
-
-<img src=images/vc_page.png alt="Alt text" width="200"/>
-
-1. Go to **“Credentials”** > Tap **“New Verifiable Entity”**.
-
-<img src=images/vc_page_dialog.png alt="Alt text" width="200"/>
-
-2. Select **“Credential”** as the entity type.
-
-<img src=images/vc_form.png alt="Alt text" width="200"/>
-
-3. Enter the **issuer DID** (your identity or a key-based DID).
-
-<img src=images/vc_subject_field_dialog.png alt="Alt text" width="200"/>
-<img src=images/vc_subject_page.png alt="Alt text" width="200"/>
-
-4. Define the **credential subject**, **schema**, and optional metadata.
-5. Tap **“Generate Credential”** and sign with your private key.
-
-> ✅ The credential will appear in your wallet and can be exported.
+   * Paste file link
+   * Choose network
+5. Tap **Create** (top of screen).
+6. Confirm blockchain transaction.
+7. After minting → go to **History**.
+8. Locate the document record.
+9. From **More**, select **Initialize and Setup**.
+10. Share the **Verifiable Document DID**.
 
 ---
 
-## ✅ 4. Verifying or Updating a Credential
+## 📜 Pledge Contract
 
-Verify the authenticity of a credential or update its status.
+> **Issuer = Seller**
+> Must be created on the same network as the linked Verifiable Document.
 
-### To Verify a Credential:
+### Steps
 
-<img src=images/vc_page2.png alt="Alt text" width="200"/>
+1. Navigate to **Create** → tap **Create**.
+2. Fill the form:
 
-1. Open the credential from your **Credentials list**.
+   * Choose network
+   * Select token
+   * (Optional) Link to Verifiable Document:
 
-<img src=images/vc_page_dialog.png alt="Alt text" width="200"/>
-<img src=images/vc_display.png alt="Alt text" width="200"/>
+     * Toggle **Document Link**
+     * Enter Verifiable Document DID
+3. Tap **Create** (top of screen).
+4. Confirm transaction.
+5. After minting → go to **History**.
+6. Locate pledge record.
+7. From **More**, select **Initialize and Setup**.
+8. Confirm transaction.
+9. Share **Pledge Contract DID** with buyer.
 
-2. Tap **“Verify”** from the top-right menu.
-3. Input the **verififer DID** and your **private key** to confirm.
+**Fees & Conditions**
 
-<img src=images/verified_vc_display.png alt="Alt text" width="200"/>
-
-4. Verification proof will be appended to the VC.
-
-### To Update Credential Status:
-
-1. Tap **“More”** > **“Update Status”**.
-2. Select one of the following: **Valid**, **Suspended**, **Revoked**.
-3. Sign/verify the credentials with your private key.
-
-> 📝 Only the issuer DID can perform status updates.
+* 0% withdrawal fee
+* Other platform terms may apply
 
 ---
 
-## 💰 5. Using the Pledge Contract
-
-Perfect for freelancers, service providers, and milestone-based payment agreements.
-
-### For Service Providers:
-
-1. Go to **“Contracts”** > **“Pledge Contract”**.
-
-2. Fill in service details, total cost in chosen network currency in (WEI) unit.
-
-3. Deploy and initialize the contract.
-
-4. Share the **Contract DID** with the customer.
-
-### For Customers:
-
-1. Open the contract using the shared DID.
-2. Submit payments per milestone or full upfront.
-3. Confirm **“Service Complete”** when work is finished.
-
-### Contarct Status Guide:
+### 🔄 Pledge Contract Status Guide
 
 #### 1. `pending`
 
-* **Meaning**: Service is initialized but **not started** yet.
-* **Entered by**: No one, its default state.
-* **Who can act**: Only the **seller** (issuer).
-* **Transitions to**:
+**Meaning:** Service is initialized but not started yet.
 
-  * `active` → when seller start service
-  * `canceled` → when seller cancels before starting
-* **Permissions**:
+* **Entered by:** Default state.
+* **Who can act:** Seller (issuer).
+* **Transitions to:**
 
-  * ✅ Rollback: ✅ Allowed (buyer)
-  * ✅ Cancel: ✅ Allowed (seller)
-  * 🚫 Withdraw: ❌ Not allowed
+  * `active` → seller starts service
+  * `canceled` → seller cancels before starting
+* **Permissions:**
+
+  * ✅ Rollback → buyer
+  * ✅ Cancel → seller
+  * 🚫 Withdraw
 
 ---
 
 #### 2. `active`
 
-* **Meaning**: Service has been started and is in progress.
-* **Entered by**: Seller start the service
-* **Who can act**: Seller (to execute); Buyer (to dispute, after execute).
-* **Transitions to**:
+**Meaning:** Service has started and is ongoing.
 
-  * `executed` → when seller exceute service (marks delivery)
-  * `disputed` → if buyer raises dispute while service is still active (on going)
-* **Permissions**:
+* **Entered by:** Seller starts service.
+* **Who can act:** Seller (execute), Buyer (dispute).
+* **Transitions to:**
 
-  * 🚫 Rollback: ❌ Not allowed (buyer), unless expired
-  * 🚫 Cancel: ❌ Not allowed (seller)
-  * 🚫 Withdraw: ❌ Not allowed
+  * `executed` → seller executes service
+  * `disputed` → buyer disputes service
+* **Permissions:**
+
+  * 🚫 Rollback (unless expired)
+  * 🚫 Cancel
+  * 🚫 Withdraw
 
 ---
 
 #### 3. `executed`
 
-* **Meaning**: Seller marked service as delivered.
-* **Entered by**: Seller execute the Service
-* **Who can act**:
+**Meaning:** Seller marked service as delivered.
 
-  * Buyer can confirm → `completed`
-  * Buyer can dispute → `disputed`
-  * Seller can withdraw after 5 days post-expiration (if no dispute submitted)
-* **Transitions to**:
+* **Entered by:** Seller executes service.
+* **Who can act:**
 
-  * `completed` → when buyer complete service
-  * `disputed` → when buyer dispute service
-* **Permissions**:
+  * Buyer → confirm (`completed`)
+  * Buyer → dispute (`disputed`)
+  * Seller → withdraw after 5 days post-expiration (if no dispute)
+* **Transitions to:**
 
-  * 🚫 Rollback: ❌ Not allowed
-  * ✅ Withdraw: ✅ Allowed (only 5 days after expiration)
-  * 🚫 Cancel: ❌ Not allowed
+  * `completed` → buyer confirms delivery
+  * `disputed` → buyer disputes service
+* **Permissions:**
+
+  * 🚫 Rollback
+  * ✅ Withdraw (after 5 days if no dispute)
+  * 🚫 Cancel
 
 ---
 
 #### 4. `disputed`
 
-* **Meaning**: Buyer raised a dispute over execution/delivery.
-* **Entered by**: Buyer dispute the service
-* **Who can act**:
+**Meaning:** Buyer raised a dispute.
 
-  * Buyer can complete it
-  * Seller can cancel it
-* **Transitions to**:
+* **Entered by:** Buyer disputes service.
+* **Who can act:**
 
-  * `Complete` → By Customer
-  * `Cancel` → By Seller
-* **Permissions**:
+  * Buyer → complete it
+  * Seller → cancel it
+* **Transitions to:**
 
-  * 🚫 Rollback: ❌ Not allowed
-  * 🚫 Withdraw: ❌ Not allowed
-  * 🚫 Cancel: ❌ Not allowed
+  * `completed` → by buyer
+  * `canceled` → by seller
+* **Permissions:**
+
+  * 🚫 Rollback
+  * 🚫 Withdraw
+  * 🚫 Cancel
 
 ---
 
 #### 5. `completed`
 
-* **Meaning**: Buyer confirmed that service was delivered and accepted.
-* **Entered by**: Buyer complete the service
-* **Who can act**:
+**Meaning:** Buyer confirmed delivery and acceptance.
 
-  * Seller → can now withdraw
-* **Permissions**:
+* **Entered by:** Buyer completes service.
+* **Who can act:** Seller → withdraw.
+* **Permissions:**
 
-  * 🚫 Rollback: ❌ Not allowed
-  * ✅ Withdraw: ✅ Allowed (seller)
-  * 🚫 Dispute: ❌ Not allowed
-  * 🚫 Cancel: ❌ Not allowed
+  * ✅ Withdraw (seller)
+  * 🚫 Rollback
+  * 🚫 Dispute
+  * 🚫 Cancel
 
 ---
 
 #### 6. `canceled`
 
-* **Meaning**: Seller canceled the service before delivery or completion.
-* **Entered by**: Seller calls `cancelService()`
-* **Who can act**:
+**Meaning:** Seller canceled service before completion.
 
-  * Buyer can rollback to retrieve funds
-* **Permissions**:
+* **Entered by:** Seller cancels.
+* **Who can act:** Buyer → rollback.
+* **Permissions:**
 
-  * ✅ Rollback: ✅ Allowed (buyer)
-  * 🚫 Withdraw: ❌ Not allowed
-  * 🚫 Execute/Complete: ❌ Not allowed
+  * ✅ Rollback (buyer)
+  * 🚫 Withdraw
+  * 🚫 Execute/Complete
 
 ---
 
-### 📌 Notes
+#### 📌 Notes
 
-* **Dispute only happens from `active` or `executed`**
-* **Rollback only allowed when:**
+* Dispute only possible from `active` or `executed`.
+* Rollback allowed only when:
 
-  * State is not `active` or is expired
+  * State is not `active`, or expired
   * State is not `executed`, `completed`, or `disputed`
-* **Withdraw only allowed when:**
+* Withdraw allowed only when:
 
-  * State is `completed`
-  * Or `executed` and no dispute submitted by customer and 5 days passed after expiretion day
-* **No state transitions allowed from `completed`, `disputed`, or `canceled`** unless manually handled
-
-> 🔐 Funds are locked until the customer approves service completion.
-
----
-
-## 📂 6. Creating a Verifiable Presentation (VP)
-
-Combine multiple VCs into a single presentation file.
-
-### Steps:
-
-1. Go to **“Credentials”** > Tap **“New Verifiable Entity”**.
-2. Enter the **issuer DID** (your identity or a key-based DID).
-3. Select VCs from your list.
-4. Tap **“Create Presentation”** and sign.
-5. The presentation is stored in your wallet and can be exported manually.
+  * State is `completed`, or
+  * State is `executed` and 5 days passed with no dispute
+* No transitions allowed from `completed`, `disputed`, or `canceled` unless manual.
+* 🔐 Funds are locked until customer approves completion.
 
 ---
 
-## 📦 7. Exporting and Sharing credentials
+#### 📎 Linked Document Rules
 
-All credentials, presentations, and document references can be exported as JSON files.
+If linked to a **Verifiable Document**:
 
-### To Export:
+* For **`executed`** → seller must sign on-chain in the Document Contract.
+* For **`completed`** → buyer must sign on-chain in the Document Contract.
+* For **`canceled`** → Document Contract must be in **suspended** or **revoked** status.
 
-1. Open the credentials page.
-2. Tap **“Export”**, file will be created in **"Download"** folder in internal storage.
+---
 
-### Sharing Options:
+## 💰 Escrow Deposit
 
-* Share file manually via email or messaging apps.
-* Upload to IPFS or Arweave for decentralized access (optional).
+> **Depositor = Customer/Buyer**
+> Stablecoin deposits require approval first.
+
+### Pre-requisite: Token Approval
+
+1. Navigate to **Organize**.
+2. Choose network and token.
+3. Set allowed approval amount.
+
+### Steps
+
+1. From **Escrow Contract card** → tap **Deposit Contract**.
+2. Fill in the form:
+
+   * Network
+   * Token
+   * Expiration time
+3. Tap **Deposit** (top of screen).
+4. Confirm transaction.
+5. Share **Escrow DID** with seller.
+
+**Fees & Conditions**
+
+* Flat fee for deposit
+* 1% withdrawal platform fee
+
+---
+
+### 🔄 Escrow Contract Status Guide
+
+#### 1. `open`
+
+**Meaning:** Funds deposited, escrow active.
+
+* 🚫 Withdraw
+* ✅ Rollback → allowed 5 days after expiration
+
+---
+
+#### 2. `freeze`
+
+**Meaning:** Escrow blocked.
+
+* 🚫 Withdraw
+* 🚫 Rollback
+
+---
+
+#### 3. `release`
+
+**Meaning:** Escrow released to seller.
+
+* ✅ Withdraw (seller)
+* 🚫 Rollback
+
+---
+
+#### 4. `cancel`
+
+**Meaning:** Escrow canceled.
+
+* 🚫 Withdraw
+* ✅ Rollback (buyer)
+
+---
+
+## 🗂️ Document Registry
+
+* Works like Verifiable Document creation.
+* No **Initialization** step required.
+* Instead of **Create**, tap **Register**.
+* Issuer must have balance to cover flat registration fee.
+
+---
+
+## 🔐 Asset Paywall Registration
+
+### Steps
+
+1. Upload file to:
+
+   * IPFS
+   * Arweave
+   * Centralized storage (direct download link required)
+2. Ensure issuer has balance for flat registration fee.
+3. Register asset via platform interface.
