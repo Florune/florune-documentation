@@ -9,4 +9,5 @@
 - [Secutiry and privacy](./security_and_privacy.md)
 - [Legal information](./legal.md)
 - [FAQ](./faq.md)
+- [Contact Us](./contact.md)
 

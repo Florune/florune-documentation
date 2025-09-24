@@ -28,5 +28,5 @@ Our policies and terms may evolve to reflect technological, regulatory, or opera
 
 ### Contact Information
 
-For any questions or concerns related to legal matters or privacy, please contact us at:
-📧 [contractfoundry@gmail.com](mailto:contractfoundry@gmail.com)
+<!-- For any questions or concerns related to legal matters or privacy, please contact us at:
+📧 [contractfoundry@gmail.com](mailto:contractfoundry@gmail.com) -->
