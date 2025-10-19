@@ -63,9 +63,9 @@ This hybrid model ensures flexibility for users with different security or compl
 
 ---
 
-## CFGT Token
+## Rune Token
 
-Florune uses **CFGT**, an internal utility token, to fuel the system.
+Florune uses **Rune**, an internal utility token, to fuel the system.
 
 * **Non-tradable**: It cannot be speculated on; used only within the ecosystem.
 * **Anti-spam**: Prevents fraudulent or unlimited contract creation.

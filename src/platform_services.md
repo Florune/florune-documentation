@@ -25,7 +25,7 @@ Each service is powered by **onchain smart contracts**, designed to be **transpa
 * **Revocable** and **rollback** options.
 * **Document & signature binding** for enforceability.
 * One-time creation fee (**0% ongoing fees**).
-* Example: **33 CFGT** per contract deployment.
+* Example: **33 Rune** per contract deployment.
 
 ---
 
@@ -36,7 +36,7 @@ Each service is powered by **onchain smart contracts**, designed to be **transpa
 * **Revocable** and linked to contracts (e.g., pledges).
 * Stored locally or in decentralized storage.
 * Onchain **proof of authenticity** with selective disclosure.
-* Example: Deploy a document for **9 CFGT**.
+* Example: Deploy a document for **9 Rune**.
 
 ---
 
@@ -117,7 +117,7 @@ Each layer interacts with smart contracts onchain, while maintaining **user cont
 * Advanced escrow with **milestones, revocation, and document binding**.
 * 0% ongoing fees after creation.
 * Ideal for larger B2B agreements or projects with phased deliverables.
-* Uses **CFGT token** to deploy contracts securely.
+* Uses **Rune token** to deploy contracts securely.
 
 ---
 

@@ -2,44 +2,44 @@
 
 The Florune ecosystem utilizes a **multi-layered token and fee system** designed to support trustless, non-custodial operations while maintaining fair access and network security.
 
-This section explains the **CFGT utility token, transaction fees, and revenue model**.
+This section explains the **Rune utility token, transaction fees, and revenue model**.
 
 ---
 
-## CFGT Utility Token
+## Rune Utility Token
 
-Florune uses **CFGT** as an internal utility token to deploy certain types of contracts and services within the ecosystem.
+Florune uses **Rune** as an internal utility token to deploy certain types of contracts and services within the ecosystem.
 
 ### Key Characteristics:
 
-* **Non-tradable:** CFGT cannot be exchanged on external markets; it functions solely as a fuel token.
+* **Non-tradable:** Rune cannot be exchanged on external markets; it functions solely as a fuel token.
 * **Network Security:** Prevents spamming and unauthorized contract deployment.
 * **Access Control:** Required for deploying creatable contracts such as Pledge Contracts and Verifiable Documents.
-* **Distribution:** CFGT is allocated to users through predefined mechanisms (testnet faucets, mainnet issuance protocols).
+* **Distribution:** Rune is allocated to users through predefined mechanisms (testnet faucets, mainnet issuance protocols).
 
 ### Usage Examples:
 
-* Deploying a **Pledge Contract**: 33 CFGT
-* Deploying a **Verifiable Document**: 9 CFGT
+* Deploying a **Pledge Contract**: 33 Rune
+* Deploying a **Verifiable Document**: 9 Rune
 
 ---
 
 ## Fee Model
 
-Florune combines **transaction-based fees** and CFGT token usage to maintain sustainability:
+Florune combines **transaction-based fees** and Rune token usage to maintain sustainability:
 
 | Service             | Fee Structure                   | Payment Method     |
 | ------------------- | ------------------------------- | ------------------ |
 | Escrow              | Flat deposit + 1% withdrawal    | Native chain token |
-| Pledge Contract     | One-time creation fee (33 CFGT) | CFGT token         |
-| Verifiable Document | Paid per deployment (9 CFGT)    | CFGT token         |
+| Pledge Contract     | One-time creation fee (33 Rune) | Rune token         |
+| Verifiable Document | Paid per deployment (9 Rune)    | Rune token         |
 | Document Registry   | Low-cost pay-per-use            | Native chain token |
 | Asset Paywall       | Transaction-based per access    | Native chain token |
 
 ### Notes:
 
 * Pay-per-use fees apply to non-creatable contracts and public services.
-* CFGT is **required only for creatable contracts** to prevent misuse and secure the network.
+* Rune is **required only for creatable contracts** to prevent misuse and secure the network.
 * Subscription plans for enterprises provide predictable access for frequent contract deployment.
 
 ---
@@ -53,7 +53,7 @@ Florune generates revenue through three main channels:
    * Users pay per service usage using native chain tokens.
    * Ideal for individuals and small businesses.
 
-2. **Internal Utility Token (CFGT)**
+2. **Internal Utility Token (Rune)**
 
    * Non-tradable token used as fuel for deployable contracts.
    * Ensures fair usage and prevents tampering.
@@ -68,4 +68,4 @@ Florune generates revenue through three main channels:
 
 ## Token & Economy Summary
 
-The combination of **CFGT utility token, transaction fees, and subscription models** ensures that Florune remains **sustainable, accessible, and secure**, while aligning incentives for both users and the ecosystem.
+The combination of **Rune utility token, transaction fees, and subscription models** ensures that Florune remains **sustainable, accessible, and secure**, while aligning incentives for both users and the ecosystem.

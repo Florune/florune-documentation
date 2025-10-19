@@ -60,7 +60,7 @@ Pledge Contracts extend escrow functionality by supporting milestones, revocatio
   * Automates complex multi-party agreements
 * **Drawbacks:**
 
-  * Requires CFGT token to deploy
+  * Requires Rune token to deploy
   * Slightly higher complexity than simple escrow
 
 **Related Services / Patterns**
@@ -96,7 +96,7 @@ Florune allows users to create verifiable, wallet-first documents. Documents can
 * **Drawbacks:**
 
   * Users must manage decentralized storage options
-  * Requires CFGT token for deployment
+  * Requires Rune token for deployment
 
 **Related Services / Patterns**
 
