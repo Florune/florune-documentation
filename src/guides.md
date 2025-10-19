@@ -1,6 +1,6 @@
 # 📘 How-To Guides
 
-This section provides step-by-step instructions for using Contract Foundry’s features via the official Android wallet application. All operations—from identity creation to smart contract deployment—are executed locally on your device, ensuring secure, self-sovereign interaction with the blockchain.
+This section provides step-by-step instructions for using Florune’s features via the official Android wallet application. All operations—from identity creation to smart contract deployment—are executed locally on your device, ensuring secure, self-sovereign interaction with the blockchain.
 
 > ⚠️ **Note**: All actions require a EOA as delegate and for deployment an active subscription plan or account charge based on usage needs.
 

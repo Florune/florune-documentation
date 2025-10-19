@@ -9,7 +9,7 @@ In peer-to-peer transactions, freelancers, clients, and small businesses often e
 How can users securely transfer funds in a P2P environment while minimizing fees and avoiding custodial risk?
 
 **Solution**
-Contract Foundry’s Escrow service uses smart contracts to hold funds securely until predefined conditions are met. Funds can be time-bound, revocable, or rolled back automatically if conditions are unmet.
+Florune’s Escrow service uses smart contracts to hold funds securely until predefined conditions are met. Funds can be time-bound, revocable, or rolled back automatically if conditions are unmet.
 
 **Examples**
 
@@ -79,7 +79,7 @@ Organizations and individuals often need tamper-proof documents for legal, compl
 How can documents be verified, shared selectively, and bound to contracts without relying on a central authority?
 
 **Solution**
-Contract Foundry allows users to create verifiable, wallet-first documents. Documents can be stored locally or on decentralized networks (IPFS, Arweave), with hashes anchored onchain. Selective disclosure ensures privacy while proving authenticity.
+Florune allows users to create verifiable, wallet-first documents. Documents can be stored locally or on decentralized networks (IPFS, Arweave), with hashes anchored onchain. Selective disclosure ensures privacy while proving authenticity.
 
 **Examples**
 
@@ -147,7 +147,7 @@ Digital identity is traditionally controlled by centralized authorities, which l
 How can users maintain a portable, self-sovereign digital identity usable across multiple agreements?
 
 **Solution**
-Contract Foundry implements ERC-1056 DIDs, enabling users to control their identity without reliance on central authorities. DIDs are portable, privacy-preserving, and compatible with verifiable credentials.
+Florune implements ERC-1056 DIDs, enabling users to control their identity without reliance on central authorities. DIDs are portable, privacy-preserving, and compatible with verifiable credentials.
 
 **Examples**
 

@@ -1,10 +1,10 @@
 # Security and Privacy
 
-At Contract Foundry, your privacy and security are our highest priorities. We are committed to protecting your personal information and empowering you with full control over your data.
+At Florune, your privacy and security are our highest priorities. We are committed to protecting your personal information and empowering you with full control over your data.
 
 ### Data Minimalism and Transparency
 
-We follow a strict policy of data minimalism. Contract Foundry does **not collect, store, or process any personal information** such as names, email addresses, phone numbers, government IDs, wallet keys, biometric data, or user behavior. Your privacy is respected at every step.
+We follow a strict policy of data minimalism. Florune does **not collect, store, or process any personal information** such as names, email addresses, phone numbers, government IDs, wallet keys, biometric data, or user behavior. Your privacy is respected at every step.
 
 ### Local Control of Identity and Keys
 
@@ -22,24 +22,24 @@ To ensure secure maintain app performance, we use third-party services like Fire
 
 ### No Tracking or Data Sharing
 
-We do **not** use cookies, web beacons, fingerprinting, or any tracking technologies. We do **not** sell or share user data with third parties. Your activity on Contract Foundry remains private and confidential.
+We do **not** use cookies, web beacons, fingerprinting, or any tracking technologies. We do **not** sell or share user data with third parties. Your activity on Florune remains private and confidential.
 
 ### Integration with Decentralized Systems
 
 When you choose to interact with third-party decentralized identity providers or verifiable credential issuers, these integrations are:
 
 * Fully **optional and user-controlled**
-* Managed outside Contract Foundry
+* Managed outside Florune
 * Governed by their own privacy policies and protocols
 
 ### Escrow and Dispute Management
 
-Our escrow functionality enables trustless contract payments, but Contract Foundry does **not intervene** in disputes. Contract participants retain full control, and disputed funds or actions are paused until all parties agree.
+Our escrow functionality enables trustless contract payments, but Florune does **not intervene** in disputes. Contract participants retain full control, and disputed funds or actions are paused until all parties agree.
 
 ### Content and Age Restrictions
 
 * Use of asset paywalls for illegal or inappropriate content is prohibited and subject to user reporting.
-* Contract Foundry is intended for users aged 22 and above; we do not knowingly collect data from minors.
+* Florune is intended for users aged 22 and above; we do not knowingly collect data from minors.
 
 ### Ongoing Commitment
 

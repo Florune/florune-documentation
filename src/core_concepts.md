@@ -1,13 +1,13 @@
 # Core Concepts
 
-Understanding Contract Foundry begins with a few key concepts. These principles define how the platform works and why it’s different from traditional systems.
+Understanding Florune begins with a few key concepts. These principles define how the platform works and why it’s different from traditional systems.
 
 ---
 
 ## Smart Contract-as-a-Service (SCaaS)
 
-Contract Foundry provides **Smart Contract-as-a-Service** — meaning you don’t need to code or deploy contracts manually.
-Instead, you interact through the **Contract Foundry Wallet**, which abstracts away the complexity.
+Florune provides **Smart Contract-as-a-Service** — meaning you don’t need to code or deploy contracts manually.
+Instead, you interact through the **Florune Wallet**, which abstracts away the complexity.
 
 * **Automated**: Escrows, pledges, and verifications run without intermediaries.
 * **Trustless**: Smart contracts enforce rules transparently onchain.
@@ -17,7 +17,7 @@ Instead, you interact through the **Contract Foundry Wallet**, which abstracts a
 
 ## Non-Custodial Architecture
 
-Traditional platforms hold custody of funds and data. Contract Foundry does not.
+Traditional platforms hold custody of funds and data. Florune does not.
 
 * You control your **funds, private keys, and documents**.
 * No intermediaries can freeze, censor, or tamper with your assets.
@@ -29,7 +29,7 @@ This ensures maximum **sovereignty and security** for users.
 
 ## Decentralized Identity (DID)
 
-Contract Foundry implements **W3C-compliant Decentralized Identifiers (DIDs)**.
+Florune implements **W3C-compliant Decentralized Identifiers (DIDs)**.
 A DID is a portable, self-sovereign identity that you fully control.
 
 * No central authority or platform owns your identity.
@@ -53,7 +53,7 @@ Example: A freelancer can prove skill certification to a client without sharing 
 
 ## Hybrid Storage
 
-Contract Foundry supports both **decentralized and centralized storage** for documents.
+Florune supports both **decentralized and centralized storage** for documents.
 
 * **Decentralized Options**: IPFS, Arweave.
 * **Centralized Options**: Standard cloud or self-hosted storage.
@@ -65,7 +65,7 @@ This hybrid model ensures flexibility for users with different security or compl
 
 ## CFGT Token
 
-Contract Foundry uses **CFGT**, an internal utility token, to fuel the system.
+Florune uses **CFGT**, an internal utility token, to fuel the system.
 
 * **Non-tradable**: It cannot be speculated on; used only within the ecosystem.
 * **Anti-spam**: Prevents fraudulent or unlimited contract creation.

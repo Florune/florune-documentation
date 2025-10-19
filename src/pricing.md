@@ -1,6 +1,6 @@
 # Token & Economy
 
-The Contract Foundry ecosystem utilizes a **multi-layered token and fee system** designed to support trustless, non-custodial operations while maintaining fair access and network security.
+The Florune ecosystem utilizes a **multi-layered token and fee system** designed to support trustless, non-custodial operations while maintaining fair access and network security.
 
 This section explains the **CFGT utility token, transaction fees, and revenue model**.
 
@@ -8,7 +8,7 @@ This section explains the **CFGT utility token, transaction fees, and revenue mo
 
 ## CFGT Utility Token
 
-Contract Foundry uses **CFGT** as an internal utility token to deploy certain types of contracts and services within the ecosystem.
+Florune uses **CFGT** as an internal utility token to deploy certain types of contracts and services within the ecosystem.
 
 ### Key Characteristics:
 
@@ -26,7 +26,7 @@ Contract Foundry uses **CFGT** as an internal utility token to deploy certain ty
 
 ## Fee Model
 
-Contract Foundry combines **transaction-based fees** and CFGT token usage to maintain sustainability:
+Florune combines **transaction-based fees** and CFGT token usage to maintain sustainability:
 
 | Service             | Fee Structure                   | Payment Method     |
 | ------------------- | ------------------------------- | ------------------ |
@@ -46,7 +46,7 @@ Contract Foundry combines **transaction-based fees** and CFGT token usage to mai
 
 ## Revenue Streams
 
-Contract Foundry generates revenue through three main channels:
+Florune generates revenue through three main channels:
 
 1. **Pay-As-You-Go**
 
@@ -68,4 +68,4 @@ Contract Foundry generates revenue through three main channels:
 
 ## Token & Economy Summary
 
-The combination of **CFGT utility token, transaction fees, and subscription models** ensures that Contract Foundry remains **sustainable, accessible, and secure**, while aligning incentives for both users and the ecosystem.
+The combination of **CFGT utility token, transaction fees, and subscription models** ensures that Florune remains **sustainable, accessible, and secure**, while aligning incentives for both users and the ecosystem.

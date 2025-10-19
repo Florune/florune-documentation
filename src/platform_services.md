@@ -1,6 +1,6 @@
 # Services
 
-Contract Foundry offers a suite of **trustless, non-custodial services** that allow individuals, businesses, and enterprises to manage agreements, payments, and documents securely.
+Florune offers a suite of **trustless, non-custodial services** that allow individuals, businesses, and enterprises to manage agreements, payments, and documents securely.
 
 Each service is powered by **onchain smart contracts**, designed to be **transparent, automated, and censorship-resistant**.
 
@@ -85,14 +85,14 @@ Each service is powered by **onchain smart contracts**, designed to be **transpa
 
 # Service Structures & Features
 
-Contract Foundry offers a suite of **trustless, non-custodial services**.
+Florune offers a suite of **trustless, non-custodial services**.
 This page breaks down the **structure, purpose, and benefits** of each service in the ecosystem.
 
 ---
 
 ## Service Structure Overview
 
-Contract Foundry’s services can be grouped into three **main layers**:
+Florune’s services can be grouped into three **main layers**:
 
 1. **Payment & Agreement Layer** – Escrows and Pledge Contracts
 2. **Document & Verification Layer** – Verifiable Documents, Document Registry
