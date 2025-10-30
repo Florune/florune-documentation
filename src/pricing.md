@@ -22,14 +22,18 @@ Florune uses **Rune** as an internal utility token to deploy certain types of co
 * Deploying a **Pledge Contract**: 33 Rune
 * Deploying a **Verifiable Document**: 9 Rune
 
-> ### Access Notice
->
-> **Only Flarion token holders can buy Rune token.**
->
-> **Eligibility:** Hold ≥ 1 Flarion token in a connected wallet.
-> **How to participate:** Connect your wallet → Verify Flarion balance → Purchase Rune.
->
-> *If you don't hold Flarion tokens yet, acquire them on supported exchanges or via the Flarion contract before attempting to buy Rune.*
+ #### Access Policy
+
+ **Only Flarion token holders are eligible to purchase the Rune token.**
+
+ **About Flarion:**
+ Flarion is a **tradable, invite-only ERC-20 token** that grants exclusive access to specific ecosystem features and offerings.
+
+ **Whitelist Access:**
+ Interested participants who are not yet Flarion holders may **submit a request to be added to the whitelist** for potential inclusion. Approval is subject to review and availability.
+
+ *Note: Only verified Flarion holders will be able to participate in Rune token purchases.*
+
 
 
 ---
