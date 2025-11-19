@@ -1,47 +1,228 @@
-# Security and Privacy
+# **Privacy Policy**
 
-At Florune, your privacy and security are our highest priorities. We are committed to protecting your personal information and empowering you with full control over your data.
+*Last updated: 19 Nov 2025*
 
-### Data Minimalism and Transparency
+---
 
-We follow a strict policy of data minimalism. Florune does **not collect, store, or process any personal information** such as names, email addresses, phone numbers, government IDs, wallet keys, biometric data, or user behavior. Your privacy is respected at every step.
+# **1. Introduction**
 
-### Local Control of Identity and Keys
+Florune (“Florune”, “the Platform”, “we”, “us”, “our”) is committed to protecting your privacy and ensuring that you maintain full control over your data.
+Florune is designed with **data minimalism**, **local-first identity**, and **non-custodial architecture** as core principles.
 
-All cryptographic keys, digital identities, and credentials are created and stored **exclusively on your device**. This means:
+This Privacy Policy explains how Florune handles information, what is (and is not) collected, and your rights and responsibilities as a user.
 
-* We have **no access** to your private keys or credentials.
-* Your sensitive information never leaves your device unless you choose to share it.
-* If you lose your keys, they cannot be recovered by us or anyone else — so secure your device and backups carefully.
+---
 
-### Performance Monitoring
+# **2. Zero Personal Data Collection**
 
-To ensure secure maintain app performance, we use third-party services like Firebase Analytics and crashlytics:
+Florune collects **no personal information whatsoever**.
 
-* Performance monitoring collects only **anonymous device data** to detect crashes and improve stability — no personal tracking or profiling occurs.
+We do **not** collect, store, or process:
 
-### No Tracking or Data Sharing
+* names
+* email addresses
+* phone numbers
+* government IDs
+* documents
+* biometric data
+* wallet private keys
+* seed phrases
+* sensitive financial details
+* location-based identity
+* personal behavioral tracking
+* IP-linked user profiles
 
-We do **not** use cookies, web beacons, fingerprinting, or any tracking technologies. We do **not** sell or share user data with third parties. Your activity on Florune remains private and confidential.
+Florune performs **no KYC**, **no identity verification**, and **no account creation with personal data**.
 
-### Integration with Decentralized Systems
+---
 
-When you choose to interact with third-party decentralized identity providers or verifiable credential issuers, these integrations are:
+# **3. Local Device Control of Identity and Keys**
 
-* Fully **optional and user-controlled**
-* Managed outside Florune
-* Governed by their own privacy policies and protocols
+All cryptographic materials—including identity keys, DID keys, private keys, credential keys, and signing keys—are generated and stored **exclusively on your device**.
 
-### Escrow and Dispute Management
+Florune:
 
-Our escrow functionality enables trustless contract payments, but Florune does **not intervene** in disputes. Contract participants retain full control, and disputed funds or actions are paused until all parties agree.
+* does **not** access your keys
+* does **not** store or back up keys
+* does **not** transmit your keys
+* does **not** retain any credential-related information
 
-### Content and Age Restrictions
+You are solely responsible for securing your keys, recovery phrases, and device.
 
-* Use of asset paywalls for illegal or inappropriate content is prohibited and subject to user reporting.
-* Florune is intended for users aged 22 and above; we do not knowingly collect data from minors.
+If keys are lost, Florune **cannot** recover them, reset them, or restore access in any form.
 
-### Ongoing Commitment
+---
 
-We regularly review and update our privacy practices to stay aligned with evolving technology and regulations. Any updates will be communicated clearly, and continued use means acceptance of the current policy.
+# **4. No Cloud Backups & No Cloud Recovery**
 
+Florune does **not** provide:
+
+* cloud backup
+* cloud key storage
+* SRP-based backup
+* server-side identity storage
+* remote account restoration
+
+All recovery is performed **locally by you** using your own passphrase or recovery materials.
+
+---
+
+# **5. No Traditional Authentication Services**
+
+Florune does **not** use or rely on:
+
+* OAuth
+* email/password authentication
+* phone number verification
+* Firebase Authentication
+* centralized login systems
+* third-party identity providers
+
+Authentication and identity generation occur entirely **on-device** and are **self-sovereign**.
+
+---
+
+# **6. Optional Diagnostic Analytics**
+
+Florune may collect **non-personal diagnostic data** solely to improve:
+
+* stability
+* performance
+* security
+* crash detection
+
+This data:
+
+* is **anonymous**
+* contains **no identity or personal information**
+* cannot be used to track or identify users
+* can be **disabled at any time** in the settings
+
+Diagnostic analytics may include device type, error logs, and crash traces—only for performance improvement.
+
+---
+
+# **7. No Tracking Technologies**
+
+Florune does **not** use:
+
+* cookies
+* web beacons
+* fingerprinting
+* targeted advertising identifiers
+* cross-site tracking
+* behavioral analytics
+
+No data is sold, shared, or monetized.
+
+---
+
+# **8. Third-Party Decentralized Integrations**
+
+When interacting with:
+
+* decentralized identity providers
+* verifiable credential issuers
+* blockchain networks
+* smart contract systems
+
+these integrations are:
+
+* **optional**
+* **user-initiated**
+* **separate from Florune’s internal systems**
+* governed by their **own privacy policies**
+
+Florune does not control or store data from third-party decentralized services.
+
+---
+
+# **9. Escrow and Smart Contract Interactions**
+
+Escrow operations and smart contract interactions may appear on public ledgers.
+By design:
+
+* transactions are irreversible
+* blockchain records are public by default
+* Florune cannot delete or alter blockchain data
+* Florune cannot interfere with contract state
+
+Users must ensure they understand the public and immutable nature of blockchain systems.
+
+---
+
+# **10. Content Restrictions & User Responsibility**
+
+Users must ensure that their usage of Florune:
+
+* complies with laws applicable to their own jurisdiction
+* does not involve illegal, abusive, harmful, or exploitative content
+* respects platform restrictions against prohibited misuse
+* remains within the allowed use cases of the decentralized system
+
+You are responsible for your own actions and for securing your cryptographic materials.
+
+---
+
+# **11. Age Restriction**
+
+Florune is intended for users **22 years of age or older**.
+
+We do not knowingly collect or store any data (personal or non-personal) from minors.
+
+---
+
+# **12. Data Sharing**
+
+Florune:
+
+* does **not** share data with third parties
+* does **not** sell data
+* does **not** profile users
+* does **not** integrate ad networks
+* does **not** share analytics information beyond essential anonymous diagnostics
+
+Your activity on Florune remains private and local to your device.
+
+---
+
+# **13. Security Measures**
+
+Florune uses:
+
+* local encryption
+* self-sovereign identity mechanisms
+* decentralized architectures
+* secure cryptographic standards
+
+However, no digital system is perfectly secure.
+
+Users must:
+
+* protect their devices
+* maintain secure backups
+* use strong passphrases
+* understand the risk of key loss
+
+Florune cannot recover lost keys or compromised devices.
+
+---
+
+# **14. Updates to This Policy**
+
+Florune may update this Privacy Policy to reflect:
+
+* changes in technology
+* improvements to security
+* new platform features
+* changes in decentralized identity standards
+
+Continued use of the Platform constitutes acceptance of the updated policy.
+
+---
+
+# **15. Contact Information**
+
+For privacy questions or administrative matters:
+
+**[info@florune.net](mailto:info@florune.net)**
