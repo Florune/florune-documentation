@@ -1,14 +1,14 @@
 # Escrow
 
-*A trustless, non-custodial payment safeguard for peer-to-peer transactions and service agreements.*
+*A trustless, non-custodial payment safeguard for peer-to-peer and high-value transactions.*
 
 ---
 
 ## **Overview**
 
-Florune Escrow is a **trust-minimized payment mechanism** that holds funds securely until agreed-upon conditions are met. Built entirely onchain, it protects **buyers, sellers, clients, freelancers, and service providers** during low- to mid-value transactions.
+Florune Escrow is a **trust-minimized, non-custodial onchain payment mechanism** that securely locks funds until both parties meet agreed-upon conditions. Designed for **buyers, sellers, freelancers, enterprises, and service providers**, it is ideal for **high-value transactions** where trust and protection are critical.
 
-With an easy setup, transparent fee structure, and cryptographic verification, Florune’s Escrow reduces fraud risk, removes intermediaries, and creates a neutral, automated environment for secure payments.
+With transparent fees, cryptographic enforcement, and guaranteed neutrality, Florune Escrow eliminates fraud risks and intermediaries — delivering a secure, automated environment for global payments of any size.
 
 ---
 
@@ -16,96 +16,128 @@ With an easy setup, transparent fee structure, and cryptographic verification, F
 
 ### **The Problem**
 
-Digital transactions between two parties (e.g., freelancer ↔ client, buyer ↔ seller) are prone to:
+Digital agreements — whether between individuals or businesses — frequently face:
 
 * Payment fraud
 * Delivery disputes
 * Chargebacks
-* Legally unenforceable agreements
-* Lack of transparency during the transaction lifecycle
+* Unenforceable promises
+* Lack of trusted middlemen
+* No protection for large-value deals
+* Opaque transaction processes
 
-Centralized escrow providers exist but introduce:
+Centralized escrow alternatives exist, but they introduce:
 
-* High fees
-* Custodial risk
-* Limited verification
+* High fees (often 2–10%+)
+* Custodial risk (fund freezing, loss, shutdowns)
 * Slow dispute resolution
-* Country restrictions
+* Geographic restrictions
+* Risk of platform censorship
+
+For **large-value or cross-border transactions**, these risks become even more severe.
 
 ### **The Solution**
 
-Florune Escrow replaces centralized processors with **onchain smart contracts**, giving users:
+Florune Escrow replaces intermediaries with **automation, transparency, and cryptography**:
 
-* Non-custodial fund holding
-* Cryptographically secured signatures
-* Immutable payment flows
-* Transparent status updates
-* Revocable, time-bound, and rollback options
+* Smart contracts hold funds securely
+* Neither Florune nor any third party can access funds
+* Payments follow signature-verified, immutable logic
+* Status is always transparent to both parties
+* Options for rollback, cancellation, or conditional release
 
-This creates a fair, automated payment channel ideal for digital work and simple agreements.
+This makes it suitable for **everything from small digital engagements to high-value deals** worth thousands or millions.
 
 ---
 
 ## **Use Cases**
 
-### **1. Freelance / Gig Work**
+### **1. High-Value B2B Transactions**
+
+*Manufacturing orders, consulting retainers, licensing fees*
+
+* Securely holds large sums
+* Ensures contract milestones are met
+* Prevents fraud or late delivery
+
+### **2. Freelance / Gig Work**
+
+*Design, development, marketing, writing, auditing*
 
 * Client deposits funds in escrow
-* Freelancer completes the work
-* Client releases payment upon approval
+* Freelancer completes work
+* Payment released on approval
 
-### **2. P2P Item Purchases**
+### **3. P2P Item Purchases**
 
-* Buyer locks payment in escrow
-* Seller delivers the product
-* Buyer verifies and releases funds
+*High-value goods, collectibles, hardware, digital assets*
 
-### **3. Deposits, Reservations, and Rentals**
+* Buyer locks payment
+* Seller delivers
+* Buyer verifies and releases
 
-* Secure holding of booking deposits
-* Automatic rollback if conditions aren’t met
+### **4. Deposits, Rentals, Prepayments**
 
-### **4. Small B2B Transactions**
+*Real estate, equipment rentals, agency pre-bookings*
 
-* Protects both parties in quick service delivery
-* Ideal for prototype delivery, consulting sessions, one-off jobs
+* Supports refundable deposits
+* Automatically rolls back if conditions fail
 
-### **5. Content & Digital Deliverables**
+### **5. Large Digital Deliverables**
 
-* Works seamlessly with the **Asset Paywall**
-* Protects creators and purchasers in content delivery workflows
+*Software source code, research, proprietary datasets*
+
+* Easily combines with **Verifiable Documents**
+* Ensures proof-of-delivery before release
+
+### **6. Content & Digital Asset Sales**
+
+* Protects both creators and buyers
+* Seamless integration with **Asset Paywall**
 
 ---
 
 ## **Key Features**
 
-### **1. Trustless, Non-Custodial Payment Holding**
+### **1. Trustless, Non-Custodial Fund Holding**
 
-Funds are held onchain — not by Florune, not by a third party.
+Funds are locked in smart contracts — not controlled by Florune or any third party.
 
-### **2. Revocable, Time-Bound, Rollback Support**
+### **2. Safe for High-Value Transactions**
 
-Flexible payment protection with conditional rules.
+Smart contracts guarantee:
 
-### **3. Simple Fee Structure**
+* No freezing
+* No mismanagement
+* No interference
+* No misappropriation
+
+### **3. Revocable, Time-Bound, and Rollback Support**
+
+Automated safety mechanisms for any agreement size.
+
+### **4. Simple Fee Structure**
 
 * **Flat deposit fee**
 * **1% withdrawal fee**
+* No subscriptions required
 
-No hidden costs or subscriptions required.
+Cheaper and safer than centralized escrow — even for high-value deals.
 
-### **4. Status Transparency**
+### **5. Complete Status Transparency**
 
-Each escrow moves through a clear lifecycle:
+Escrow lifecycle:
 
 * **Open**
 * **Freeze**
 * **Release**
 * **Cancel**
 
-### **5. Wallet-First Flow**
+Every party always knows the exact state.
 
-The entire process is managed in the Florune Wallet — from creation to withdrawal.
+### **6. Wallet-First, On-Device Execution**
+
+All actions happen through the Florune Wallet — intuitive, secure, and verifiable.
 
 ---
 
@@ -113,10 +145,10 @@ The entire process is managed in the Florune Wallet — from creation to withdra
 
 | Status      | Meaning                                            |
 | ----------- | -------------------------------------------------- |
-| **Open**    | Escrow created; waiting for deposit or approval    |
-| **Freeze**  | Funds locked and held securely                     |
-| **Release** | Funds released to recipient upon agreed conditions |
-| **Cancel**  | Funds returned to sender                           |
+| **Open**    | Escrow created; awaiting token approval or deposit |
+| **Freeze**  | Funds locked securely inside smart contract        |
+| **Release** | Funds released to the recipient                    |
+| **Cancel**  | Funds refunded to the sender                       |
 
 ---
 
@@ -125,118 +157,98 @@ The entire process is managed in the Florune Wallet — from creation to withdra
 ### **Prerequisites**
 
 * Florune Wallet installed
-* Native network tokens for gas fees
-* Any payment token approved for use
+* Gas tokens available
+* Payment token approved for use
 
 ---
 
-### **A. Creating an Escrow Deposit**
+## **A. Creating an Escrow Deposit**
 
-1. Open **Create** → select **Escrow Deposit**
-2. Fill in the deposit details:
+1. Open **Create → Escrow Deposit**
+2. Enter:
 
-   * Recipient wallet address
+   * Recipient address
    * Amount
-   * Optional memo or notes
+   * Optional memo
 3. Select network
 4. Tap **Create**
-5. A record appears under **History**
+5. Escrow appears in **History**
 
 ---
 
-### **B. Approving Tokens for Escrow Use**
-
-Before depositing, you must allow the smart contract to handle your tokens.
+## **B. Approving Tokens for Escrow**
 
 1. Open the escrow record
 2. Tap **Approve Token**
-3. Confirm
-4. Wait for confirmation
+3. Confirm the transaction
 
-Once approved, the escrow is ready for deposit.
+Once approved, the deposit can be made.
 
 ---
 
-### **C. Depositing Funds**
+## **C. Depositing Funds**
 
 1. Open the escrow record
 2. Tap **Deposit**
 3. Enter the amount
-4. Confirm transaction
-5. Status becomes **Freeze** when funds are secured
+4. Confirm
+5. Status becomes **Freeze**
 
 ---
 
-### **D. Releasing or Canceling the Escrow**
+## **D. Releasing or Canceling**
 
-#### **Release**
+### **Release**
 
-Used when:
+Used when obligations are met:
 
-* The work was delivered
-* The item was received
-* The agreement is fulfilled
+* Work delivered
+* Product received
+* Agreement fulfilled
 
-1. Open the escrow record
-2. Tap **Release**
-3. Confirm the action
+User taps **Release → Confirm**.
 
-Funds go to the recipient.
-
-#### **Cancel**
+### **Cancel**
 
 Used when:
 
-* Agreement fails
-* Time expires
-* Parties agree to cancel
+* Conditions fail
+* Deadlines pass
+* Mutual cancellation occurs
 
-1. Open the escrow
-2. Tap **Cancel**
-3. Confirm
-
-Funds return to the sender.
+Funds are returned to the sender.
 
 ---
 
 ## **Real-World Examples**
 
-### **Example 1: Buyer ↔ Seller Transaction**
+### **1. High-Value Contract Payment**
 
-Buyer deposits payment → Seller ships item → Buyer confirms → Payment released.
+$50,000 locked → Developer delivers → Company verifies → Funds released.
 
-### **Example 2: Freelancer ↔ Client Work**
+### **2. Hardware Purchase**
 
-Client deposits → Freelancer delivers design files → Client approves → Funds released.
+Buyer deposits → Seller ships → Buyer confirms → Funds released.
 
-### **Example 3: Refundable Deposit**
+### **3. Security Deposit**
 
-User makes a booking deposit → Service is unavailable → Deposit canceled and refunded automatically.
+Tenant deposits → No issues → Deposit returned upon cancellation.
 
 ---
 
 ## **Benefits**
 
-* **Protects both parties** with neutral fund holding
-* **Reduces fraud** in digital transactions
-* **Secure and transparent** lifecycle
-* **Low-cost payment protection**
-* **Automated enforcement** through smart contracts
-* **Compatible with Pledge Contracts and Paywalls**
+* Safe for **high-value** and **cross-border** payments
+* Non-custodial and censorship-resistant
+* Transparent and automated lifecycle
+* Eliminates fraud and trust issues
+* Simple and predictable costs
+* Integrates with **Pledge Contracts** and **Paywalls**
 
 ---
 
 ## **Drawbacks**
 
-* Requires basic understanding of gas fees
-* Both parties should use blockchain wallets
-* Status resolution requires user interaction (no central arbiter)
-
----
-
-## **Best Practices**
-
-* Always keep communication in writing (or in Verifiable Documents)
-* For larger agreements, pair Escrow with a **Pledge Contract**
-* Use time-bound or revocable conditions if risk is involved
-* Confirm wallet addresses carefully before depositing
+* Requires blockchain familiarity
+* Both parties must manage wallets
+* No centralized party can force a resolution

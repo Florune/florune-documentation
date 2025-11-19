@@ -1,4 +1,4 @@
-# Florune – Identity Layer
+# Identity Layer
 
 ## Introduction
 
