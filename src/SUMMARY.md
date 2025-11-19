@@ -20,7 +20,7 @@
   - [Verifiable Credentials](./tutorials/vc.md)
   - [Asset Paywall](./tutorials/asset_paywall.md)
 - [Revenue](./pricing.md)
-  - [Tokenomics](./revenue/tokenomics.md)
+  - [Execution Asset](./revenue/token.md)
   - [Pay-As-You-Go](./revenue/payg.md)
   - [Subscriptions](./revenue/plans.md)
   - [Target Market](./revenue/target_market.md)
