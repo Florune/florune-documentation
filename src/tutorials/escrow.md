@@ -6,7 +6,7 @@
 
 ## **Overview**
 
-Florune Escrow is a **trust-minimized, non-custodial onchain payment mechanism** that securely locks funds until both parties meet agreed-upon conditions. Designed for **buyers, sellers, freelancers, enterprises, and service providers**, it is ideal for **high-value transactions** where trust and protection are critical.
+Florune Escrow is a **trustless, non-custodial onchain payment mechanism** that securely locks funds until both parties meet agreed-upon conditions. Designed for **buyers, sellers, freelancers, enterprises, and service providers**, it is ideal for **high-value transactions** where trust and protection are critical.
 
 With transparent fees, cryptographic enforcement, and guaranteed neutrality, Florune Escrow eliminates fraud risks and intermediaries — delivering a secure, automated environment for global payments of any size.
 
@@ -83,14 +83,7 @@ This makes it suitable for **everything from small digital engagements to high-v
 * Supports refundable deposits
 * Automatically rolls back if conditions fail
 
-### **5. Large Digital Deliverables**
-
-*Software source code, research, proprietary datasets*
-
-* Easily combines with **Verifiable Documents**
-* Ensures proof-of-delivery before release
-
-### **6. Content & Digital Asset Sales**
+### **5. Content & Digital Asset Sales**
 
 * Protects both creators and buyers
 * Seamless integration with **Asset Paywall**
@@ -107,7 +100,7 @@ Funds are locked in smart contracts — not controlled by Florune or any third p
 
 Smart contracts guarantee:
 
-* No freezing
+* No third-party access
 * No mismanagement
 * No interference
 * No misappropriation
@@ -164,15 +157,15 @@ All actions happen through the Florune Wallet — intuitive, secure, and verifia
 
 ## **A. Creating an Escrow Deposit**
 
-1. Open **Create → Escrow Deposit**
+1. Tap **Escrow**
 2. Enter:
 
    * Recipient address
    * Amount
-   * Optional memo
-3. Select network
-4. Tap **Create**
+3. Select network and token
+4. Tap **Deposit**
 5. Escrow appears in **History**
+6. Share Deposit DID with your party
 
 ---
 

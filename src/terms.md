@@ -158,7 +158,7 @@ By using Florune, you agree to:
 2. Maintain your own backups.
 3. Ensure your usage complies with the laws applicable to **your own jurisdiction**.
 4. Understand that blockchain transactions are irreversible.
-5. Accept that smart contracts cannot be undone or modified by Florune.
+5. Accept that smart contracts data cannot be undone or modified by Florune.
 
 You assume full responsibility for your digital assets.
 

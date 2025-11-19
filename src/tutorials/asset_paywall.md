@@ -171,32 +171,26 @@ All requests and decryptions run locally inside the user’s device.
 
 ## A. **Creating a Paywalled Asset**
 
+* Upload or host file on an centralized or decentralized storage
 1. Open the wallet
-2. Navigate to **Create → Paywall**
+2. Tap **Asset Paywall**
 3. Choose the asset type
-
-   * Upload or paste the file link
 4. Choose your payment configuration
 
-   * Asset to accept (Rune / other supported tokens)
+   * Issuer DID
+   * Network and token
    * Price
-   * Access duration (optional)
-   * Access tier (optional)
-5. Set optional rules:
-
-   * Revocable?
-   * Transferable?
-   * Limited-time sale?
+   * Asset Name
 6. Confirm onchain deployment
 7. Asset Paywall contract is deployed
-8. Share the generated **Paywall Access Link** or QR
+8. Share the asset **DID**
 
 ---
 
 ## B. **User Purchasing Access**
 
 1. Open wallet
-2. Scan Paywall QR or open link
+2. Scan Paywall QR or paste DID
 3. View content preview + price
 4. Tap **Purchase**
 5. Wallet executes payment contract
@@ -205,35 +199,9 @@ All requests and decryptions run locally inside the user’s device.
 
 ---
 
-## C. **Creator Managing Access**
+## C. **Managing Asset**
 
-1. Go to **My Creations**
-2. Select paywalled asset
-3. View:
-
-   * Purchases
-   * Users with access
-   * Expiration dates
-4. Optional actions:
-
-   * Revoke access
-   * Modify price (future contracts may require redeploy)
-   * Pause the paywall
-   * Export access logs
-
----
-
-## D. **User Accessing Purchased Content**
-
-1. Open wallet
-2. Navigate to **Assets → Paid Content**
-3. Select purchased asset
-4. Wallet verifies:
-
-   * DID matches access token
-   * Payment contract still valid
-   * Access window not expired
-5. Content decrypts or link opens
+At Contract organization there is options for freeze/unfreeze asset, collect payments or delete asset.
 
 ---
 

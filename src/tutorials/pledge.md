@@ -1,6 +1,6 @@
 # Pledge Contract
 
-*A hybrid physical–digital contract framework with milestone enforcement, verifiable documents, and on-chain guarantees.*
+*A hybrid physical–digital contract framework with flexible milestone enforcement, verifiable documents, and on-chain guarantees.*
 
 ---
 
@@ -37,7 +37,7 @@ Florune’s Pledge Contract provides:
 
 * **Immutable, on-chain agreements** verified by participants' cryptographic signatures
 * **Linked deliverables**, such as Verifiable Documents
-* **Milestone-based workflows** for structured work delivery
+* **Flexible Milestone-based workflows** for structured work delivery and progressive payments
 * **Optional escrowed funds** to secure both sides
 * **Automated status updates** to reduce manual coordination
 
@@ -57,11 +57,11 @@ Attach **Verifiable Documents** as deliverables, guidelines, licenses, terms, or
 
 ### **3. Milestone Enforcement**
 
-Create phases (milestones) that are completed sequentially or individually with explicit confirmation from involved parties.
+Flexible milestones for progressive payments.
 
-### **4. Optional Escrow Binding**
+### **4. Multiple Payments on One Document**
 
-Secure payments by linking to **Escrow Deposits**, ensuring funds are locked until milestones are achieved.
+One Verifiable Document can be used for multiple Pledge Contracts, with diffrent parties and multiple payment process.
 
 ### **5. Full Status Lifecycle**
 
@@ -87,69 +87,44 @@ Everything is controlled in the Florune Wallet — no external software required
 * Florune Wallet installed
 * Active subscription or usage credits
 * Network tokens for contract deployment
-* A Verifiable Document (optional but recommended)
+* A Verifiable Document for document-bound payments
 
 ---
 
-### **A. Creating a Basic Pledge Contract**
+### **A. Creating a Pledge Contract**
 
-1. Open **Create** → tap **Pledge Contract**
+1. Tap **Pledge Contract**
 2. Fill in contract details:
 
-   * Title
-   * Description
-   * Parties involved
-3. Select **network**
-4. Tap **Create**
-5. Approve transaction
-6. Contract is now deployed and appears under **History**
+   * Seller/Contarctor/Issuer DID
+   * Contractee/buyer address
+   * Network and Token
+   * Enter Verifiable Document Contract DID (optional)
+3. Tap **Create**
+4. Choose key
+4. Approve transaction
+5. Contract is now deployed and appears under **History**
+
+Note: oposite the Escrow, Pledge Contract should be created by seller and its DID should be shared with parties, whole process will be done on pledge contracts.
 
 ---
 
-### **B. Linking Verifiable Documents (Optional)**
-
-1. Go to the contract record
-2. Tap **More** → **Link Document**
-3. Select one or multiple Verifiable Documents
-4. Wait for confirmation
-5. Linked documents now appear in contract details
-
----
-
-### **C. Adding Milestones (Optional)**
-
-1. Open the contract
-2. Tap **Add Milestone**
-3. Enter milestone name + details
-4. Save
-5. Repeat for additional steps
-
----
-
-### **D. Initializing the Contract**
+### **B. Initializing the Contract**
 
 1. Inside the contract, tap **Initialize**
-2. All participants must sign
-3. Once everyone signs → **Status becomes Active**
+2. Choose key
+3. Approve transaction
+
+Important Note: before initialization contract controller stays empty so INITIALIZE CONTRACT QUICKLY AFTER DEPLOYMENT
 
 ---
 
-### **E. Completing Milestones**
+### **C. Share Contarct DID with parties**
 
-1. Select a milestone
-2. Tap **Mark Complete**
-3. Other party may need to confirm
-4. System updates contract status
-
----
-
-### **F. Finalizing the Contract**
-
-Once all milestones are complete:
-
-* Tap **Execute Contract**
-* If linked to Escrow, funds will automatically release
-* Status becomes **Executed** or **Completed** depending on workflow
+1. Go to History
+2. Find Issue record related to your contract
+3. On More tap on "Show Transaction Info"
+4. Copy DID
 
 ---
 

@@ -44,22 +44,22 @@ This ensures documents are trustworthy, verifiable, and usable in automated paym
 
 ### **Steps**
 
-1. Navigate to **Create** → tap **Create**
+1. Tap **Verifiable Document**
 2. Upload your file to one of:
 
    * IPFS
    * Arweave
    * Centralized host (direct download link)
-3. Copy the file link
+3. Copy the file link/IPFS-CID/Arweave Transaction Id
 4. Fill in the creation form:
 
-   * Paste file link
+   * Paste the refrence identifier (file link/IPFS-CID/Arweave Transaction Id)
    * Choose blockchain network
 5. Tap **Create** (top of screen)
 6. Confirm the on-chain transaction
 7. After minting, go to **History**
-8. Locate the document record
-9. From **More**, select **Initialize and Setup**
+8. Locate the document history record
+9. From More, select **Initialize and Setup**
 10. Share the **Verifiable Document DID** with relevant parties
 
 ---
