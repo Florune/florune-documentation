@@ -122,9 +122,9 @@ Issuers can revoke credentials using their DID keys (if issued with revocation r
 {
   "@context": ["https://www.w3.org/2018/credentials/v2"],
   "type": ["VerifiableCredential", "EducationCertificate"],
-  "issuer": "did:erc1056:0xABC...",
+  "issuer": "did:ethr:0xABC...",
   "credentialSubject": {
-    "id": "did:erc1056:0x123...",
+    "id": "did:ethr:0x123...",
     "name": "John Doe",
     "course": "Blockchain Development"
   },
@@ -132,7 +132,7 @@ Issuers can revoke credentials using their DID keys (if issued with revocation r
     "type": "EcdsaSecp256k1Signature",
     "created": "2025-01-01T00:00:00Z",
     "proofPurpose": "assertionMethod",
-    "verificationMethod": "did:erc1056:0xABC#owner",
+    "verificationMethod": "did:ethr:0xABC#owner",
     "signatureValue": "0x..."
   }
 }
