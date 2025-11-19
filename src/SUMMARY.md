@@ -1,7 +1,12 @@
 # Summary
 
 - [Introduction](./introduction.md)
-- [Core concepts](./core_concepts.md)
+- [Concepts](./core_concepts.md)
+  - [DID](./concepts/did.md)
+  - [Elysium Protocol](./concepts/elysium_protocol.md)
+  - [Rune Token](./concepts/rune_token.md)
+  - [Flarion Token](./concepts/flarion_token.md)
+  - [Decentralized Storage](./concepts/decentralized_storage.md)
 - [Plafrom services](./platform_services.md)
 - [How to](./guides.md)
 - [Use cases](./usecases.md)
