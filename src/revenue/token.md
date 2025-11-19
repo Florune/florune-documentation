@@ -67,5 +67,5 @@ RUNE is supplied to Flarion holders and via subscription rewards, giving users a
 
 ## **Summary**
 
-Florune’s tokenomics are built for functionality, not hype.
+Florune’s ecosystem tokens built for functionality and real value as an execution asset, not hype.
 RUNE powers the system with predictable, transparent, and fair access to smart contract creation—ensuring Florune remains sustainable, scalable, and trustless.
