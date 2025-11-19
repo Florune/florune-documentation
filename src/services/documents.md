@@ -113,6 +113,4 @@ Provide **low-cost, on-chain proof of document existence** for timestamping, aut
 
 ---
 
-## Conclusion
-
 The **Document & Verification Layer** provides Florune users with **secure, verifiable, and blockchain-backed document services**. By combining verifiable documents and a lightweight registry, this layer ensures **trust, privacy, and proof of authenticity**, forming a reliable foundation for compliance, legal, and IP workflows.

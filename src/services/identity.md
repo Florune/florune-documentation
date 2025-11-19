@@ -113,6 +113,4 @@ Provide **wallet-first, blockchain-backed digital credentials** that are tamper-
 
 ---
 
-## Conclusion
-
 The **Identity Layer** empowers users with **trustworthy, self-sovereign digital identity and credentials**, enabling **secure, verifiable interactions** across Florune’s ecosystem. By combining DIDs with verifiable credentials, Florune supports **privacy-preserving, interoperable, and blockchain-backed identity solutions** suitable for individuals, businesses, and developers alike.
