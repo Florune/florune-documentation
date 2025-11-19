@@ -1,8 +1,8 @@
-# Document & Verification Layer
+# **Document & Verification Layer**
 
-## Introduction
+## **Introduction**
 
-The **Document & Verification Layer** enables **secure, tamper-proof, and verifiable document management** within the Florune ecosystem. It empowers individuals, businesses, and enterprises to **create, verify, and timestamp digital documents** on-chain, ensuring authenticity, integrity, and selective sharing.
+The **Document & Verification Layer** enables **secure, tamper-proof, and verifiable document management** within the Florune ecosystem. It empowers individuals, businesses, and enterprises to **create, verify, and timestamp digital documents** on-chain, ensuring authenticity, integrity, and enforceability.
 
 This layer is ideal for:
 
@@ -15,7 +15,7 @@ All services in this layer leverage **on-chain proof mechanisms** and decentrali
 
 ---
 
-## Layer Overview
+## **Layer Overview**
 
 | Layer Name              | Description                                                                                    | Services                                |
 | ----------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------- |
@@ -24,15 +24,15 @@ All services in this layer leverage **on-chain proof mechanisms** and decentrali
 **Key Objectives of the Layer:**
 
 * Ensure **document authenticity and integrity**
-* Enable **revocable and selective disclosure**
-* Provide **cost-effective proof of document existence**
-* Integrate documents with **smart contract agreements**
+* Provide **revocable document options**
+* Offer **cost-effective proof of document existence**
+* Integrate documents seamlessly with **smart contract agreements**
 
 ---
 
-## Services in Document & Verification Layer
+## **Services in Document & Verification Layer**
 
-### 1. Verifiable Documents
+### **1. Verifiable Documents**
 
 **Purpose:**
 Create secure, wallet-first documents that are **tamper-proof, revocable, and blockchain-backed**, with optional linking to smart contracts for automated enforcement.
@@ -40,32 +40,41 @@ Create secure, wallet-first documents that are **tamper-proof, revocable, and bl
 **Key Features:**
 
 * **Revocable** and **contract-linkable** documents
-* Stored locally or in decentralized storage
+* Stored locally or in decentralized storage (IPFS, Arweave, or centralized hosts)
 * On-chain **proof of authenticity**
-* Supports **selective disclosure** for privacy
+* Wallet-first signing for cryptographic verification
 * Example deployment: **9 Rune per document**
 
 **How It Works:**
 
 1. User creates a document and signs it with their wallet.
 2. Document metadata and proof are stored on-chain; content can remain off-chain.
-3. Document can be linked to contracts (e.g., pledge agreements) for automated verification.
-4. Selective disclosure allows sharing only specific portions of the document.
+3. Document can be linked to contracts (e.g., Pledge Contracts or Escrow) for automated verification.
 
 **Use Case Example:**
 
-* A company issues a compliance certificate to a vendor. The certificate is verifiable on-chain, and the vendor can selectively share proof of compliance without exposing full content.
+* A company issues a compliance certificate to a vendor. The certificate is verifiable on-chain, and can be used to trigger contract milestones or payment releases.
 
 **Benefits:**
 
 * **Tamper-proof and secure** – Blockchain ensures integrity
-* **Privacy-preserving** – Selective disclosure protects sensitive information
-* **Contract integration** – Links directly to escrow or pledge contracts for automated verification
+* **Contract integration** – Links directly to Escrow or Pledge Contracts for automated verification
 * **Revocability** – Documents can be revoked if needed
+
+**Drawbacks:**
+
+* Requires management of decentralized storage
+* Deployment may incur Rune token costs
+
+**Related Services / Cross-links:**
+
+* **Pledge Contract:** For milestone-based contracts linked to documents
+* **Escrow:** To secure payments tied to verified documents
+* **Document Registry:** For lightweight on-chain proof without full content deployment
 
 ---
 
-### 2. Document Registry
+### **2. Document Registry**
 
 **Purpose:**
 Provide **low-cost, on-chain proof of document existence** for timestamping, authorship claims, and IP verification.
@@ -73,14 +82,14 @@ Provide **low-cost, on-chain proof of document existence** for timestamping, aut
 **Key Features:**
 
 * **Lightweight and public** registry
-* Cost-effective solution compared to full verifiable document deployment
+* Cost-effective solution compared to full Verifiable Document deployment
 * Immutable on-chain proof without storing full document content
 * Pay-per-use with native chain tokens
 
 **How It Works:**
 
 1. User registers the document’s hash on-chain.
-2. The blockchain records the timestamp and ownership proof.
+2. Blockchain records the timestamp and ownership proof.
 3. Anyone can verify the document’s existence and authenticity without accessing the full document.
 
 **Use Case Example:**
@@ -94,23 +103,28 @@ Provide **low-cost, on-chain proof of document existence** for timestamping, aut
 * **Lightweight** – Ideal for large-scale or frequent document verification
 * **Immutable proof** – On-chain records cannot be tampered with
 
+**Drawbacks:**
+
+* Does not store full document content
+* Limited functionality compared to full Verifiable Documents
+
 ---
 
-## Layer Benefits Summary
+## **Layer Benefits Summary**
 
-| Service              | Key Advantages                                                       |
-| -------------------- | -------------------------------------------------------------------- |
-| Verifiable Documents | Tamper-proof, revocable, selective disclosure, smart contract linked |
-| Document Registry    | Lightweight, cost-effective, immutable proof of document existence   |
+| Service              | Key Advantages                                            |
+| -------------------- | --------------------------------------------------------- |
+| Verifiable Documents | Tamper-proof, revocable, contract-linked documents        |
+| Document Registry    | Lightweight, cost-effective, immutable proof of existence |
 
 **Overall Layer Benefits:**
 
-1. **Trustworthy Documents** – On-chain verification ensures authenticity.
-2. **Privacy Control** – Selective disclosure keeps sensitive data secure.
-3. **Contract Integration** – Documents can trigger or validate smart contracts.
-4. **Cost Efficiency** – Public registry reduces overhead for proofs.
-5. **Auditability** – Immutable on-chain records support compliance and legal needs.
+1. **Trustworthy Documents** – On-chain verification ensures authenticity
+2. **Contract Integration** – Documents can trigger or validate smart contracts
+3. **Cost Efficiency** – Public registry reduces overhead for proofs
+4. **Auditability** – Immutable on-chain records support compliance and legal needs
+5. **Revocability** – Documents can be suspended or revoked if necessary
 
 ---
 
-The **Document & Verification Layer** provides Florune users with **secure, verifiable, and blockchain-backed document services**. By combining verifiable documents and a lightweight registry, this layer ensures **trust, privacy, and proof of authenticity**, forming a reliable foundation for compliance, legal, and IP workflows.
+The **Document & Verification Layer** provides Florune users with **secure, verifiable, and blockchain-backed document services**. By combining Verifiable Documents and a lightweight registry, this layer ensures **trust, proof of authenticity, and enforceability**, forming a reliable foundation for compliance, legal, and IP workflows.
