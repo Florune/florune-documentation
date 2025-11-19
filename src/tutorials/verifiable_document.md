@@ -1,4 +1,4 @@
-# **Verifiable Document**
+# Verifiable Document
 
 ## **Overview**
 

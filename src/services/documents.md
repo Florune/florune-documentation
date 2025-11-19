@@ -1,4 +1,4 @@
-# **Document & Verification Layer**
+# Document & Verification Layer
 
 ## **Introduction**
 
