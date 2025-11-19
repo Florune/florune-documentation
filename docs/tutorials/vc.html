@@ -1,0 +1,488 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Verifiable Credentials - Florune Docs</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Florune Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="verifiable-credentials"><a class="header" href="#verifiable-credentials">Verifiable Credentials</a></h1>
+<p><em>Wallet-first, privacy-preserving credentials compliant with W3C VC v2.0 and anchored to Florune DIDs.</em></p>
+<hr />
+<h2 id="overview"><a class="header" href="#overview"><strong>Overview</strong></a></h2>
+<p>Florune’s <strong>Verifiable Credentials (VCs)</strong> provide a secure, decentralized way to issue, verify, and present proofs of:</p>
+<ul>
+<li>Skills &amp; achievements</li>
+<li>Education &amp; training</li>
+<li>Compliance &amp; licenses</li>
+<li>Membership &amp; identity attributes</li>
+<li>Business records or attestations</li>
+</ul>
+<p>VCs are:</p>
+<ul>
+<li><strong>Tamper-proof</strong> (cryptographically verifiable)</li>
+<li><strong>Self-sovereign</strong> (stored in the user’s wallet)</li>
+<li><strong>Portable</strong> across networks and platforms</li>
+<li><strong>Privacy-preserving</strong> via <strong>selective disclosure &amp; verifiable presentations</strong></li>
+<li><strong>Built on W3C Verifiable Credential v2.0</strong></li>
+</ul>
+<p>A VC is signed by the issuer’s <strong>DID</strong>, held by the subject’s <strong>wallet</strong>, and verifiable by any third party.</p>
+<hr />
+<h2 id="context--problem"><a class="header" href="#context--problem"><strong>Context &amp; Problem</strong></a></h2>
+<h3 id="the-problem"><a class="header" href="#the-problem"><strong>The Problem</strong></a></h3>
+<p>Traditional credentials (certificates, licenses, IDs) have challenges:</p>
+<ul>
+<li>Easy to forge or manipulate</li>
+<li>Hard to verify internationally</li>
+<li>Require centralized authorities</li>
+<li>Reveal too much personal data</li>
+<li>Slow manual verification processes</li>
+<li>Not portable across platforms</li>
+</ul>
+<p>Users and organizations need <strong>trusted, private, standardized digital credentials</strong> that work anywhere.</p>
+<h3 id="the-solution"><a class="header" href="#the-solution"><strong>The Solution</strong></a></h3>
+<p>Florune VCs:</p>
+<ul>
+<li>Are <strong>verified via blockchain + DID signatures</strong></li>
+<li>Require <strong>no central authority</strong></li>
+<li>Support <strong>selective disclosure</strong> (only reveal what’s necessary)</li>
+<li>Allow <strong>flexible proof presentations</strong></li>
+<li>Can represent <strong>any type of claim</strong> — academic, corporate, legal, or personal</li>
+</ul>
+<p>VCs integrate deeply with Florune’s identity and document ecosystem, powering secure B2B and P2P verification workflows.</p>
+<hr />
+<h2 id="use-cases"><a class="header" href="#use-cases"><strong>Use Cases</strong></a></h2>
+<h3 id="1-education--certification"><a class="header" href="#1-education--certification"><strong>1. Education &amp; Certification</strong></a></h3>
+<ul>
+<li>Schools issue degrees or certificates as VCs</li>
+<li>Training centers issue completion badges</li>
+<li>Students share credentials without revealing full identity</li>
+</ul>
+<h3 id="2-enterprise-compliance"><a class="header" href="#2-enterprise-compliance"><strong>2. Enterprise Compliance</strong></a></h3>
+<ul>
+<li>Employees receive compliance certifications (e.g., AML/KYC training)</li>
+<li>Contractors prove qualifications before engagement</li>
+<li>Auditors verify digital proof instantly</li>
+</ul>
+<h3 id="3-talent--freelancing"><a class="header" href="#3-talent--freelancing"><strong>3. Talent &amp; Freelancing</strong></a></h3>
+<ul>
+<li>Freelancers present verified work history or skill credentials</li>
+<li>Clients validate identity attributes without exposing personal details</li>
+</ul>
+<h3 id="4-legal--regulatory"><a class="header" href="#4-legal--regulatory"><strong>4. Legal &amp; Regulatory</strong></a></h3>
+<ul>
+<li>Businesses issue licenses or compliance documents</li>
+<li>Individuals prove age or residency using selective disclosure</li>
+<li>Lawyers validate document issuance via VCs</li>
+</ul>
+<h3 id="5-web3--onchain-reputation"><a class="header" href="#5-web3--onchain-reputation"><strong>5. Web3 &amp; Onchain Reputation</strong></a></h3>
+<ul>
+<li>Proof-of-contribution credentials</li>
+<li>DAO participation records</li>
+<li>Reputation scoring anchored to DID</li>
+</ul>
+<hr />
+<h2 id="key-features"><a class="header" href="#key-features"><strong>Key Features</strong></a></h2>
+<h3 id="1-w3c-vc-v20-compliant"><a class="header" href="#1-w3c-vc-v20-compliant"><strong>1. W3C VC v2.0 Compliant</strong></a></h3>
+<p>Ensures global compatibility with web3 wallets, institutions, and verifiers.</p>
+<h3 id="2-self-sovereign-storage"><a class="header" href="#2-self-sovereign-storage"><strong>2. Self-Sovereign Storage</strong></a></h3>
+<p>Credentials stay in the payer’s device — <strong>no platform custody</strong>.</p>
+<h3 id="3-selective-disclosure"><a class="header" href="#3-selective-disclosure"><strong>3. Selective Disclosure</strong></a></h3>
+<p>Users reveal <strong>only the needed fields</strong> to a verifier.</p>
+<h3 id="4-did-based-signing"><a class="header" href="#4-did-based-signing"><strong>4. DID-Based Signing</strong></a></h3>
+<p>Both issuer and holder use their <strong>Decentralized Identity (DID)</strong>.</p>
+<h3 id="5-blockchain-anchoring"><a class="header" href="#5-blockchain-anchoring"><strong>5. Blockchain Anchoring</strong></a></h3>
+<p>Credential hashes or metadata can be anchored onchain for immutability.</p>
+<h3 id="6-revocation-support"><a class="header" href="#6-revocation-support"><strong>6. Revocation Support</strong></a></h3>
+<p>Issuers can revoke credentials using their DID keys (if issued with revocation registry).</p>
+<hr />
+<h2 id="credential-structure-simplified-example"><a class="header" href="#credential-structure-simplified-example"><strong>Credential Structure (Simplified Example)</strong></a></h2>
+<pre><code class="language-json">{
+  "@context": ["https://www.w3.org/2018/credentials/v2"],
+  "type": ["VerifiableCredential", "EducationCertificate"],
+  "issuer": "did:ethr:0xABC...",
+  "credentialSubject": {
+    "id": "did:ethr:0x123...",
+    "name": "John Doe",
+    "course": "Blockchain Development"
+  },
+  "proof": {
+    "type": "EcdsaSecp256k1Signature",
+    "created": "2025-01-01T00:00:00Z",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:ethr:0xABC#owner",
+    "signatureValue": "0x..."
+  }
+}
+</code></pre>
+<hr />
+<h1 id="step-by-step-tutorial"><a class="header" href="#step-by-step-tutorial"><strong>Step-by-Step Tutorial</strong></a></h1>
+<h2 id="a-receiving-a-credential"><a class="header" href="#a-receiving-a-credential"><strong>A. Receiving a Credential</strong></a></h2>
+<ol>
+<li>
+<p>Open the Florune Wallet</p>
+</li>
+<li>
+<p>Navigate to <strong>Identity → Credentials</strong></p>
+</li>
+<li>
+<p>Tap <strong>Receive VC</strong></p>
+</li>
+<li>
+<p>Scan QR code / paste credential payload</p>
+</li>
+<li>
+<p>Wallet verifies:</p>
+<ul>
+<li>Issuer DID</li>
+<li>Signature</li>
+<li>Expiration &amp; revocation (if applicable)</li>
+</ul>
+</li>
+<li>
+<p>Accept and store the VC locally</p>
+</li>
+</ol>
+<p>Your VC is now available for presentations or sharing.</p>
+<hr />
+<h2 id="b-issuing-a-credential"><a class="header" href="#b-issuing-a-credential"><strong>B. Issuing a Credential</strong></a></h2>
+<h3 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites</a></h3>
+<ul>
+<li>Your DID must be initialized</li>
+<li>You must have issuer permissions in your workflow</li>
+<li>(Optional) Verifiable Document to attach additional files</li>
+</ul>
+<h3 id="steps"><a class="header" href="#steps">Steps</a></h3>
+<ol>
+<li>
+<p>Navigate to <strong>Issue Credential</strong></p>
+</li>
+<li>
+<p>Fill in the credential fields:</p>
+<ul>
+<li>Type (certificate, membership, license…)</li>
+<li>Subject DID</li>
+<li>Data fields</li>
+</ul>
+</li>
+<li>
+<p>(Optional) Attach Verifiable Document</p>
+</li>
+<li>
+<p>Tap <strong>Issue</strong></p>
+</li>
+<li>
+<p>Wallet signs VC using issuer’s DID</p>
+</li>
+<li>
+<p>Share VC with subject via:</p>
+<ul>
+<li>QR Code</li>
+<li>Direct import</li>
+<li>Encrypted message</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="c-presenting-a-credential-verifiable-presentation"><a class="header" href="#c-presenting-a-credential-verifiable-presentation"><strong>C. Presenting a Credential (“Verifiable Presentation”)</strong></a></h2>
+<p>A presentation allows the holder to share <strong>only the required parts</strong> of the credential.</p>
+<ol>
+<li>
+<p>Open the credential</p>
+</li>
+<li>
+<p>Tap <strong>Present</strong></p>
+</li>
+<li>
+<p>Select fields to reveal</p>
+</li>
+<li>
+<p>Wallet generates:</p>
+<ul>
+<li>A zero-knowledge / selective disclosure proof</li>
+<li>Holder’s DID authentication</li>
+</ul>
+</li>
+<li>
+<p>Share the presentation with verifier</p>
+</li>
+</ol>
+<p>This preserves maximum privacy.</p>
+<hr />
+<h2 id="d-revoking-a-credential-optional"><a class="header" href="#d-revoking-a-credential-optional"><strong>D. Revoking a Credential (Optional)</strong></a></h2>
+<ol>
+<li>Open <strong>Issued Credentials</strong></li>
+<li>Select credential</li>
+<li>Tap <strong>Revoke</strong></li>
+<li>Confirm DID-signed revocation</li>
+</ol>
+<p>Verifiers will see the credential as revoked in future checks.</p>
+<hr />
+<h1 id="real-world-examples"><a class="header" href="#real-world-examples"><strong>Real-World Examples</strong></a></h1>
+<h3 id="example-1--digital-degree"><a class="header" href="#example-1--digital-degree"><strong>Example 1 — Digital Degree</strong></a></h3>
+<p>A university issues VCs instead of PDFs.
+Employers verify authenticity instantly without contacting the school.</p>
+<h3 id="example-2--driver-license-check"><a class="header" href="#example-2--driver-license-check"><strong>Example 2 — Driver License Check</strong></a></h3>
+<p>User presents only “Over 18” instead of full identity details.
+Selective disclosure protects privacy.</p>
+<h3 id="example-3--corporate-compliance"><a class="header" href="#example-3--corporate-compliance"><strong>Example 3 — Corporate Compliance</strong></a></h3>
+<p>An employee presents a “Certified AML Officer” credential to a financial institution.
+The institution verifies:</p>
+<ul>
+<li>DID of employee</li>
+<li>DID of the issuing company</li>
+<li>Integrity of the credential</li>
+</ul>
+<h3 id="example-4--dao-reputation"><a class="header" href="#example-4--dao-reputation"><strong>Example 4 — DAO Reputation</strong></a></h3>
+<p>A DAO issues contribution-based VCs to members.
+Tools read VC reputation to grant roles or voting rights.</p>
+<hr />
+<h1 id="benefits"><a class="header" href="#benefits"><strong>Benefits</strong></a></h1>
+<ul>
+<li>Trustless, verifiable credentials</li>
+<li>Self-sovereign, not platform-controlled</li>
+<li>Portable across apps, companies, and chains</li>
+<li>Supports privacy and selective disclosure</li>
+<li>Compatible with global W3C standards</li>
+<li>Works seamlessly with DID and Document Contracts</li>
+</ul>
+<hr />
+<h1 id="drawbacks"><a class="header" href="#drawbacks"><strong>Drawbacks</strong></a></h1>
+<ul>
+<li>Users must safeguard wallet and credentials</li>
+<li>Revocation requires issuer DID control</li>
+<li>Some platforms still rely on centralized credential formats</li>
+</ul>
+<hr />
+<h1 id="best-practices"><a class="header" href="#best-practices"><strong>Best Practices</strong></a></h1>
+<h3 id="for-issuers"><a class="header" href="#for-issuers">For Issuers</a></h3>
+<ul>
+<li>Use stable, persistent DIDs</li>
+<li>Anchor revocation lists onchain</li>
+<li>Avoid including unnecessary personal data</li>
+<li>Use credential types aligned with global schemas (e.g., W3C)</li>
+</ul>
+<h3 id="for-holders"><a class="header" href="#for-holders">For Holders</a></h3>
+<ul>
+<li>Make secure encrypted backups of credentials</li>
+<li>Use selective disclosure whenever possible</li>
+<li>Keep DID keys rotated and secure</li>
+</ul>
+<h3 id="for-verifiers"><a class="header" href="#for-verifiers">For Verifiers</a></h3>
+<ul>
+<li>Always check DID signature and timestamp</li>
+<li>Verify revocation status</li>
+<li>Use VC-compliant parsers for best interoperability</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../tutorials/did.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../tutorials/asset_paywall.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../tutorials/did.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../tutorials/asset_paywall.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

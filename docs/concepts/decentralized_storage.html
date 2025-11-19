@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Secutiry and privacy - Florune Docs</title>
+        <title>Decentralized Storage - Florune Docs</title>
 
 
         <!-- Custom HTML head -->
@@ -12,33 +12,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
-            const path_to_root = "";
+            const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc.js"></script>
+        <script src="../toc.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -102,7 +102,7 @@
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
-                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
             </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -137,7 +137,7 @@
                     <h1 class="menu-title">Florune Docs</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
 
@@ -166,50 +166,36 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="security-and-privacy"><a class="header" href="#security-and-privacy">Security and Privacy</a></h1>
-<p>At Florune, your privacy and security are our highest priorities. We are committed to protecting your personal information and empowering you with full control over your data.</p>
-<h3 id="data-minimalism-and-transparency"><a class="header" href="#data-minimalism-and-transparency">Data Minimalism and Transparency</a></h3>
-<p>We follow a strict policy of data minimalism. Florune does <strong>not collect, store, or process any personal information</strong> such as names, email addresses, phone numbers, government IDs, wallet keys, biometric data, or user behavior. Your privacy is respected at every step.</p>
-<h3 id="local-control-of-identity-and-keys"><a class="header" href="#local-control-of-identity-and-keys">Local Control of Identity and Keys</a></h3>
-<p>All cryptographic keys, digital identities, and credentials are created and stored <strong>exclusively on your device</strong>. This means:</p>
+                        <h1 id="decentralized-storage"><a class="header" href="#decentralized-storage">Decentralized Storage</a></h1>
+<p>Decentralized storage refers to a method of <strong>storing digital data across a distributed network</strong> rather than on centralized servers. By leveraging blockchain and peer-to-peer technologies, decentralized storage ensures <strong>data immutability, censorship resistance, and long-term availability</strong>, empowering users with <strong>full control over their data</strong> without relying on any single authority.</p>
+<p>In the Florune ecosystem, decentralized storage plays a critical role in <strong>storing verifiable documents, smart contract references, and other high-value data assets</strong>, enabling secure and verifiable interactions between users, smart contracts, and third parties. Two of the most widely used decentralized storage protocols are <strong>Arweave</strong> and <strong>IPFS (InterPlanetary File System)</strong>.</p>
+<hr />
+<h3 id="arweave"><a class="header" href="#arweave"><strong>Arweave</strong></a></h3>
+<p><strong>Arweave</strong> is a <strong>permanent, blockchain-backed storage protocol</strong> designed for long-term, immutable data storage. Data uploaded to Arweave is stored in a distributed network and guaranteed to persist <strong>forever</strong> through a one-time upfront fee. Each piece of data stored is assigned a <strong>unique transaction ID (TxID)</strong>.</p>
+<p>The <strong>TxID</strong> serves as a permanent reference to the stored data, allowing it to be <strong>retrieved, verified, and referenced by smart contracts, applications, or users</strong> at any time. Arweave’s storage model ensures that once data is uploaded, it cannot be altered or deleted, providing <strong>tamper-proof auditability</strong> critical for legal, institutional, and contractual documents.</p>
+<p>Arweave employs a <strong>blockweave structure</strong>, an evolution of traditional blockchain, which links data together using a combination of cryptographic proofs and consensus mechanisms. This ensures both <strong>data permanence</strong> and <strong>efficient network scalability</strong>.</p>
+<hr />
+<h3 id="ipfs-interplanetary-file-system"><a class="header" href="#ipfs-interplanetary-file-system"><strong>IPFS (InterPlanetary File System)</strong></a></h3>
+<p><strong>IPFS</strong> is a <strong>peer-to-peer distributed file system</strong> that addresses data by its <strong>content hash</strong> rather than its location. Unlike centralized servers where files are located at a fixed URL, IPFS retrieves data from any node storing that content, making the system <strong>resilient and decentralized</strong>.</p>
+<p>Every file or folder uploaded to IPFS is assigned a <strong>Content Identifier (CID)</strong>, a cryptographic hash of the file’s contents. The CID ensures <strong>integrity</strong>, meaning any modification to the file results in a different CID. This makes IPFS ideal for <strong>verifiable, tamper-resistant references</strong> in decentralized applications.</p>
+<p>IPFS operates with a <strong>distributed hash table (DHT)</strong> to locate nodes storing the requested content. When a user requests a file via its CID, the network identifies peers hosting the file and retrieves it efficiently from multiple sources, ensuring <strong>redundancy and fault tolerance</strong>. Unlike Arweave, IPFS data persistence depends on <strong>pinning services or active hosting</strong>, as files may not remain available unless intentionally preserved.</p>
+<hr />
+<h3 id="identifiers-arweave-txid-vs-ipfs-cid"><a class="header" href="#identifiers-arweave-txid-vs-ipfs-cid"><strong>Identifiers: Arweave TxID vs IPFS CID</strong></a></h3>
 <ul>
-<li>We have <strong>no access</strong> to your private keys or credentials.</li>
-<li>Your sensitive information never leaves your device unless you choose to share it.</li>
-<li>If you lose your keys, they cannot be recovered by us or anyone else — so secure your device and backups carefully.</li>
+<li><strong>Arweave TxID</strong>: A unique transaction identifier that permanently links to stored data on the Arweave network. Once uploaded, data associated with a TxID is immutable and guaranteed to persist indefinitely.</li>
+<li><strong>IPFS CID</strong>: A content-based cryptographic hash that identifies a file by its content. Changing the file changes its CID. Data availability depends on nodes hosting or pinning the content.</li>
 </ul>
-<h3 id="performance-monitoring"><a class="header" href="#performance-monitoring">Performance Monitoring</a></h3>
-<p>To ensure secure maintain app performance, we use third-party services like Firebase Analytics and crashlytics:</p>
-<ul>
-<li>Performance monitoring collects only <strong>anonymous device data</strong> to detect crashes and improve stability — no personal tracking or profiling occurs.</li>
-</ul>
-<h3 id="no-tracking-or-data-sharing"><a class="header" href="#no-tracking-or-data-sharing">No Tracking or Data Sharing</a></h3>
-<p>We do <strong>not</strong> use cookies, web beacons, fingerprinting, or any tracking technologies. We do <strong>not</strong> sell or share user data with third parties. Your activity on Florune remains private and confidential.</p>
-<h3 id="integration-with-decentralized-systems"><a class="header" href="#integration-with-decentralized-systems">Integration with Decentralized Systems</a></h3>
-<p>When you choose to interact with third-party decentralized identity providers or verifiable credential issuers, these integrations are:</p>
-<ul>
-<li>Fully <strong>optional and user-controlled</strong></li>
-<li>Managed outside Florune</li>
-<li>Governed by their own privacy policies and protocols</li>
-</ul>
-<h3 id="escrow-and-dispute-management"><a class="header" href="#escrow-and-dispute-management">Escrow and Dispute Management</a></h3>
-<p>Our escrow functionality enables trustless contract payments, but Florune does <strong>not intervene</strong> in disputes. Contract participants retain full control, and disputed funds or actions are paused until all parties agree.</p>
-<h3 id="content-and-age-restrictions"><a class="header" href="#content-and-age-restrictions">Content and Age Restrictions</a></h3>
-<ul>
-<li>Use of asset paywalls for illegal or inappropriate content is prohibited and subject to user reporting.</li>
-<li>Florune is intended for users aged 22 and above; we do not knowingly collect data from minors.</li>
-</ul>
-<h3 id="ongoing-commitment"><a class="header" href="#ongoing-commitment">Ongoing Commitment</a></h3>
-<p>We regularly review and update our privacy practices to stay aligned with evolving technology and regulations. Any updates will be communicated clearly, and continued use means acceptance of the current policy.</p>
+<p>By combining <strong>Arweave and IPFS</strong>, Florune ensures <strong>both permanent and distributed storage options</strong>, allowing users to store critical documents securely, reference them in smart contracts, and verify them without relying on any centralized system. These protocols are essential for <strong>tamper-proof operations, verifiable credentials, and long-term digital record integrity</strong>.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="pricing.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../concepts/flarion_token.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="legal.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../services.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -219,11 +205,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="pricing.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../concepts/flarion_token.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="legal.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../services.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -238,13 +224,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
 

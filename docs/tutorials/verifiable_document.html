@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Revenue - Florune Docs</title>
+        <title>Verifiable Document - Florune Docs</title>
 
 
         <!-- Custom HTML head -->
@@ -12,33 +12,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
-            const path_to_root = "";
+            const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc.js"></script>
+        <script src="../toc.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -102,7 +102,7 @@
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
-                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
             </noscript>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -137,7 +137,7 @@
                     <h1 class="menu-title">Florune Docs</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
 
@@ -166,23 +166,128 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="services"><a class="header" href="#services">Services</a></h1>
+                        <h1 id="verifiable-document"><a class="header" href="#verifiable-document">Verifiable Document</a></h1>
+<h2 id="overview"><a class="header" href="#overview"><strong>Overview</strong></a></h2>
+<p><strong>Verifiable Documents</strong> allow users to create <strong>tamper-proof, wallet-first documents</strong> that can be stored locally or on decentralized storage networks, such as <strong>IPFS</strong> or <strong>Arweave</strong>. Each document can be <strong>anchored on-chain</strong>, providing an immutable proof of authenticity. Documents can also be <strong>linked to smart contracts</strong>, enabling automated enforcement in escrow or pledge workflows.</p>
+<blockquote>
+<p>All operations are executed via the Florune Wallet, ensuring <strong>self-sovereign, local execution</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="purpose--context"><a class="header" href="#purpose--context"><strong>Purpose / Context</strong></a></h2>
+<p><strong>Problem:</strong>
+Organizations and individuals often require tamper-proof documents for <strong>legal, compliance, or intellectual property purposes</strong>. Centralized solutions carry the risk of modification, loss, or lack of verifiability.</p>
+<p><strong>Solution:</strong>
+Florune’s Verifiable Document service allows users to:</p>
 <ul>
-<li><a href="./revenue/tokenomics.html">Tokenomics</a></li>
-<li><a href="./revenue/payg.html">Pay-As-You-Go</a></li>
-<li><a href="./revenue/plans.html">Subscriptions</a></li>
-<li><a href="./revenue/target_market.html">Target Market</a></li>
+<li>Anchor documents <strong>on-chain</strong> for immutability</li>
+<li><strong>Link documents to smart contracts</strong> (Pledge Contracts or Escrow) for enforceable workflows</li>
+<li>Maintain full <strong>self-sovereign control</strong> over document storage and access</li>
+</ul>
+<p>This ensures documents are trustworthy, verifiable, and usable in automated payment or contract workflows.</p>
+<hr />
+<h2 id="features"><a class="header" href="#features"><strong>Features</strong></a></h2>
+<ul>
+<li><strong>Decentralized storage options:</strong> IPFS, Arweave, or centralized host with direct download</li>
+<li><strong>Revocable documents:</strong> Documents can be suspended or revoked if needed</li>
+<li><strong>Linked to contracts:</strong> Automatically enforceable within Pledge or Escrow workflows</li>
+<li><strong>Wallet-first signing:</strong> Cryptographically signed via your private key</li>
+<li><strong>On-chain anchoring:</strong> Ensures tamper-proof verification of authenticity</li>
+</ul>
+<hr />
+<h2 id="step-by-step-tutorial"><a class="header" href="#step-by-step-tutorial"><strong>Step-by-Step Tutorial</strong></a></h2>
+<h3 id="prerequisites"><a class="header" href="#prerequisites"><strong>Prerequisites</strong></a></h3>
+<ul>
+<li>Florune Wallet installed</li>
+<li>Active EOA (Externally Owned Account) with subscription plan or usage credit</li>
+<li>Network tokens (e.g., Rune) to pay deployment fees</li>
+</ul>
+<h3 id="steps"><a class="header" href="#steps"><strong>Steps</strong></a></h3>
+<ol>
+<li>
+<p>Navigate to <strong>Create</strong> → tap <strong>Create</strong></p>
+</li>
+<li>
+<p>Upload your file to one of:</p>
+<ul>
+<li>IPFS</li>
+<li>Arweave</li>
+<li>Centralized host (direct download link)</li>
+</ul>
+</li>
+<li>
+<p>Copy the file link</p>
+</li>
+<li>
+<p>Fill in the creation form:</p>
+<ul>
+<li>Paste file link</li>
+<li>Choose blockchain network</li>
+</ul>
+</li>
+<li>
+<p>Tap <strong>Create</strong> (top of screen)</p>
+</li>
+<li>
+<p>Confirm the on-chain transaction</p>
+</li>
+<li>
+<p>After minting, go to <strong>History</strong></p>
+</li>
+<li>
+<p>Locate the document record</p>
+</li>
+<li>
+<p>From <strong>More</strong>, select <strong>Initialize and Setup</strong></p>
+</li>
+<li>
+<p>Share the <strong>Verifiable Document DID</strong> with relevant parties</p>
+</li>
+</ol>
+<hr />
+<h2 id="use-cases--examples"><a class="header" href="#use-cases--examples"><strong>Use Cases / Examples</strong></a></h2>
+<ul>
+<li><strong>Education Certificates:</strong> Universities issue tamper-proof diplomas verifiable by employers</li>
+<li><strong>Contract Enforcement:</strong> Attach signed documents to a Pledge Contract to enforce milestone payments</li>
+<li><strong>Intellectual Property:</strong> Timestamp creative works or research papers to prove authorship</li>
+<li><strong>Legal Agreements:</strong> Ensure critical agreements are immutable and verifiable by all parties</li>
+</ul>
+<hr />
+<h2 id="benefits--drawbacks"><a class="header" href="#benefits--drawbacks"><strong>Benefits &amp; Drawbacks</strong></a></h2>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>Tamper-proof and auditable</li>
+<li>Integrates with Florune contracts for automated enforcement</li>
+<li>Full control over document storage and access</li>
+</ul>
+<p><strong>Drawbacks:</strong></p>
+<ul>
+<li>Requires management of decentralized storage</li>
+<li>Deployment may incur Rune token costs</li>
+</ul>
+<hr />
+<h2 id="related-services--cross-links"><a class="header" href="#related-services--cross-links"><strong>Related Services / Cross-links</strong></a></h2>
+<ul>
+<li><strong>Pledge Contract:</strong> For milestone-based contracts linked to documents</li>
+<li><strong>Escrow:</strong> To secure payments tied to verified documents</li>
+<li><strong>Document Registry:</strong> For lightweight on-chain proof without full content deployment</li>
+</ul>
+<hr />
+<h2 id="notes--tips"><a class="header" href="#notes--tips"><strong>Notes &amp; Tips</strong></a></h2>
+<ul>
+<li>Confirm your document is uploaded correctly before creating a Verifiable Document</li>
+<li>Keep a <strong>local backup</strong> in addition to decentralized storage</li>
+<li>Always link documents to contracts where verification is required for automated enforcement</li>
 </ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="tutorials/asset_paywall.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../tutorials.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="revenue/token.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../tutorials/pledge.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -192,11 +297,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="tutorials/asset_paywall.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../tutorials.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="revenue/token.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../tutorials/pledge.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -211,13 +316,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
 
