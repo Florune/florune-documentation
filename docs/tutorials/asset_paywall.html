@@ -305,34 +305,26 @@ It is designed to support:</p>
 <hr />
 <h1 id="step-by-step-tutorial"><a class="header" href="#step-by-step-tutorial"><strong>Step-by-Step Tutorial</strong></a></h1>
 <h2 id="a-creating-a-paywalled-asset"><a class="header" href="#a-creating-a-paywalled-asset">A. <strong>Creating a Paywalled Asset</strong></a></h2>
+<ul>
+<li>Upload or host file on an centralized or decentralized storage</li>
+</ul>
 <ol>
 <li>
 <p>Open the wallet</p>
 </li>
 <li>
-<p>Navigate to <strong>Create → Paywall</strong></p>
+<p>Tap <strong>Asset Paywall</strong></p>
 </li>
 <li>
 <p>Choose the asset type</p>
-<ul>
-<li>Upload or paste the file link</li>
-</ul>
 </li>
 <li>
 <p>Choose your payment configuration</p>
 <ul>
-<li>Asset to accept (Rune / other supported tokens)</li>
+<li>Issuer DID</li>
+<li>Network and token</li>
 <li>Price</li>
-<li>Access duration (optional)</li>
-<li>Access tier (optional)</li>
-</ul>
-</li>
-<li>
-<p>Set optional rules:</p>
-<ul>
-<li>Revocable?</li>
-<li>Transferable?</li>
-<li>Limited-time sale?</li>
+<li>Asset Name</li>
 </ul>
 </li>
 <li>
@@ -342,14 +334,14 @@ It is designed to support:</p>
 <p>Asset Paywall contract is deployed</p>
 </li>
 <li>
-<p>Share the generated <strong>Paywall Access Link</strong> or QR</p>
+<p>Share the asset <strong>DID</strong></p>
 </li>
 </ol>
 <hr />
 <h2 id="b-user-purchasing-access"><a class="header" href="#b-user-purchasing-access">B. <strong>User Purchasing Access</strong></a></h2>
 <ol>
 <li>Open wallet</li>
-<li>Scan Paywall QR or open link</li>
+<li>Scan Paywall QR or paste DID</li>
 <li>View content preview + price</li>
 <li>Tap <strong>Purchase</strong></li>
 <li>Wallet executes payment contract</li>
@@ -357,56 +349,8 @@ It is designed to support:</p>
 <li>Content unlocks automatically</li>
 </ol>
 <hr />
-<h2 id="c-creator-managing-access"><a class="header" href="#c-creator-managing-access">C. <strong>Creator Managing Access</strong></a></h2>
-<ol>
-<li>
-<p>Go to <strong>My Creations</strong></p>
-</li>
-<li>
-<p>Select paywalled asset</p>
-</li>
-<li>
-<p>View:</p>
-<ul>
-<li>Purchases</li>
-<li>Users with access</li>
-<li>Expiration dates</li>
-</ul>
-</li>
-<li>
-<p>Optional actions:</p>
-<ul>
-<li>Revoke access</li>
-<li>Modify price (future contracts may require redeploy)</li>
-<li>Pause the paywall</li>
-<li>Export access logs</li>
-</ul>
-</li>
-</ol>
-<hr />
-<h2 id="d-user-accessing-purchased-content"><a class="header" href="#d-user-accessing-purchased-content">D. <strong>User Accessing Purchased Content</strong></a></h2>
-<ol>
-<li>
-<p>Open wallet</p>
-</li>
-<li>
-<p>Navigate to <strong>Assets → Paid Content</strong></p>
-</li>
-<li>
-<p>Select purchased asset</p>
-</li>
-<li>
-<p>Wallet verifies:</p>
-<ul>
-<li>DID matches access token</li>
-<li>Payment contract still valid</li>
-<li>Access window not expired</li>
-</ul>
-</li>
-<li>
-<p>Content decrypts or link opens</p>
-</li>
-</ol>
+<h2 id="c-managing-asset"><a class="header" href="#c-managing-asset">C. <strong>Managing Asset</strong></a></h2>
+<p>At Contract organization there is options for freeze/unfreeze asset, collect payments or delete asset.</p>
 <hr />
 <h1 id="real-world-examples"><a class="header" href="#real-world-examples"><strong>Real-World Examples</strong></a></h1>
 <h3 id="example-1--paid-pdf-guide"><a class="header" href="#example-1--paid-pdf-guide">Example 1 — Paid PDF Guide</a></h3>

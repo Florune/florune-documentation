@@ -167,7 +167,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="pledge-contract"><a class="header" href="#pledge-contract">Pledge Contract</a></h1>
-<p><em>A hybrid physical–digital contract framework with milestone enforcement, verifiable documents, and on-chain guarantees.</em></p>
+<p><em>A hybrid physical–digital contract framework with flexible milestone enforcement, verifiable documents, and on-chain guarantees.</em></p>
 <hr />
 <h2 id="overview"><a class="header" href="#overview"><strong>Overview</strong></a></h2>
 <p>A <strong>Pledge Contract</strong> is a decentralized agreement between two or more parties where all obligations, milestones, and deliverables are <strong>digitally anchored</strong> and optionally backed by <strong>escrowed funds</strong>. It serves as a <strong>wallet-first, self-executed contract</strong> where every participant signs with their private key, ensuring integrity, accountability, and traceability without relying on centralized intermediaries.</p>
@@ -195,7 +195,7 @@
 <ul>
 <li><strong>Immutable, on-chain agreements</strong> verified by participants' cryptographic signatures</li>
 <li><strong>Linked deliverables</strong>, such as Verifiable Documents</li>
-<li><strong>Milestone-based workflows</strong> for structured work delivery</li>
+<li><strong>Flexible Milestone-based workflows</strong> for structured work delivery and progressive payments</li>
 <li><strong>Optional escrowed funds</strong> to secure both sides</li>
 <li><strong>Automated status updates</strong> to reduce manual coordination</li>
 </ul>
@@ -207,9 +207,9 @@
 <h3 id="2-document-integration"><a class="header" href="#2-document-integration"><strong>2. Document Integration</strong></a></h3>
 <p>Attach <strong>Verifiable Documents</strong> as deliverables, guidelines, licenses, terms, or specifications.</p>
 <h3 id="3-milestone-enforcement"><a class="header" href="#3-milestone-enforcement"><strong>3. Milestone Enforcement</strong></a></h3>
-<p>Create phases (milestones) that are completed sequentially or individually with explicit confirmation from involved parties.</p>
-<h3 id="4-optional-escrow-binding"><a class="header" href="#4-optional-escrow-binding"><strong>4. Optional Escrow Binding</strong></a></h3>
-<p>Secure payments by linking to <strong>Escrow Deposits</strong>, ensuring funds are locked until milestones are achieved.</p>
+<p>Flexible milestones for progressive payments.</p>
+<h3 id="4-multiple-payments-on-one-document"><a class="header" href="#4-multiple-payments-on-one-document"><strong>4. Multiple Payments on One Document</strong></a></h3>
+<p>One Verifiable Document can be used for multiple Pledge Contracts, with diffrent parties and multiple payment process.</p>
 <h3 id="5-full-status-lifecycle"><a class="header" href="#5-full-status-lifecycle"><strong>5. Full Status Lifecycle</strong></a></h3>
 <p>Automatically transitions through states such as:</p>
 <ul>
@@ -229,27 +229,28 @@
 <li>Florune Wallet installed</li>
 <li>Active subscription or usage credits</li>
 <li>Network tokens for contract deployment</li>
-<li>A Verifiable Document (optional but recommended)</li>
+<li>A Verifiable Document for document-bound payments</li>
 </ul>
 <hr />
-<h3 id="a-creating-a-basic-pledge-contract"><a class="header" href="#a-creating-a-basic-pledge-contract"><strong>A. Creating a Basic Pledge Contract</strong></a></h3>
+<h3 id="a-creating-a-pledge-contract"><a class="header" href="#a-creating-a-pledge-contract"><strong>A. Creating a Pledge Contract</strong></a></h3>
 <ol>
 <li>
-<p>Open <strong>Create</strong> → tap <strong>Pledge Contract</strong></p>
+<p>Tap <strong>Pledge Contract</strong></p>
 </li>
 <li>
 <p>Fill in contract details:</p>
 <ul>
-<li>Title</li>
-<li>Description</li>
-<li>Parties involved</li>
+<li>Seller/Contarctor/Issuer DID</li>
+<li>Contractee/buyer address</li>
+<li>Network and Token</li>
+<li>Enter Verifiable Document Contract DID (optional)</li>
 </ul>
 </li>
 <li>
-<p>Select <strong>network</strong></p>
+<p>Tap <strong>Create</strong></p>
 </li>
 <li>
-<p>Tap <strong>Create</strong></p>
+<p>Choose key</p>
 </li>
 <li>
 <p>Approve transaction</p>
@@ -258,47 +259,23 @@
 <p>Contract is now deployed and appears under <strong>History</strong></p>
 </li>
 </ol>
+<p>Note: oposite the Escrow, Pledge Contract should be created by seller and its DID should be shared with parties, whole process will be done on pledge contracts.</p>
 <hr />
-<h3 id="b-linking-verifiable-documents-optional"><a class="header" href="#b-linking-verifiable-documents-optional"><strong>B. Linking Verifiable Documents (Optional)</strong></a></h3>
-<ol>
-<li>Go to the contract record</li>
-<li>Tap <strong>More</strong> → <strong>Link Document</strong></li>
-<li>Select one or multiple Verifiable Documents</li>
-<li>Wait for confirmation</li>
-<li>Linked documents now appear in contract details</li>
-</ol>
-<hr />
-<h3 id="c-adding-milestones-optional"><a class="header" href="#c-adding-milestones-optional"><strong>C. Adding Milestones (Optional)</strong></a></h3>
-<ol>
-<li>Open the contract</li>
-<li>Tap <strong>Add Milestone</strong></li>
-<li>Enter milestone name + details</li>
-<li>Save</li>
-<li>Repeat for additional steps</li>
-</ol>
-<hr />
-<h3 id="d-initializing-the-contract"><a class="header" href="#d-initializing-the-contract"><strong>D. Initializing the Contract</strong></a></h3>
+<h3 id="b-initializing-the-contract"><a class="header" href="#b-initializing-the-contract"><strong>B. Initializing the Contract</strong></a></h3>
 <ol>
 <li>Inside the contract, tap <strong>Initialize</strong></li>
-<li>All participants must sign</li>
-<li>Once everyone signs → <strong>Status becomes Active</strong></li>
+<li>Choose key</li>
+<li>Approve transaction</li>
 </ol>
+<p>Important Note: before initialization contract controller stays empty so INITIALIZE CONTRACT QUICKLY AFTER DEPLOYMENT</p>
 <hr />
-<h3 id="e-completing-milestones"><a class="header" href="#e-completing-milestones"><strong>E. Completing Milestones</strong></a></h3>
+<h3 id="c-share-contarct-did-with-parties"><a class="header" href="#c-share-contarct-did-with-parties"><strong>C. Share Contarct DID with parties</strong></a></h3>
 <ol>
-<li>Select a milestone</li>
-<li>Tap <strong>Mark Complete</strong></li>
-<li>Other party may need to confirm</li>
-<li>System updates contract status</li>
+<li>Go to History</li>
+<li>Find Issue record related to your contract</li>
+<li>On More tap on "Show Transaction Info"</li>
+<li>Copy DID</li>
 </ol>
-<hr />
-<h3 id="f-finalizing-the-contract"><a class="header" href="#f-finalizing-the-contract"><strong>F. Finalizing the Contract</strong></a></h3>
-<p>Once all milestones are complete:</p>
-<ul>
-<li>Tap <strong>Execute Contract</strong></li>
-<li>If linked to Escrow, funds will automatically release</li>
-<li>Status becomes <strong>Executed</strong> or <strong>Completed</strong> depending on workflow</li>
-</ul>
 <hr />
 <h2 id="pledge-contract-status-guide"><a class="header" href="#pledge-contract-status-guide"><strong>Pledge Contract Status Guide</strong></a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Status</th><th>Meaning</th></tr></thead><tbody>
