@@ -1,4 +1,4 @@
-# Core Concepts
+# Concepts
 
 - [DID](concepts/did.md)
 - [Elysium Protocol](concepts/elysium_protocol.md)
