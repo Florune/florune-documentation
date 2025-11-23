@@ -111,7 +111,7 @@ Notes:
 
 ---
 
-### **C. Share Contarct DID with parties**
+### **B. Share Contarct DID with parties**
 
 1. Go to History
 2. Find Issue record related to your contract

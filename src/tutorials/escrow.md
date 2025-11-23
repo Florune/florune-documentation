@@ -178,7 +178,7 @@ Once approved, the deposit can be made.
 
 ---
 
-## **D. Releasing or Canceling**
+## **C. Releasing or Canceling**
 
 ### **Release**
 
