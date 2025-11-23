@@ -124,12 +124,12 @@ Notes:
 
 | Status        | Meaning                                                             |
 | ------------- | ------------------------------------------------------------------- |
-| **Pending**   | Contract created but not yet signed by all parties                  |
-| **Active**    | All parties signed—contract is in force                             |
-| **Executed**  | Terms fulfilled; contract performed successfully                    |
-| **Completed** | All deliverables + linked workflows finished                        |
-| **Disputed**  | A party flagged an issue requiring resolution                       |
-| **Canceled**  | Contract voided before activation or execution                      |
+| **Pending**   | Contract created but not yet Accepted by Seller                     |
+| **Active**    | Seller Accepted agreement                                           |
+| **Executed**  | Terms fulfilled                                                     |
+| **Completed** | All deliverables + linked workflows finished, Buyer approve fulfillment|
+| **Disputed**  | A party flagged an issue requiring resolution, fund freezes         |
+| **Canceled**  | Contract voided before activation or execution, seller rejected the agreement|
 
 ---
 
