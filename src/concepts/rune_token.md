@@ -1,6 +1,6 @@
-# Rune Token (RUNE)
+# Rune Token
 
-**Rune (RUNE)** is the **execution token** within the Florune ecosystem, used exclusively for performing **premium on-chain operations**. It powers **high-security actions** such as executing Pledge Contracts, processing Verifiable Documents, and other Elysium-tier services. Unlike traditional tokens, Rune is **non-tradable** and **confined to internal platform use**, ensuring that its value is functional rather than financial.
+**Rune (RUNE)** is the **execution token** within the Florune Elysium ecosystem, used exclusively for performing **premium on-chain operations**. It powers **high-security actions** such as executing Pledge Contracts, processing Verifiable Documents, and other Elysium services. Unlike traditional tokens, Rune is **non-tradable** and **confined to internal platform use**, ensuring that its value is functional rather than financial.
 
 RUNE acts as a **transactional asset**, providing a secure mechanism to perform critical operations while maintaining **data integrity, cryptographic assurance, and tamper-proof execution**. Access to Rune-powered services is limited to **Flarion Token holders**, ensuring that only verified users can engage in high-value interactions.
 

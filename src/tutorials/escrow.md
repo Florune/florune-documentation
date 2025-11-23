@@ -6,9 +6,9 @@
 
 ## **Overview**
 
-Florune Escrow is a **trustless, non-custodial onchain payment mechanism** that securely locks funds until both parties meet agreed-upon conditions. Designed for **buyers, sellers, freelancers, enterprises, and service providers**, it is ideal for **high-value transactions** where trust and protection are critical.
+Florune Escrow is a **trustless, non-custodial onchain escrow service** that securely locks funds until both parties meet agreed-upon conditions. Designed for **buyers, sellers, freelancers, enterprises, and service providers** where trust and protection are critical.
 
-With transparent fees, cryptographic enforcement, and guaranteed neutrality, Florune Escrow eliminates fraud risks and intermediaries — delivering a secure, automated environment for global payments of any size.
+With transparent fees and guaranteed neutrality, Florune Escrow eliminates fraud risks and intermediaries — delivering a secure, automated environment for global payments of any size.
 
 ---
 
@@ -23,6 +23,7 @@ Digital agreements — whether between individuals or businesses — frequently 
 * Chargebacks
 * Unenforceable promises
 * Lack of trusted middlemen
+* High cost of middlemen
 * No protection for large-value deals
 * Opaque transaction processes
 
@@ -30,7 +31,7 @@ Centralized escrow alternatives exist, but they introduce:
 
 * High fees (often 2–10%+)
 * Custodial risk (fund freezing, loss, shutdowns)
-* Slow dispute resolution
+* Slow and costy dispute resolution
 * Geographic restrictions
 * Risk of platform censorship
 
@@ -42,22 +43,20 @@ Florune Escrow replaces intermediaries with **automation, transparency, and cryp
 
 * Smart contracts hold funds securely
 * Neither Florune nor any third party can access funds
-* Payments follow signature-verified, immutable logic
 * Status is always transparent to both parties
-* Options for rollback, cancellation, or conditional release
+* Options for rollback, cancellation, and freeze under safe conditions and only by parties
 
-This makes it suitable for **everything from small digital engagements to high-value deals** worth thousands or millions.
+This makes it suitable for **everything from small digital engagements to high-value deals**.
 
 ---
 
 ## **Use Cases**
 
-### **1. High-Value B2B Transactions**
+### **1. High-Value Transactions**
 
 *Manufacturing orders, consulting retainers, licensing fees*
 
 * Securely holds large sums
-* Ensures contract milestones are met
 * Prevents fraud or late delivery
 
 ### **2. Freelance / Gig Work**
@@ -101,7 +100,6 @@ Funds are locked in smart contracts — not controlled by Florune or any third p
 Smart contracts guarantee:
 
 * No third-party access
-* No mismanagement
 * No interference
 * No misappropriation
 
@@ -111,9 +109,9 @@ Automated safety mechanisms for any agreement size.
 
 ### **4. Simple Fee Structure**
 
-* **Flat deposit fee**
+* **Flat deposit fee (pays in network native token)**
 * **1% withdrawal fee**
-* No subscriptions required
+* No subscriptions or access token required
 
 Cheaper and safer than centralized escrow — even for high-value deals.
 
@@ -138,10 +136,10 @@ All actions happen through the Florune Wallet — intuitive, secure, and verifia
 
 | Status      | Meaning                                            |
 | ----------- | -------------------------------------------------- |
-| **Open**    | Escrow created; awaiting token approval or deposit |
-| **Freeze**  | Funds locked securely inside smart contract        |
-| **Release** | Funds released to the recipient                    |
-| **Cancel**  | Funds refunded to the sender                       |
+| **Open**    | token deposited, waiting for release/freeze/cancel |
+| **Freeze**  | Funds locked securely inside smart contract until expiration time |
+| **Release** | Funds released and allow recipient to withdraw     |
+| **Cancel**  | Allow sender/buyer/contractee to refund            |
 
 ---
 
@@ -155,21 +153,7 @@ All actions happen through the Florune Wallet — intuitive, secure, and verifia
 
 ---
 
-## **A. Creating an Escrow Deposit**
-
-1. Tap **Escrow**
-2. Enter:
-
-   * Recipient address
-   * Amount
-3. Select network and token
-4. Tap **Deposit**
-5. Escrow appears in **History**
-6. Share Deposit DID with your party
-
----
-
-## **B. Approving Tokens for Escrow**
+## **A. Approving Tokens for Escrow**
 
 1. Open the escrow record
 2. Tap **Approve Token**
@@ -179,13 +163,18 @@ Once approved, the deposit can be made.
 
 ---
 
-## **C. Depositing Funds**
+## **B. Creating an Escrow Deposit**
 
-1. Open the escrow record
-2. Tap **Deposit**
-3. Enter the amount
-4. Confirm
-5. Status becomes **Freeze**
+1. At organize section onder title of escrow Tap **Approve**
+2. Enter:
+
+   * Recipient address
+   * Amount
+   * expiration date
+3. Select network and token
+4. Tap **Deposit**
+5. Escrow appears in **History**
+6. Share Deposit DID with your party
 
 ---
 
@@ -210,6 +199,44 @@ Used when:
 * Mutual cancellation occurs
 
 Funds are returned to the sender.
+
+---
+
+### Escrow Contract Status Guide
+
+#### 1. `open`
+
+**Meaning:** Funds deposited, escrow active.
+
+* 🚫 Withdraw
+* ✅ Rollback → allowed 5 days after expiration
+
+---
+
+#### 2. `freeze`
+
+**Meaning:** Escrow blocked.
+
+* 🚫 Withdraw
+* 🚫 Rollback
+
+---
+
+#### 3. `release`
+
+**Meaning:** Escrow released to seller.
+
+* ✅ Withdraw (seller)
+* 🚫 Rollback
+
+---
+
+#### 4. `cancel`
+
+**Meaning:** Escrow canceled.
+
+* 🚫 Withdraw
+* ✅ Rollback (buyer)
 
 ---
 

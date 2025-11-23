@@ -6,11 +6,11 @@
 
 ## **Overview**
 
-The Document Registry provides a **fast, inexpensive, and immutable method** to prove that a document existed at a specific point in time. Instead of storing the full file onchain, Florune only records the **hash**, making the process cost-efficient while maintaining strong cryptographic guarantees.
+The Document Registry provides a **fast, cost-efficient and immutable method** to prove that a document existed at a specific point in time. Instead of storing the full file onchain, Florune only records the **hash**, making the process cost-efficient while maintaining strong cryptographic guarantees.
 
 This service is ideal for protecting **intellectual property**, **research**, **legal documents**, **design drafts**, **code**, and any other material where authorship and existence must be provably timestamped.
 
-Unlike Verifiable Documents, the Document Registry does **not** support selective disclosure, signatures, or revocation. It is intentionally minimal: a trustless, permanent anchor for any file.
+A trustless, permanent anchor for any file that need to be verified.
 
 ---
 
@@ -33,7 +33,7 @@ Organizations and creators need a way to **prove authorship**, **establish prior
 Florune Document Registry creates an **immutable onchain proof** that a specific document, identified by its hash, existed at a given moment. This proof is:
 
 * Cryptographically verifiable
-* Public or private depending on how you store the document
+* Public or private document identifier
 * Permanent and censorship-resistant
 * Quick and inexpensive
 
@@ -77,9 +77,9 @@ This allows creators, researchers, and businesses to validate authorship or exis
 
 Designed as a lightweight alternative to Verifiable Documents.
 
-### **2. Privacy-Preserving**
+### **2. Non-custodial Data management**
 
-Only the hash is published — the actual file stays off-chain.
+File stays off-chain by user/issuer, we verify.
 
 ### **3. Immutable and Permanent**
 
@@ -100,58 +100,35 @@ Unlike Verifiable Documents, the record exists immediately after registration.
 
 ---
 
-## **Document Registry vs. Verifiable Documents**
-
-| Feature              | Document Registry   | Verifiable Document                  |
-| -------------------- | ------------------- | ------------------------------------ |
-| Proof of existence   | ✅ Yes               | ✅ Yes                                |
-| Selective disclosure | ❌ No                | ✅ Yes                                |
-| Onchain signatures   | ❌ No                | ✅ Yes                                |
-| Revocation           | ❌ No                | ✅ Yes                                |
-| Cost                 | Very low            | Moderate                             |
-| Ideal for            | Timestamp, IP proof | Verification, contracts, credentials |
-
----
-
 ## **Step-by-Step Tutorial**
 
 ### **Prerequisites**
 
 * Florune Wallet installed
-* Native token balance for gas fees
+* Native token balance for registration fees
+* Issuer/Creator DID: an key DID (did:key) or an ERC-1056 DID with issuer key as its Delegate  
 * File prepared and hashed automatically by the app
 
 ---
 
 ### **A. Registering a Document**
 
-1. Navigate to **Organize** → **Document Registry**
-2. Tap **Register**
-3. Upload or select your file
-4. The wallet will:
+1. Upload your file to one of:
 
-   * Hash your file locally (never uploaded)
-   * Prepare the registration transaction
-5. Choose your network
-6. Ensure you have sufficient Rune/credits for the flat fee
-7. Tap **Register** (top of screen)
-8. Confirm the blockchain transaction
-9. Once confirmed, your registry entry appears under **History**
+   * IPFS
+   * Arweave
+   * Centralized host (direct download link)
+2. Tap **Document Registry** 
+3. Copy the file link/IPFS-CID/Arweave Transaction Id
+4. Fill in the creation form:
 
----
-
-### **B. Retrieving a Registry Entry**
-
-1. Navigate to **History**
-2. Locate your document entry
-3. You can view:
-
-   * Timestamp
-   * Document hash
-   * DID
-   * Network and transaction hash
-
-You can now prove authorship or existence to any external party.
+   * Paste the refrence identifier (file link/IPFS-CID/Arweave Transaction Id)
+   * Choose blockchain network
+5. Tap **Register** (top of screen)
+6. Confirm the on-chain transaction
+7. After minting, go to **History**
+8. Locate the document history record
+9. Share the **Verifiable Document DID** with relevant parties
 
 ---
 
@@ -185,9 +162,9 @@ A compliance officer anchors a log of policy updates to prove the timeline of or
 ## **Drawbacks**
 
 * Does **not** support revocation
+* Does **not** support multiple controller
 * Cannot attach signatures
-* Cannot selectively disclose information
-* Only verifies existence, not content or ownership claims
+* Cannot filter/limit verifiers
 
 For these advanced features, **Verifiable Documents** are recommended.
 

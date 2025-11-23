@@ -170,9 +170,9 @@
 <p><em>A lightweight, low-cost, onchain proof-of-existence system for timestamping documents, research, IP, and digital work.</em></p>
 <hr />
 <h2 id="overview"><a class="header" href="#overview"><strong>Overview</strong></a></h2>
-<p>The Document Registry provides a <strong>fast, inexpensive, and immutable method</strong> to prove that a document existed at a specific point in time. Instead of storing the full file onchain, Florune only records the <strong>hash</strong>, making the process cost-efficient while maintaining strong cryptographic guarantees.</p>
+<p>The Document Registry provides a <strong>fast, cost-efficient and immutable method</strong> to prove that a document existed at a specific point in time. Instead of storing the full file onchain, Florune only records the <strong>hash</strong>, making the process cost-efficient while maintaining strong cryptographic guarantees.</p>
 <p>This service is ideal for protecting <strong>intellectual property</strong>, <strong>research</strong>, <strong>legal documents</strong>, <strong>design drafts</strong>, <strong>code</strong>, and any other material where authorship and existence must be provably timestamped.</p>
-<p>Unlike Verifiable Documents, the Document Registry does <strong>not</strong> support selective disclosure, signatures, or revocation. It is intentionally minimal: a trustless, permanent anchor for any file.</p>
+<p>A trustless, permanent anchor for any file that need to be verified.</p>
 <hr />
 <h2 id="context--problem"><a class="header" href="#context--problem"><strong>Context &amp; Problem</strong></a></h2>
 <h3 id="the-problem"><a class="header" href="#the-problem"><strong>The Problem</strong></a></h3>
@@ -189,7 +189,7 @@
 <p>Florune Document Registry creates an <strong>immutable onchain proof</strong> that a specific document, identified by its hash, existed at a given moment. This proof is:</p>
 <ul>
 <li>Cryptographically verifiable</li>
-<li>Public or private depending on how you store the document</li>
+<li>Public or private document identifier</li>
 <li>Permanent and censorship-resistant</li>
 <li>Quick and inexpensive</li>
 </ul>
@@ -226,8 +226,8 @@
 <h2 id="key-features"><a class="header" href="#key-features"><strong>Key Features</strong></a></h2>
 <h3 id="1-fast-and-low-cost"><a class="header" href="#1-fast-and-low-cost"><strong>1. Fast and Low-Cost</strong></a></h3>
 <p>Designed as a lightweight alternative to Verifiable Documents.</p>
-<h3 id="2-privacy-preserving"><a class="header" href="#2-privacy-preserving"><strong>2. Privacy-Preserving</strong></a></h3>
-<p>Only the hash is published — the actual file stays off-chain.</p>
+<h3 id="2-non-custodial-data-management"><a class="header" href="#2-non-custodial-data-management"><strong>2. Non-custodial Data management</strong></a></h3>
+<p>File stays off-chain by user/issuer, we verify.</p>
 <h3 id="3-immutable-and-permanent"><a class="header" href="#3-immutable-and-permanent"><strong>3. Immutable and Permanent</strong></a></h3>
 <p>Records cannot be deleted or modified, ensuring trustworthiness.</p>
 <h3 id="4-flexible-storage-options"><a class="header" href="#4-flexible-storage-options"><strong>4. Flexible Storage Options</strong></a></h3>
@@ -241,79 +241,54 @@
 <h3 id="5-no-initialization-required"><a class="header" href="#5-no-initialization-required"><strong>5. No Initialization Required</strong></a></h3>
 <p>Unlike Verifiable Documents, the record exists immediately after registration.</p>
 <hr />
-<h2 id="document-registry-vs-verifiable-documents"><a class="header" href="#document-registry-vs-verifiable-documents"><strong>Document Registry vs. Verifiable Documents</strong></a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Feature</th><th>Document Registry</th><th>Verifiable Document</th></tr></thead><tbody>
-<tr><td>Proof of existence</td><td>✅ Yes</td><td>✅ Yes</td></tr>
-<tr><td>Selective disclosure</td><td>❌ No</td><td>✅ Yes</td></tr>
-<tr><td>Onchain signatures</td><td>❌ No</td><td>✅ Yes</td></tr>
-<tr><td>Revocation</td><td>❌ No</td><td>✅ Yes</td></tr>
-<tr><td>Cost</td><td>Very low</td><td>Moderate</td></tr>
-<tr><td>Ideal for</td><td>Timestamp, IP proof</td><td>Verification, contracts, credentials</td></tr>
-</tbody></table>
-</div>
-<hr />
 <h2 id="step-by-step-tutorial"><a class="header" href="#step-by-step-tutorial"><strong>Step-by-Step Tutorial</strong></a></h2>
 <h3 id="prerequisites"><a class="header" href="#prerequisites"><strong>Prerequisites</strong></a></h3>
 <ul>
 <li>Florune Wallet installed</li>
-<li>Native token balance for gas fees</li>
+<li>Native token balance for registration fees</li>
+<li>Issuer/Creator DID: an key DID (did:key) or an ERC-1056 DID with issuer key as its Delegate</li>
 <li>File prepared and hashed automatically by the app</li>
 </ul>
 <hr />
 <h3 id="a-registering-a-document"><a class="header" href="#a-registering-a-document"><strong>A. Registering a Document</strong></a></h3>
 <ol>
 <li>
-<p>Navigate to <strong>Organize</strong> → <strong>Document Registry</strong></p>
-</li>
-<li>
-<p>Tap <strong>Register</strong></p>
-</li>
-<li>
-<p>Upload or select your file</p>
-</li>
-<li>
-<p>The wallet will:</p>
+<p>Upload your file to one of:</p>
 <ul>
-<li>Hash your file locally (never uploaded)</li>
-<li>Prepare the registration transaction</li>
+<li>IPFS</li>
+<li>Arweave</li>
+<li>Centralized host (direct download link)</li>
 </ul>
 </li>
 <li>
-<p>Choose your network</p>
+<p>Tap <strong>Document Registry</strong></p>
 </li>
 <li>
-<p>Ensure you have sufficient Rune/credits for the flat fee</p>
+<p>Copy the file link/IPFS-CID/Arweave Transaction Id</p>
+</li>
+<li>
+<p>Fill in the creation form:</p>
+<ul>
+<li>Paste the refrence identifier (file link/IPFS-CID/Arweave Transaction Id)</li>
+<li>Choose blockchain network</li>
+</ul>
 </li>
 <li>
 <p>Tap <strong>Register</strong> (top of screen)</p>
 </li>
 <li>
-<p>Confirm the blockchain transaction</p>
+<p>Confirm the on-chain transaction</p>
 </li>
 <li>
-<p>Once confirmed, your registry entry appears under <strong>History</strong></p>
+<p>After minting, go to <strong>History</strong></p>
+</li>
+<li>
+<p>Locate the document history record</p>
+</li>
+<li>
+<p>Share the <strong>Verifiable Document DID</strong> with relevant parties</p>
 </li>
 </ol>
-<hr />
-<h3 id="b-retrieving-a-registry-entry"><a class="header" href="#b-retrieving-a-registry-entry"><strong>B. Retrieving a Registry Entry</strong></a></h3>
-<ol>
-<li>
-<p>Navigate to <strong>History</strong></p>
-</li>
-<li>
-<p>Locate your document entry</p>
-</li>
-<li>
-<p>You can view:</p>
-<ul>
-<li>Timestamp</li>
-<li>Document hash</li>
-<li>DID</li>
-<li>Network and transaction hash</li>
-</ul>
-</li>
-</ol>
-<p>You can now prove authorship or existence to any external party.</p>
 <hr />
 <h2 id="real-world-examples"><a class="header" href="#real-world-examples"><strong>Real-World Examples</strong></a></h2>
 <h3 id="example-1-protecting-creative-work"><a class="header" href="#example-1-protecting-creative-work"><strong>Example 1: Protecting Creative Work</strong></a></h3>
@@ -336,9 +311,9 @@
 <h2 id="drawbacks"><a class="header" href="#drawbacks"><strong>Drawbacks</strong></a></h2>
 <ul>
 <li>Does <strong>not</strong> support revocation</li>
+<li>Does <strong>not</strong> support multiple controller</li>
 <li>Cannot attach signatures</li>
-<li>Cannot selectively disclose information</li>
-<li>Only verifies existence, not content or ownership claims</li>
+<li>Cannot filter/limit verifiers</li>
 </ul>
 <p>For these advanced features, <strong>Verifiable Documents</strong> are recommended.</p>
 <hr />

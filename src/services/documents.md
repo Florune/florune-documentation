@@ -9,7 +9,7 @@ This layer is ideal for:
 * **Legal and compliance documentation**
 * **Intellectual property proof and timestamping**
 * **Smart-contract-linked document verification**
-* **Auditable, verifiable credentials for enterprise workflows**
+* **Auditable, verifiable documents for enterprise workflows**
 
 All services in this layer leverage **on-chain proof mechanisms** and decentralized storage to guarantee **security, transparency, and user control**.
 
@@ -35,31 +35,31 @@ All services in this layer leverage **on-chain proof mechanisms** and decentrali
 ### **1. Verifiable Documents**
 
 **Purpose:**
-Create secure, wallet-first documents that are **tamper-proof, revocable, and blockchain-backed**, with optional linking to smart contracts for automated enforcement.
+Create secure, **tamper-proof, revocable, and blockchain-backed** document verification contract, with optional linking to smart contracts for automated enforcement.
 
 **Key Features:**
 
 * **Revocable** and **contract-linkable** documents
 * Stored locally or in decentralized storage (IPFS, Arweave, or centralized hosts)
 * On-chain **proof of authenticity**
-* Wallet-first signing for cryptographic verification
+* Automated On-chain cryptographic verification
 * Example deployment: **9 Rune per document**
 
 **How It Works:**
 
-1. User creates a document and signs it with their wallet.
-2. Document metadata and proof are stored on-chain; content can remain off-chain.
-3. Document can be linked to contracts (e.g., Pledge Contracts or Escrow) for automated verification.
+1. User strore thir document, enter identifier od document and creates a Verifiable Document contract.
+2. Document metadata and proof are stored on-chain; content remain off-chain but verifiable.
+3. Document can be linked to Pledge Contracts for automated verification and payment syncing.
 
 **Use Case Example:**
 
-* A company issues a compliance certificate to a vendor. The certificate is verifiable on-chain, and can be used to trigger contract milestones or payment releases.
+* A company issues a compliance document to a vendor. The document is manageable and verifiable on-chain, and can be used to trigger contract milestones or payment releases.
 
 **Benefits:**
 
 * **Tamper-proof and secure** – Blockchain ensures integrity
-* **Contract integration** – Links directly to Escrow or Pledge Contracts for automated verification
-* **Revocability** – Documents can be revoked if needed
+* **Contract integration** – Links directly to Pledge Contracts for automated verification and payment syncing
+* **Revocability** – Documents can be revoked by issuers and controllers of contract if needed
 
 **Drawbacks:**
 
@@ -68,9 +68,7 @@ Create secure, wallet-first documents that are **tamper-proof, revocable, and bl
 
 **Related Services / Cross-links:**
 
-* **Pledge Contract:** For milestone-based contracts linked to documents
-* **Escrow:** To secure payments tied to verified documents
-* **Document Registry:** For lightweight on-chain proof without full content deployment
+* **Pledge Contract:** For milestone-based contracts linked to documents and secure payments tied to verified documents
 
 ---
 
@@ -82,15 +80,14 @@ Provide **low-cost, on-chain proof of document existence** for timestamping, aut
 **Key Features:**
 
 * **Lightweight and public** registry
-* Cost-effective solution compared to full Verifiable Document deployment
-* Immutable on-chain proof without storing full document content
-* Pay-per-use with native chain tokens
+* Cost-effective solution compared to Verifiable Document contract
+* Immutable on-chain cryptographic proof and automated on-chain document verification 
 
 **How It Works:**
 
-1. User registers the document’s hash on-chain.
-2. Blockchain records the timestamp and ownership proof.
-3. Anyone can verify the document’s existence and authenticity without accessing the full document.
+1. User store docuemnt and enter document identifier and registers the document.
+2. Data will be registered in Florune document registry smart contract and will be verifiable and managable.
+3. Anyone can verify the document’s existence and authenticity.
 
 **Use Case Example:**
 
@@ -100,13 +97,13 @@ Provide **low-cost, on-chain proof of document existence** for timestamping, aut
 
 * **Cost-effective** – Minimal on-chain storage fees
 * **Public verification** – Anyone can verify existence and timestamp
-* **Lightweight** – Ideal for large-scale or frequent document verification
+* **Lightweight** – Ideal for frequent document verification
 * **Immutable proof** – On-chain records cannot be tampered with
 
 **Drawbacks:**
 
 * Does not store full document content
-* Limited functionality compared to full Verifiable Documents
+* Limited functionality compared to Verifiable Documents
 
 ---
 
@@ -120,7 +117,7 @@ Provide **low-cost, on-chain proof of document existence** for timestamping, aut
 **Overall Layer Benefits:**
 
 1. **Trustworthy Documents** – On-chain verification ensures authenticity
-2. **Contract Integration** – Documents can trigger or validate smart contracts
+2. **Contract Integration** – Documents can trigger or validate on-chain
 3. **Cost Efficiency** – Public registry reduces overhead for proofs
 4. **Auditability** – Immutable on-chain records support compliance and legal needs
 5. **Revocability** – Documents can be suspended or revoked if necessary

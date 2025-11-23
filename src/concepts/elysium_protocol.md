@@ -1,6 +1,6 @@
 ## **Elysium Protocol**
 
-The Elysium Protocol represents the **premium, non-custodial service layer** within the Florune ecosystem. While Florune itself is designed as a fully non-custodial infrastructure, Elysium provides an **exclusive high-tier environment** for users who require **maximum security, operational sovereignty, and access to advanced features**.
+The Elysium Protocol represents the **premium Meta protocol** within the Florune ecosystem. While Florune itself is designed as a fully non-custodial infrastructure, Elysium provides an **exclusive high-tier environment** for users who require **maximum security, operational sovereignty, and access to advanced features**.
 
 Unlike standard Florune services, Elysium is reserved exclusively for **Elysian Accounts**, which are verified through the possession of **Flarion Tokens**. This architecture ensures that access, permissions, and operations are fully tied to token ownership, granting users unparalleled control over their interactions.
 
@@ -12,7 +12,7 @@ An **Elysian Account** is the designation for authenticated holders of Flarion T
 
 * **Limited-supply ERC-20 tokens**
 * **Non-tradable** and not listed on exchanges
-* **Functionally exclusive**, granting access to premium features only
+* **Functionally exclusive**, granting access to premium features
 
 #### Key Features:
 
@@ -60,10 +60,10 @@ Elysium extends the capabilities of Florune through a set of **premium tools and
 
 ### **Flarion Token (FLR)**
 
-* **Non-financial, invitation-only ERC-20 token**
-* Serves as the **access credential** to premium services.
+* **Non-financial ERC-20 token**
+* Serves as the **access credential** to Elysium services.
 * Intentionally **non-tradable**, ensuring that access is **utility-focused**, not speculative.
-* Grants access only; **public users without FLR** can still use open services but cannot access Elysium-tier features.
+* Grants access only; **public users without FLR** can still use open services but cannot access Elysium services.
 
 ---
 

@@ -40,16 +40,16 @@ Enable lightweight, self-sovereign digital identity that is **fully user-control
 
 * Based on **ERC-1056** Ethereum standard
 * Fully **user-controlled** – no centralized authority required
-* Portable across platforms and services
-* Compatible with **verifiable credentials**
+* Portable
+* Compatible with W3C **verifiable credentials** v2.0
 * Secure and cryptographically verifiable
 
 **How It Works:**
 
 1. User creates a DID linked to their blockchain wallet.
-2. The DID stores essential metadata and public keys on-chain.
+2. The DID stores essential metadata and public keys/delegates on-chain.
 3. Users control access to their identity data through wallet authorization.
-4. Can be used for signing agreements, documents, and interacting with Florune services.
+4. Can be used for verifying agreements, documents, and interacting with services.
 
 **Use Case Example:**
 
@@ -59,8 +59,8 @@ Enable lightweight, self-sovereign digital identity that is **fully user-control
 
 * **Self-sovereignty** – full user control of identity
 * **Interoperability** – compatible with decentralized apps and smart contracts
-* **Privacy-preserving** – selective disclosure of identity attributes
-* **Security** – cryptographic proof of identity
+* **compliance** – uport integration
+* **Security** – cryptographic proof of identity, self identifying with EOA's
 
 ---
 
@@ -73,14 +73,14 @@ Provide **wallet-first, blockchain-backed digital credentials** that are tamper-
 
 * Compliant with **W3C Verifiable Credentials v2.0**
 * Blockchain-backed and tamper-proof
-* Supports **verifiable presentations** with selective disclosure
+* Supports **verifiable presentations**
 * Can represent education certificates, licenses, compliance documents, or professional credentials
 
 **How It Works:**
 
 1. Credential issuer creates a verifiable credential for a user.
 2. Credential metadata and proof are recorded on-chain.
-3. User stores credentials in their wallet and selectively shares proofs with third parties.
+3. User stores credentials in their wallet and selectively shares informations and proofs with third parties.
 4. Recipients can verify authenticity without needing direct access to the issuer.
 
 **Use Case Example:**
@@ -91,7 +91,6 @@ Provide **wallet-first, blockchain-backed digital credentials** that are tamper-
 
 * **Trustless Verification** – verifiable without a central authority
 * **Privacy-Preserving Sharing** – selective disclosure for sensitive data
-* **Interoperable** – compatible with multiple services and smart contracts
 * **Tamper-Proof** – blockchain ensures integrity and immutability
 
 ---

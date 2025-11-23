@@ -173,7 +173,6 @@
 <ul>
 <li><strong>Individuals:</strong> Freelancers, gig workers, and peer-to-peer (P2P) payments</li>
 <li><strong>Businesses &amp; Enterprises:</strong> Small B2B contracts, milestone-driven projects, and enterprise workflows</li>
-<li><strong>Developers &amp; Integrators:</strong> Automated payment flows and programmatic contract interactions</li>
 </ul>
 <p>Every service in this layer leverages <strong>on-chain smart contracts</strong> to provide <strong>trust, security, and automation</strong>, ensuring that agreements execute exactly as defined and that funds are handled safely.</p>
 <hr />
@@ -206,7 +205,7 @@ Escrow provides a <strong>trustless, non-custodial payment mechanism</strong> th
 <ol>
 <li>Sender deposits funds into the Escrow smart contract</li>
 <li>Funds remain locked until the recipient fulfills the agreement</li>
-<li>Upon completion, funds are automatically released</li>
+<li>Upon completion, buyer release funds and let seller to withdraw funds</li>
 <li>Conditional rollback or cancellation is supported if obligations are unmet</li>
 </ol>
 <p><strong>Use Cases:</strong></p>
@@ -215,7 +214,6 @@ Escrow provides a <strong>trustless, non-custodial payment mechanism</strong> th
 <li>P2P Item Purchases: Buyer deposits → Seller delivers → Buyer verifies → Funds released</li>
 <li>High-Value B2B Transactions: Secure large payments for prototypes, consulting sessions, or licensing deals</li>
 <li>Deposits, Reservations, and Rentals: Automatically refundable if conditions fail</li>
-<li>Digital Content Delivery: Works seamlessly with <strong>Asset Paywall</strong> for monetized content</li>
 </ul>
 <p><strong>Benefits:</strong></p>
 <ul>
@@ -223,32 +221,32 @@ Escrow provides a <strong>trustless, non-custodial payment mechanism</strong> th
 <li><strong>Cost-effective</strong> for high-value and regular payments</li>
 <li><strong>Automated enforcement</strong> via smart contracts</li>
 <li><strong>Secure, transparent lifecycle</strong></li>
-<li><strong>Compatible with Pledge Contracts</strong> for more complex workflows</li>
 </ul>
 <hr />
 <h3 id="2-pledge-contracts"><a class="header" href="#2-pledge-contracts"><strong>2. Pledge Contracts</strong></a></h3>
 <p><strong>Purpose:</strong>
-Pledge Contracts extend escrow functionality to <strong>larger, milestone-based, or complex agreements</strong>, making them ideal for <strong>enterprise-grade projects</strong> and <strong>high-value contracts</strong> requiring multiple stages, verification, or document linkage.</p>
+Pledge Contracts extend escrow functionality to <strong>larger, progressive, or complex agreements</strong>, making them ideal for <strong>enterprise-grade projects</strong> and <strong>high-value contracts</strong> requiring multiple payments on agreement, verification, or document linkage.</p>
 <p><strong>Key Features:</strong></p>
 <ul>
-<li><strong>Milestones &amp; partial payouts</strong> — release funds based on verified project stages</li>
+<li><strong>Milestones &amp; partial payouts</strong> — flexible progressive payments, multiple payment linkage</li>
 <li><strong>Revocable &amp; rollback options</strong> for flexible risk management</li>
-<li><strong>Document &amp; signature binding</strong> — ensures legal enforceability and auditability</li>
+<li><strong>Document binding</strong> — sync with document, automated on-chain verification and authentication, ensures enforceability and auditability</li>
 <li><strong>One-time creation fee</strong> with <strong>0% ongoing fees</strong></li>
 <li>Example: <strong>33 Rune</strong> per contract deployment</li>
 <li>Fully integrates with <strong>Verifiable Documents</strong>, syncing payout conditions with document status</li>
 </ul>
 <p><strong>How It Works:</strong></p>
 <ol>
-<li>Contract creator defines milestones and corresponding payouts</li>
+<li>Contractor deploy verifiable document contract and enter document contract DID for pledge contarct creation</li>
 <li>Funds are deposited into the Pledge Contract smart contract</li>
-<li>As each milestone is verified, funds are released automatically</li>
-<li>All contract terms, payments, and document interactions are <strong>cryptographically secured and auditable</strong></li>
+<li>As each parties verify document, funds are released automatically</li>
+<li>All contract terms, payments, and document interactions are on-chain and <strong>cryptographically secured and auditable</strong></li>
 </ol>
+<p>Note: Pledge contract is an sovereign contract and can operate without linking to verifiable document contract</p>
 <p><strong>Use Cases:</strong></p>
 <ul>
 <li>Enterprise Software Development: Payment released as each development milestone is completed</li>
-<li>Licensing or Procurement: Funds unlocked when verified deliverables or documentation are submitted</li>
+<li>Licensing or Procurement: Funds unlocked when contractee verify document and approve delivery of service</li>
 <li>Complex Freelance Projects: Large creative or consulting projects with multi-phase deliverables</li>
 <li>Document-Linked Agreements: Synchronize payments with signed verifiable documents to ensure accountability</li>
 <li>Cross-Border B2B Deals: Ensures high-value payments execute reliably across jurisdictions</li>
@@ -265,7 +263,7 @@ Pledge Contracts extend escrow functionality to <strong>larger, milestone-based,
 <h2 id="layer-benefits-summary"><a class="header" href="#layer-benefits-summary"><strong>Layer Benefits Summary</strong></a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Service</th><th>Key Advantages</th></tr></thead><tbody>
 <tr><td>Escrow</td><td>Trustless, high-value capable, automated P2P payments, low fees</td></tr>
-<tr><td>Pledge Contracts</td><td>Milestone-based, revocable, document-linked agreements, suitable for large payments</td></tr>
+<tr><td>Pledge Contracts</td><td>Progressive, revocable, document-linked agreements, suitable for large payments</td></tr>
 </tbody></table>
 </div>
 <p><strong>Overall Layer Benefits:</strong></p>
@@ -277,7 +275,7 @@ Pledge Contracts extend escrow functionality to <strong>larger, milestone-based,
 <li><strong>Cost Efficiency:</strong> Cheaper and faster than traditional intermediaries</li>
 </ol>
 <hr />
-<p>The <strong>Payment &amp; Agreement Layer</strong> is the backbone of Florune’s ecosystem. By combining <strong>Escrow for high-value payments</strong> and <strong>Pledge Contracts for flexible, milestone-driven agreements</strong>, it provides a <strong>secure, automated, and transparent financial infrastructure</strong> that empowers individuals, businesses, and enterprises to transact confidently across borders and industries.</p>
+<p>The <strong>Payment &amp; Agreement Layer</strong> is the backbone of Florune’s ecosystem. <strong>Escrow for high-value payments</strong> and <strong>Pledge Contracts for flexible, milestone-driven agreements</strong> provides a <strong>secure, automated, and transparent financial infrastructure</strong> that empowers individuals, businesses, and enterprises to transact confidently across borders and industries.</p>
 
                     </main>
 

@@ -170,7 +170,7 @@
 <p><em>Decentralized content monetization with onchain access control, multi-payment support, and DID-authenticated delivery.</em></p>
 <hr />
 <h2 id="overview"><a class="header" href="#overview"><strong>Overview</strong></a></h2>
-<p>The <strong>Asset Paywall</strong> service allows creators, businesses, and developers to <strong>lock digital content behind a secure paywall</strong> and grant access only when payment is confirmed.
+<p>The <strong>Asset Paywall</strong> service allows creators, businesses, and developers to <strong>register an digital content delivery contract</strong>.
 It is designed to support:</p>
 <ul>
 <li><strong>Digital content sales</strong> (media, PDFs, files, videos, audio, images)</li>
@@ -183,70 +183,44 @@ It is designed to support:</p>
 <p>The Asset Paywall integrates deeply with the Florune ecosystem, using:</p>
 <ul>
 <li><strong>DIDs</strong> for identity/authorship</li>
-<li><strong>Verifiable Documents</strong> for content metadata</li>
-<li><strong>Document Registry</strong> for anchoring</li>
-<li><strong>Wallet-based decryption access</strong></li>
-<li><strong>Rune, stablecoins, or supported assets</strong> as payment</li>
 </ul>
-<p>It works fully <strong>wallet-first</strong>, ensuring users <strong>retain local control</strong> while publishers remain <strong>sovereign owners</strong> of their content.</p>
+<p>It works fully <strong>wallet-first</strong>, ensuring users <strong>retain local control</strong> while publishers remain <strong>sovereign owners</strong> of their content.
+Issuers wont share ownership, they register an content delivery contract, customers approve the contract by payment and receive content identifier.</p>
 <hr />
 <h2 id="context--problem"><a class="header" href="#context--problem"><strong>Context &amp; Problem</strong></a></h2>
 <h3 id="the-problem"><a class="header" href="#the-problem"><strong>The Problem</strong></a></h3>
 <p>Most content monetization platforms:</p>
 <ul>
-<li>Take high fees</li>
 <li>Require central hosting</li>
 <li>Control creator accounts</li>
 <li>Can censor, block, or shadowban</li>
 <li>Offer weak content protection</li>
 <li>Depend on fragile credential-based logins</li>
 </ul>
-<p>Creators need <strong>trustless payment</strong>, <strong>creator ownership</strong>, and <strong>secure access control</strong> without relying on intermediaries.</p>
+<p>Creators need <strong>trustless payment</strong> and <strong>ownership</strong> without relying on intermediaries.</p>
 <h3 id="the-solution"><a class="header" href="#the-solution"><strong>The Solution</strong></a></h3>
 <p>Florune’s <strong>Asset Paywall</strong>:</p>
 <ul>
 <li>Uses <strong>smart-contract payments</strong></li>
-<li>Grants <strong>verifiable, cryptographic access</strong> after payment</li>
+<li>Deliver <strong>content identifier</strong> after payment</li>
 <li>Stores protected assets via decentralized links or secure URLs</li>
-<li>Uses <strong>DID-based access control</strong>, not centralized accounts</li>
+<li>Uses <strong>DID</strong>, not centralized accounts</li>
 <li>Runs entirely from the user's wallet (no platform custody)</li>
-<li>Allows <strong>revocable, transferable, permissioned</strong> access control</li>
 </ul>
 <hr />
 <h2 id="key-features"><a class="header" href="#key-features"><strong>Key Features</strong></a></h2>
-<h3 id="-1-contract-based-access-control"><a class="header" href="#-1-contract-based-access-control">🧱 <strong>1. Contract-Based Access Control</strong></a></h3>
-<p>Access rules are enforced via smart contracts, not centralized servers.</p>
-<h3 id="-2-multi-asset-payments"><a class="header" href="#-2-multi-asset-payments">💸 <strong>2. Multi-Asset Payments</strong></a></h3>
+<h3 id="-1-multi-asset-payments"><a class="header" href="#-1-multi-asset-payments">💸 <strong>1. Multi-Asset Payments</strong></a></h3>
 <p>Publishers can charge:</p>
 <ul>
-<li>Rune</li>
 <li>Stablecoins</li>
 <li>Other chain-native assets (where supported)</li>
 </ul>
-<h3 id="-3-did-gated-content"><a class="header" href="#-3-did-gated-content">🔐 <strong>3. DID Gated Content</strong></a></h3>
-<p>Only users with valid DID + payment signature can access the asset.</p>
-<h3 id="-4-flexible-access-models"><a class="header" href="#-4-flexible-access-models">🎫 <strong>4. Flexible Access Models</strong></a></h3>
+<h3 id="-2-flexible-access-models"><a class="header" href="#-2-flexible-access-models">🎫 <strong>2. Flexible Access Models</strong></a></h3>
 <ul>
-<li><strong>One-time purchase</strong></li>
-<li><strong>Timed access</strong> (24h, 7d, 30d, custom)</li>
-<li><strong>Subscription-like periodic renewal</strong></li>
-<li><strong>Tiered access</strong> (Basic, Pro, VIP)</li>
+<li><strong>One-time purchase means approve contract</strong></li>
 </ul>
-<h3 id="-5-multiple-asset-types-supported"><a class="header" href="#-5-multiple-asset-types-supported">🗂️ <strong>5. Multiple Asset Types Supported</strong></a></h3>
-<ul>
-<li>Documents</li>
-<li>PDF</li>
-<li>Audio</li>
-<li>Images</li>
-<li>Video</li>
-<li>Encrypted files</li>
-<li>Private URLs</li>
-<li>API endpoints</li>
-</ul>
-<h3 id="-6-onchain-proof-of-purchase"><a class="header" href="#-6-onchain-proof-of-purchase">📍 <strong>6. Onchain Proof of Purchase</strong></a></h3>
+<h3 id="-3-onchain-proof-of-purchase"><a class="header" href="#-3-onchain-proof-of-purchase">📍 <strong>3. Onchain Proof of Purchase</strong></a></h3>
 <p>Proofs are stored as lightweight logs and anchored to the buyer’s DID.</p>
-<h3 id="-7-revocable-access"><a class="header" href="#-7-revocable-access">🔄 <strong>7. Revocable Access</strong></a></h3>
-<p>Creators can optionally revoke access manually or by rule triggers.</p>
 <hr />
 <h1 id="use-cases"><a class="header" href="#use-cases"><strong>Use Cases</strong></a></h1>
 <h2 id="1-content-creators--educators"><a class="header" href="#1-content-creators--educators"><strong>1. Content Creators &amp; Educators</strong></a></h2>
@@ -256,12 +230,6 @@ It is designed to support:</p>
 <li>Photography, digital art, designs</li>
 <li>Locked newsletters or research papers</li>
 </ul>
-<h2 id="2-developers--api-monetization"><a class="header" href="#2-developers--api-monetization"><strong>2. Developers &amp; API Monetization</strong></a></h2>
-<ul>
-<li>API endpoints that unlock after payment</li>
-<li>Tiered access for dev tools</li>
-<li>Fair usage with onchain proofs</li>
-</ul>
 <h2 id="3-media--journalism"><a class="header" href="#3-media--journalism"><strong>3. Media &amp; Journalism</strong></a></h2>
 <ul>
 <li>Pay-per-article</li>
@@ -270,38 +238,9 @@ It is designed to support:</p>
 </ul>
 <h2 id="4-businesses--enterprises"><a class="header" href="#4-businesses--enterprises"><strong>4. Businesses &amp; Enterprises</strong></a></h2>
 <ul>
-<li>Internal documents shared securely</li>
+<li>Shared documents</li>
 <li>Monetized research reports</li>
-<li>Document-based licensing</li>
 </ul>
-<h2 id="5-web3-monetization"><a class="header" href="#5-web3-monetization"><strong>5. Web3 Monetization</strong></a></h2>
-<ul>
-<li>NFT media backup paywalls</li>
-<li>DAO-controlled content</li>
-<li>Creator tokens integrated with paywall flows</li>
-</ul>
-<hr />
-<h1 id="technical-architecture"><a class="header" href="#technical-architecture"><strong>Technical Architecture</strong></a></h1>
-<h3 id="1-asset"><a class="header" href="#1-asset"><strong>1. Asset</strong></a></h3>
-<p>The actual content stored as:</p>
-<ul>
-<li>Encrypted file</li>
-<li>Direct URL</li>
-<li>IPFS/Arweave link</li>
-<li>Verifiable Document wrapper</li>
-</ul>
-<h3 id="2-access-contract"><a class="header" href="#2-access-contract"><strong>2. Access Contract</strong></a></h3>
-<p>Blockchain contract managing:</p>
-<ul>
-<li>Payment verification</li>
-<li>Expiration time</li>
-<li>Access rules</li>
-<li>Revenue splits (future feature)</li>
-</ul>
-<h3 id="3-user-did"><a class="header" href="#3-user-did"><strong>3. User DID</strong></a></h3>
-<p>Used to bind access permission to the buyer.</p>
-<h3 id="4-wallet-execution"><a class="header" href="#4-wallet-execution"><strong>4. Wallet Execution</strong></a></h3>
-<p>All requests and decryptions run locally inside the user’s device.</p>
 <hr />
 <h1 id="step-by-step-tutorial"><a class="header" href="#step-by-step-tutorial"><strong>Step-by-Step Tutorial</strong></a></h1>
 <h2 id="a-creating-a-paywalled-asset"><a class="header" href="#a-creating-a-paywalled-asset">A. <strong>Creating a Paywalled Asset</strong></a></h2>
@@ -358,22 +297,18 @@ It is designed to support:</p>
 After paying, users get a DID-bound decryption key.</p>
 <h3 id="example-2--video-course"><a class="header" href="#example-2--video-course">Example 2 — Video Course</a></h3>
 <p>Teacher uploads course videos behind a paywall with 30-day access.</p>
-<h3 id="example-3--private-api"><a class="header" href="#example-3--private-api">Example 3 — Private API</a></h3>
-<p>Developers expose “Premium Quotes API” behind a blockchain-verified paywall.
-Users automatically renew access each week.</p>
-<h3 id="example-4--premium-article"><a class="header" href="#example-4--premium-article">Example 4 — Premium Article</a></h3>
+<h3 id="example-3--premium-article"><a class="header" href="#example-3--premium-article">Example 3 — Premium Article</a></h3>
 <p>A journalist publishes a pay-per-article story with a one-time purchase.</p>
-<h3 id="example-5--photography-pack"><a class="header" href="#example-5--photography-pack">Example 5 — Photography Pack</a></h3>
+<h3 id="example-4--photography-pack"><a class="header" href="#example-4--photography-pack">Example 4 — Photography Pack</a></h3>
 <p>A designer distributes a set of high-resolution files, protected by the paywall.</p>
 <hr />
 <h1 id="benefits"><a class="header" href="#benefits"><strong>Benefits</strong></a></h1>
 <h3 id="for-creators"><a class="header" href="#for-creators">For Creators</a></h3>
 <ul>
-<li>Zero platform fees (creator keeps all revenue)</li>
-<li>Full ownership of content</li>
+<li>1% platform fees</li>
 <li>No censorship</li>
 <li>Automated payments</li>
-<li>DID-based control</li>
+<li>Privacy first, no KYC</li>
 </ul>
 <h3 id="for-users"><a class="header" href="#for-users">For Users</a></h3>
 <ul>
@@ -384,10 +319,9 @@ Users automatically renew access each week.</p>
 </ul>
 <h3 id="for-businesses"><a class="header" href="#for-businesses">For Businesses</a></h3>
 <ul>
-<li>Secure internal distribution</li>
-<li>Reliable access logs</li>
+<li>Internal distribution</li>
 <li>Contract-based licensing</li>
-<li>Easy integration with enterprise workflows</li>
+<li>Easy integration</li>
 </ul>
 <hr />
 <h1 id="drawbacks--considerations"><a class="header" href="#drawbacks--considerations"><strong>Drawbacks / Considerations</strong></a></h1>
@@ -401,10 +335,7 @@ Users automatically renew access each week.</p>
 <h1 id="best-practices"><a class="header" href="#best-practices"><strong>Best Practices</strong></a></h1>
 <ul>
 <li><strong>Always encrypt sensitive files</strong> before uploading</li>
-<li>Use <strong>Document Registry</strong> to timestamp ownership claims</li>
-<li>Use <strong>DID rotation</strong> if upgrading identity keys</li>
 <li>Offer <strong>low-cost preview content</strong> to improve user trust</li>
-<li>Avoid embedding full content in URL — use encrypted storage</li>
 </ul>
 
                     </main>

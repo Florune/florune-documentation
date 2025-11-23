@@ -233,14 +233,8 @@ No admin, no provider, no central manager.</p>
 <li>Compliance proofs</li>
 <li>Identity attestations</li>
 </ul>
-<h3 id="6-required-for-florune-contracts"><a class="header" href="#6-required-for-florune-contracts"><strong>6. Required for Florune Contracts</strong></a></h3>
-<p>DIDs authorize:</p>
-<ul>
-<li>Pledge Contract interactions</li>
-<li>Signing Verifiable Documents</li>
-<li>Disputes and approvals</li>
-<li>Asset Paywall access rights</li>
-</ul>
+<h3 id="6-required-for-self-identification"><a class="header" href="#6-required-for-self-identification"><strong>6. Required for Self Identification</strong></a></h3>
+<p>Issuers need to identify themselves by DID (Public Key DID or ERC-1056)</p>
 <hr />
 <h2 id="use-cases"><a class="header" href="#use-cases"><strong>Use Cases</strong></a></h2>
 <h3 id="1-freelance-work--payments"><a class="header" href="#1-freelance-work--payments"><strong>1. Freelance Work &amp; Payments</strong></a></h3>
@@ -257,64 +251,24 @@ No admin, no provider, no central manager.</p>
 <h2 id="step-by-step-tutorial"><a class="header" href="#step-by-step-tutorial"><strong>Step-by-Step Tutorial</strong></a></h2>
 <h3 id="a-creating-your-did"><a class="header" href="#a-creating-your-did"><strong>A. Creating Your DID</strong></a></h3>
 <ol>
-<li>
-<p>Open the Florune Wallet</p>
-</li>
-<li>
-<p>Navigate to <strong>Identity</strong></p>
-</li>
-<li>
-<p>Tap <strong>Create DID</strong></p>
-</li>
-<li>
-<p>The wallet generates:</p>
-<ul>
-<li>A DID string</li>
-<li>Verification keys</li>
-<li>Controller information</li>
-</ul>
-</li>
-<li>
-<p>Confirm creation</p>
-</li>
-<li>
-<p>Your DID is now active and visible under <strong>Identity → Details</strong></p>
-</li>
+<li>Open the Florune Wallet</li>
+<li>Navigate to <strong>Identifiers</strong></li>
+<li>Tap <strong>Create DID</strong> and choose DID type (Public Key DID or ERC-1056)</li>
+<li>The wallet generates DID string as decentralized identifier of EOA as user identifier</li>
+<li>Confirm transaction</li>
+<li>Your DID is now active and visible under <strong>Identifiers</strong></li>
 </ol>
 <hr />
 <h3 id="b-managing-your-did"><a class="header" href="#b-managing-your-did"><strong>B. Managing Your DID</strong></a></h3>
 <p>Inside the DID details page, you can:</p>
 <ul>
 <li>View DID Document</li>
-<li>View public keys</li>
+<li>View delegates</li>
 <li>Add/Remove delegates (optional)</li>
 <li>Rotate keys for security</li>
 <li>Export DID metadata</li>
 </ul>
 <p>All sensitive operations stay local on your device unless explicitly broadcast onchain.</p>
-<hr />
-<h3 id="c-using-did-with-services"><a class="header" href="#c-using-did-with-services"><strong>C. Using DID With Services</strong></a></h3>
-<h4 id="1-verifiable-documents"><a class="header" href="#1-verifiable-documents"><strong>1. Verifiable Documents</strong></a></h4>
-<ul>
-<li>DID signs or authorizes document issuance</li>
-<li>DID proves ownership of the document</li>
-<li>DID is part of the certificate metadata</li>
-</ul>
-<h4 id="2-pledge-contracts"><a class="header" href="#2-pledge-contracts"><strong>2. Pledge Contracts</strong></a></h4>
-<ul>
-<li>DID identifies seller or buyer</li>
-<li>DID signs execution/completion steps</li>
-<li>DID is required for disputes and approvals</li>
-</ul>
-<h4 id="3-escrow-deposits"><a class="header" href="#3-escrow-deposits"><strong>3. Escrow Deposits</strong></a></h4>
-<ul>
-<li>DID represents the depositor or recipient</li>
-</ul>
-<h4 id="4-verifiable-credentials"><a class="header" href="#4-verifiable-credentials"><strong>4. Verifiable Credentials</strong></a></h4>
-<ul>
-<li>DID can receive or verify credentials</li>
-<li>Required for presentations and selective disclosure</li>
-</ul>
 <hr />
 <p>Florune applies the ERC-1056 standard, ensuring maximum interoperability.</p>
 <hr />
@@ -342,15 +296,6 @@ Employees prove qualifications without exposing private data.</p>
 <li>User is responsible for securing private keys</li>
 <li>Identity recovery requires proper key backups</li>
 <li>Cross-network DID document updates require gas fees</li>
-</ul>
-<hr />
-<h2 id="best-practices"><a class="header" href="#best-practices"><strong>Best Practices</strong></a></h2>
-<ul>
-<li>Enable key rotation for long-term identity protection</li>
-<li>Back up your wallet securely</li>
-<li>Use separate DIDs for public and private activities</li>
-<li>Combine DID with Verifiable Credentials for strong attestations</li>
-<li>Always verify DID controllers on incoming requests</li>
 </ul>
 
                     </main>

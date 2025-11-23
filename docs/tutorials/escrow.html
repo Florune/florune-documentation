@@ -170,8 +170,8 @@
 <p><em>A trustless, non-custodial payment safeguard for peer-to-peer and high-value transactions.</em></p>
 <hr />
 <h2 id="overview"><a class="header" href="#overview"><strong>Overview</strong></a></h2>
-<p>Florune Escrow is a <strong>trustless, non-custodial onchain payment mechanism</strong> that securely locks funds until both parties meet agreed-upon conditions. Designed for <strong>buyers, sellers, freelancers, enterprises, and service providers</strong>, it is ideal for <strong>high-value transactions</strong> where trust and protection are critical.</p>
-<p>With transparent fees, cryptographic enforcement, and guaranteed neutrality, Florune Escrow eliminates fraud risks and intermediaries — delivering a secure, automated environment for global payments of any size.</p>
+<p>Florune Escrow is a <strong>trustless, non-custodial onchain escrow service</strong> that securely locks funds until both parties meet agreed-upon conditions. Designed for <strong>buyers, sellers, freelancers, enterprises, and service providers</strong> where trust and protection are critical.</p>
+<p>With transparent fees and guaranteed neutrality, Florune Escrow eliminates fraud risks and intermediaries — delivering a secure, automated environment for global payments of any size.</p>
 <hr />
 <h2 id="context--problem"><a class="header" href="#context--problem"><strong>Context &amp; Problem</strong></a></h2>
 <h3 id="the-problem"><a class="header" href="#the-problem"><strong>The Problem</strong></a></h3>
@@ -182,6 +182,7 @@
 <li>Chargebacks</li>
 <li>Unenforceable promises</li>
 <li>Lack of trusted middlemen</li>
+<li>High cost of middlemen</li>
 <li>No protection for large-value deals</li>
 <li>Opaque transaction processes</li>
 </ul>
@@ -189,7 +190,7 @@
 <ul>
 <li>High fees (often 2–10%+)</li>
 <li>Custodial risk (fund freezing, loss, shutdowns)</li>
-<li>Slow dispute resolution</li>
+<li>Slow and costy dispute resolution</li>
 <li>Geographic restrictions</li>
 <li>Risk of platform censorship</li>
 </ul>
@@ -199,18 +200,16 @@
 <ul>
 <li>Smart contracts hold funds securely</li>
 <li>Neither Florune nor any third party can access funds</li>
-<li>Payments follow signature-verified, immutable logic</li>
 <li>Status is always transparent to both parties</li>
-<li>Options for rollback, cancellation, or conditional release</li>
+<li>Options for rollback, cancellation, and freeze under safe conditions and only by parties</li>
 </ul>
-<p>This makes it suitable for <strong>everything from small digital engagements to high-value deals</strong> worth thousands or millions.</p>
+<p>This makes it suitable for <strong>everything from small digital engagements to high-value deals</strong>.</p>
 <hr />
 <h2 id="use-cases"><a class="header" href="#use-cases"><strong>Use Cases</strong></a></h2>
-<h3 id="1-high-value-b2b-transactions"><a class="header" href="#1-high-value-b2b-transactions"><strong>1. High-Value B2B Transactions</strong></a></h3>
+<h3 id="1-high-value-transactions"><a class="header" href="#1-high-value-transactions"><strong>1. High-Value Transactions</strong></a></h3>
 <p><em>Manufacturing orders, consulting retainers, licensing fees</em></p>
 <ul>
 <li>Securely holds large sums</li>
-<li>Ensures contract milestones are met</li>
 <li>Prevents fraud or late delivery</li>
 </ul>
 <h3 id="2-freelance--gig-work"><a class="header" href="#2-freelance--gig-work"><strong>2. Freelance / Gig Work</strong></a></h3>
@@ -246,7 +245,6 @@
 <p>Smart contracts guarantee:</p>
 <ul>
 <li>No third-party access</li>
-<li>No mismanagement</li>
 <li>No interference</li>
 <li>No misappropriation</li>
 </ul>
@@ -254,9 +252,9 @@
 <p>Automated safety mechanisms for any agreement size.</p>
 <h3 id="4-simple-fee-structure"><a class="header" href="#4-simple-fee-structure"><strong>4. Simple Fee Structure</strong></a></h3>
 <ul>
-<li><strong>Flat deposit fee</strong></li>
+<li><strong>Flat deposit fee (pays in network native token)</strong></li>
 <li><strong>1% withdrawal fee</strong></li>
-<li>No subscriptions required</li>
+<li>No subscriptions or access token required</li>
 </ul>
 <p>Cheaper and safer than centralized escrow — even for high-value deals.</p>
 <h3 id="5-complete-status-transparency"><a class="header" href="#5-complete-status-transparency"><strong>5. Complete Status Transparency</strong></a></h3>
@@ -273,10 +271,10 @@
 <hr />
 <h2 id="escrow-lifecycle-status-guide"><a class="header" href="#escrow-lifecycle-status-guide"><strong>Escrow Lifecycle (Status Guide)</strong></a></h2>
 <div class="table-wrapper"><table><thead><tr><th>Status</th><th>Meaning</th></tr></thead><tbody>
-<tr><td><strong>Open</strong></td><td>Escrow created; awaiting token approval or deposit</td></tr>
-<tr><td><strong>Freeze</strong></td><td>Funds locked securely inside smart contract</td></tr>
-<tr><td><strong>Release</strong></td><td>Funds released to the recipient</td></tr>
-<tr><td><strong>Cancel</strong></td><td>Funds refunded to the sender</td></tr>
+<tr><td><strong>Open</strong></td><td>token deposited, waiting for release/freeze/cancel</td></tr>
+<tr><td><strong>Freeze</strong></td><td>Funds locked securely inside smart contract until expiration time</td></tr>
+<tr><td><strong>Release</strong></td><td>Funds released and allow recipient to withdraw</td></tr>
+<tr><td><strong>Cancel</strong></td><td>Allow sender/buyer/contractee to refund</td></tr>
 </tbody></table>
 </div>
 <hr />
@@ -288,16 +286,25 @@
 <li>Payment token approved for use</li>
 </ul>
 <hr />
-<h2 id="a-creating-an-escrow-deposit"><a class="header" href="#a-creating-an-escrow-deposit"><strong>A. Creating an Escrow Deposit</strong></a></h2>
+<h2 id="a-approving-tokens-for-escrow"><a class="header" href="#a-approving-tokens-for-escrow"><strong>A. Approving Tokens for Escrow</strong></a></h2>
+<ol>
+<li>Open the escrow record</li>
+<li>Tap <strong>Approve Token</strong></li>
+<li>Confirm the transaction</li>
+</ol>
+<p>Once approved, the deposit can be made.</p>
+<hr />
+<h2 id="b-creating-an-escrow-deposit"><a class="header" href="#b-creating-an-escrow-deposit"><strong>B. Creating an Escrow Deposit</strong></a></h2>
 <ol>
 <li>
-<p>Tap <strong>Escrow</strong></p>
+<p>At organize section onder title of escrow Tap <strong>Approve</strong></p>
 </li>
 <li>
 <p>Enter:</p>
 <ul>
 <li>Recipient address</li>
 <li>Amount</li>
+<li>expiration date</li>
 </ul>
 </li>
 <li>
@@ -312,23 +319,6 @@
 <li>
 <p>Share Deposit DID with your party</p>
 </li>
-</ol>
-<hr />
-<h2 id="b-approving-tokens-for-escrow"><a class="header" href="#b-approving-tokens-for-escrow"><strong>B. Approving Tokens for Escrow</strong></a></h2>
-<ol>
-<li>Open the escrow record</li>
-<li>Tap <strong>Approve Token</strong></li>
-<li>Confirm the transaction</li>
-</ol>
-<p>Once approved, the deposit can be made.</p>
-<hr />
-<h2 id="c-depositing-funds"><a class="header" href="#c-depositing-funds"><strong>C. Depositing Funds</strong></a></h2>
-<ol>
-<li>Open the escrow record</li>
-<li>Tap <strong>Deposit</strong></li>
-<li>Enter the amount</li>
-<li>Confirm</li>
-<li>Status becomes <strong>Freeze</strong></li>
 </ol>
 <hr />
 <h2 id="d-releasing-or-canceling"><a class="header" href="#d-releasing-or-canceling"><strong>D. Releasing or Canceling</strong></a></h2>
@@ -348,6 +338,35 @@
 <li>Mutual cancellation occurs</li>
 </ul>
 <p>Funds are returned to the sender.</p>
+<hr />
+<h3 id="escrow-contract-status-guide"><a class="header" href="#escrow-contract-status-guide">Escrow Contract Status Guide</a></h3>
+<h4 id="1-open"><a class="header" href="#1-open">1. <code>open</code></a></h4>
+<p><strong>Meaning:</strong> Funds deposited, escrow active.</p>
+<ul>
+<li>🚫 Withdraw</li>
+<li>✅ Rollback → allowed 5 days after expiration</li>
+</ul>
+<hr />
+<h4 id="2-freeze"><a class="header" href="#2-freeze">2. <code>freeze</code></a></h4>
+<p><strong>Meaning:</strong> Escrow blocked.</p>
+<ul>
+<li>🚫 Withdraw</li>
+<li>🚫 Rollback</li>
+</ul>
+<hr />
+<h4 id="3-release"><a class="header" href="#3-release">3. <code>release</code></a></h4>
+<p><strong>Meaning:</strong> Escrow released to seller.</p>
+<ul>
+<li>✅ Withdraw (seller)</li>
+<li>🚫 Rollback</li>
+</ul>
+<hr />
+<h4 id="4-cancel"><a class="header" href="#4-cancel">4. <code>cancel</code></a></h4>
+<p><strong>Meaning:</strong> Escrow canceled.</p>
+<ul>
+<li>🚫 Withdraw</li>
+<li>✅ Rollback (buyer)</li>
+</ul>
 <hr />
 <h2 id="real-world-examples"><a class="header" href="#real-world-examples"><strong>Real-World Examples</strong></a></h2>
 <h3 id="1-high-value-contract-payment"><a class="header" href="#1-high-value-contract-payment"><strong>1. High-Value Contract Payment</strong></a></h3>

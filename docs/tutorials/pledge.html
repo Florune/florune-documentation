@@ -170,12 +170,11 @@
 <p><em>A hybrid physical–digital contract framework with flexible milestone enforcement, verifiable documents, and on-chain guarantees.</em></p>
 <hr />
 <h2 id="overview"><a class="header" href="#overview"><strong>Overview</strong></a></h2>
-<p>A <strong>Pledge Contract</strong> is a decentralized agreement between two or more parties where all obligations, milestones, and deliverables are <strong>digitally anchored</strong> and optionally backed by <strong>escrowed funds</strong>. It serves as a <strong>wallet-first, self-executed contract</strong> where every participant signs with their private key, ensuring integrity, accountability, and traceability without relying on centralized intermediaries.</p>
+<p>A <strong>Pledge Contract</strong> is a decentralized agreement between two parties where all obligations, milestones, and deliverables are <strong>digitally anchored</strong>. It serves as a <strong>self-executed contract</strong> where every participant signs with their private key, ensuring integrity, accountability, and traceability without relying on centralized intermediaries.</p>
 <p>A Pledge Contract may optionally include:</p>
 <ul>
-<li><strong>Milestones</strong> representing discrete phases of work</li>
-<li><strong>Verifiable Documents</strong> that describe deliverables or legal terms</li>
-<li><strong>Escrow deposits</strong> to guarantee payments</li>
+<li><strong>Milestones</strong> multiple Pledge Contracts can be linked to one document *can use diffrent coins for payments, *using different parties for each payments from parties and controllers at Verifiable Document</li>
+<li><strong>Verifiable Documents</strong> for document verifiacation and authentication and document binding</li>
 <li><strong>Auto-updating statuses</strong> triggered by contract actions</li>
 </ul>
 <hr />
@@ -196,10 +195,9 @@
 <li><strong>Immutable, on-chain agreements</strong> verified by participants' cryptographic signatures</li>
 <li><strong>Linked deliverables</strong>, such as Verifiable Documents</li>
 <li><strong>Flexible Milestone-based workflows</strong> for structured work delivery and progressive payments</li>
-<li><strong>Optional escrowed funds</strong> to secure both sides</li>
 <li><strong>Automated status updates</strong> to reduce manual coordination</li>
 </ul>
-<p>This creates a <strong>trust-minimized contracting system</strong> suitable for digital commerce, services, creative work, licensing, and more.</p>
+<p>This creates a <strong>trustless contracting system</strong> suitable for digital commerce, services, creative work, licensing, and more.</p>
 <hr />
 <h2 id="key-features"><a class="header" href="#key-features"><strong>Key Features</strong></a></h2>
 <h3 id="1-multi-party-signing"><a class="header" href="#1-multi-party-signing"><strong>1. Multi-party Signing</strong></a></h3>
@@ -207,7 +205,7 @@
 <h3 id="2-document-integration"><a class="header" href="#2-document-integration"><strong>2. Document Integration</strong></a></h3>
 <p>Attach <strong>Verifiable Documents</strong> as deliverables, guidelines, licenses, terms, or specifications.</p>
 <h3 id="3-milestone-enforcement"><a class="header" href="#3-milestone-enforcement"><strong>3. Milestone Enforcement</strong></a></h3>
-<p>Flexible milestones for progressive payments.</p>
+<p>Be used as Flexible milestones for progressive payments.</p>
 <h3 id="4-multiple-payments-on-one-document"><a class="header" href="#4-multiple-payments-on-one-document"><strong>4. Multiple Payments on One Document</strong></a></h3>
 <p>One Verifiable Document can be used for multiple Pledge Contracts, with diffrent parties and multiple payment process.</p>
 <h3 id="5-full-status-lifecycle"><a class="header" href="#5-full-status-lifecycle"><strong>5. Full Status Lifecycle</strong></a></h3>
@@ -228,6 +226,7 @@
 <ul>
 <li>Florune Wallet installed</li>
 <li>Active subscription or usage credits</li>
+<li>Issuer/Creator DID: an key DID (did:key) or an ERC-1056 DID with issuer key as its Delegate</li>
 <li>Network tokens for contract deployment</li>
 <li>A Verifiable Document for document-bound payments</li>
 </ul>
@@ -247,27 +246,23 @@
 </ul>
 </li>
 <li>
-<p>Tap <strong>Create</strong></p>
+<p>Tap <strong>Create</strong> and Approve transaction</p>
 </li>
 <li>
-<p>Choose key</p>
+<p>After minting, go to <strong>History</strong></p>
 </li>
 <li>
-<p>Approve transaction</p>
+<p>Locate the document history record</p>
 </li>
 <li>
-<p>Contract is now deployed and appears under <strong>History</strong></p>
+<p>From More, select <strong>Initialize and Setup</strong> and confirm initialization transaction</p>
 </li>
 </ol>
-<p>Note: oposite the Escrow, Pledge Contract should be created by seller and its DID should be shared with parties, whole process will be done on pledge contracts.</p>
-<hr />
-<h3 id="b-initializing-the-contract"><a class="header" href="#b-initializing-the-contract"><strong>B. Initializing the Contract</strong></a></h3>
-<ol>
-<li>Inside the contract, tap <strong>Initialize</strong></li>
-<li>Choose key</li>
-<li>Approve transaction</li>
-</ol>
-<p>Important Note: before initialization contract controller stays empty so INITIALIZE CONTRACT QUICKLY AFTER DEPLOYMENT</p>
+<p>Notes:</p>
+<ul>
+<li>oposite the Escrow, Pledge Contract should be created by seller and its DID should be shared with parties, whole process will be done on pledge contracts.</li>
+<li>Important Note: before initialization contract controller stays empty so INITIALIZE CONTRACT QUICKLY AFTER DEPLOYMENT</li>
+</ul>
 <hr />
 <h3 id="c-share-contarct-did-with-parties"><a class="header" href="#c-share-contarct-did-with-parties"><strong>C. Share Contarct DID with parties</strong></a></h3>
 <ol>
@@ -282,11 +277,199 @@
 <tr><td><strong>Pending</strong></td><td>Contract created but not yet signed by all parties</td></tr>
 <tr><td><strong>Active</strong></td><td>All parties signed—contract is in force</td></tr>
 <tr><td><strong>Executed</strong></td><td>Terms fulfilled; contract performed successfully</td></tr>
-<tr><td><strong>Completed</strong></td><td>All deliverables + linked workflows finished (milestones + escrows)</td></tr>
+<tr><td><strong>Completed</strong></td><td>All deliverables + linked workflows finished</td></tr>
 <tr><td><strong>Disputed</strong></td><td>A party flagged an issue requiring resolution</td></tr>
 <tr><td><strong>Canceled</strong></td><td>Contract voided before activation or execution</td></tr>
 </tbody></table>
 </div>
+<hr />
+<h3 id="pledge-contract-status-guide-1"><a class="header" href="#pledge-contract-status-guide-1">Pledge Contract Status Guide</a></h3>
+<h4 id="1-pending"><a class="header" href="#1-pending">1. <code>pending</code></a></h4>
+<p><strong>Meaning:</strong> Service is initialized but not started yet.</p>
+<ul>
+<li>
+<p><strong>Entered by:</strong> Default state.</p>
+</li>
+<li>
+<p><strong>Who can act:</strong> Seller (issuer).</p>
+</li>
+<li>
+<p><strong>Transitions to:</strong></p>
+<ul>
+<li><code>active</code> → seller starts service</li>
+<li><code>canceled</code> → seller cancels before starting</li>
+</ul>
+</li>
+<li>
+<p><strong>Permissions:</strong></p>
+<ul>
+<li>✅ Rollback → buyer</li>
+<li>✅ Cancel → seller</li>
+<li>🚫 Withdraw</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="2-active"><a class="header" href="#2-active">2. <code>active</code></a></h4>
+<p><strong>Meaning:</strong> Service has started and is ongoing.</p>
+<ul>
+<li>
+<p><strong>Entered by:</strong> Seller starts service.</p>
+</li>
+<li>
+<p><strong>Who can act:</strong> Seller (execute), Buyer (dispute).</p>
+</li>
+<li>
+<p><strong>Transitions to:</strong></p>
+<ul>
+<li><code>executed</code> → seller executes service</li>
+<li><code>disputed</code> → buyer disputes service</li>
+</ul>
+</li>
+<li>
+<p><strong>Permissions:</strong></p>
+<ul>
+<li>🚫 Rollback (unless expired)</li>
+<li>🚫 Cancel</li>
+<li>🚫 Withdraw</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="3-executed"><a class="header" href="#3-executed">3. <code>executed</code></a></h4>
+<p><strong>Meaning:</strong> Seller marked service as delivered.</p>
+<ul>
+<li>
+<p><strong>Entered by:</strong> Seller executes service.</p>
+</li>
+<li>
+<p><strong>Who can act:</strong></p>
+<ul>
+<li>Buyer → confirm (<code>completed</code>)</li>
+<li>Buyer → dispute (<code>disputed</code>)</li>
+<li>Seller → withdraw after 5 days post-expiration (if no dispute)</li>
+</ul>
+</li>
+<li>
+<p><strong>Transitions to:</strong></p>
+<ul>
+<li><code>completed</code> → buyer confirms delivery</li>
+<li><code>disputed</code> → buyer disputes service</li>
+</ul>
+</li>
+<li>
+<p><strong>Permissions:</strong></p>
+<ul>
+<li>🚫 Rollback</li>
+<li>✅ Withdraw (after 5 days if no dispute)</li>
+<li>🚫 Cancel</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="4-disputed"><a class="header" href="#4-disputed">4. <code>disputed</code></a></h4>
+<p><strong>Meaning:</strong> Buyer raised a dispute.</p>
+<ul>
+<li>
+<p><strong>Entered by:</strong> Buyer disputes service.</p>
+</li>
+<li>
+<p><strong>Who can act:</strong></p>
+<ul>
+<li>Buyer → complete it</li>
+<li>Seller → cancel it</li>
+</ul>
+</li>
+<li>
+<p><strong>Transitions to:</strong></p>
+<ul>
+<li><code>completed</code> → by buyer</li>
+<li><code>canceled</code> → by seller</li>
+</ul>
+</li>
+<li>
+<p><strong>Permissions:</strong></p>
+<ul>
+<li>🚫 Rollback</li>
+<li>🚫 Withdraw</li>
+<li>🚫 Cancel</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="5-completed"><a class="header" href="#5-completed">5. <code>completed</code></a></h4>
+<p><strong>Meaning:</strong> Buyer confirmed delivery and acceptance.</p>
+<ul>
+<li>
+<p><strong>Entered by:</strong> Buyer completes service.</p>
+</li>
+<li>
+<p><strong>Who can act:</strong> Seller → withdraw.</p>
+</li>
+<li>
+<p><strong>Permissions:</strong></p>
+<ul>
+<li>✅ Withdraw (seller)</li>
+<li>🚫 Rollback</li>
+<li>🚫 Dispute</li>
+<li>🚫 Cancel</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="6-canceled"><a class="header" href="#6-canceled">6. <code>canceled</code></a></h4>
+<p><strong>Meaning:</strong> Seller canceled service before completion.</p>
+<ul>
+<li>
+<p><strong>Entered by:</strong> Seller cancels.</p>
+</li>
+<li>
+<p><strong>Who can act:</strong> Buyer → rollback.</p>
+</li>
+<li>
+<p><strong>Permissions:</strong></p>
+<ul>
+<li>✅ Rollback (buyer)</li>
+<li>🚫 Withdraw</li>
+<li>🚫 Execute/Complete</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="-notes"><a class="header" href="#-notes">📌 Notes</a></h4>
+<ul>
+<li>
+<p>Dispute only possible from <code>active</code> or <code>executed</code>.</p>
+</li>
+<li>
+<p>Rollback allowed only when:</p>
+<ul>
+<li>State is not <code>active</code>, or expired</li>
+<li>State is not <code>executed</code>, <code>completed</code>, or <code>disputed</code></li>
+</ul>
+</li>
+<li>
+<p>Withdraw allowed only when:</p>
+<ul>
+<li>State is <code>completed</code>, or</li>
+<li>State is <code>executed</code> and 5 days passed with no dispute</li>
+</ul>
+</li>
+<li>
+<p>No transitions allowed from <code>completed</code>, <code>disputed</code>, or <code>canceled</code> unless manual.</p>
+</li>
+<li>
+<p>🔐 Funds are locked until customer approves completion.</p>
+</li>
+</ul>
+<hr />
+<h4 id="-linked-document-rules"><a class="header" href="#-linked-document-rules">📎 Linked Document Rules</a></h4>
+<p>If linked to a <strong>Verifiable Document</strong>:</p>
+<ul>
+<li>For <strong><code>executed</code></strong> → seller must sign on-chain in the Document Contract.</li>
+<li>For <strong><code>completed</code></strong> → buyer must sign on-chain in the Document Contract.</li>
+<li>For <strong><code>canceled</code></strong> → Document Contract must be in <strong>suspended</strong> or <strong>revoked</strong> status.</li>
+</ul>
 <hr />
 <h2 id="real-world-use-cases"><a class="header" href="#real-world-use-cases"><strong>Real-World Use Cases</strong></a></h2>
 <h3 id="1-freelance-or-service-agreements"><a class="header" href="#1-freelance-or-service-agreements"><strong>1. Freelance or Service Agreements</strong></a></h3>
@@ -305,14 +488,8 @@
 <h3 id="3-b2b-supplier-agreements"><a class="header" href="#3-b2b-supplier-agreements"><strong>3. B2B Supplier Agreements</strong></a></h3>
 <ul>
 <li>Milestones tied to shipment or delivery phases</li>
-<li>Escrow locks funds</li>
+<li>Locks funds and payments till conditions met</li>
 <li>Each step verified for transparency</li>
-</ul>
-<h3 id="4-community-dao-workflows"><a class="header" href="#4-community-dao-workflows"><strong>4. Community DAO Workflows</strong></a></h3>
-<ul>
-<li>DAO hires contributors</li>
-<li>Pledge Contract governs deliverables</li>
-<li>Escrow ensures payment fairness</li>
 </ul>
 <hr />
 <h2 id="benefits--drawbacks"><a class="header" href="#benefits--drawbacks"><strong>Benefits &amp; Drawbacks</strong></a></h2>
@@ -333,15 +510,13 @@
 <hr />
 <h2 id="related-services"><a class="header" href="#related-services"><strong>Related Services</strong></a></h2>
 <ul>
-<li><strong>Verifiable Documents</strong> — attach deliverables, terms, proofs</li>
-<li><strong>Escrow</strong> — secure payment workflows linked to contract milestones</li>
-<li><strong>Document Registry</strong> — timestamp documents referenced by contract</li>
+<li><strong>Verifiable Documents</strong> — attach deliverables, terms, proofs, secure payment workflows linked to contract milestones,timestamp documents referenced by contract</li>
 </ul>
 <hr />
 <h2 id="tips--best-practices"><a class="header" href="#tips--best-practices"><strong>Tips &amp; Best Practices</strong></a></h2>
 <ul>
 <li>Always attach a Verifiable Document describing scope and expectations</li>
-<li>Break work into <strong>clear milestones</strong> to reduce disputes</li>
+<li>Break work into <strong>seperated milestones contracts with required tokens</strong> to reduce disputes</li>
 <li>Use escrow for high-value or high-risk agreements</li>
 <li>Keep communication in-app to maintain transparency</li>
 </ul>

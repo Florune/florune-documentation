@@ -86,14 +86,9 @@ Your DID can issue, verify, and receive:
 * Compliance proofs
 * Identity attestations
 
-### **6. Required for Florune Contracts**
+### **6. Required for Self Identification**
 
-DIDs authorize:
-
-* Pledge Contract interactions
-* Signing Verifiable Documents
-* Disputes and approvals
-* Asset Paywall access rights
+Issuers need to identify themselves by DID (Public Key DID or ERC-1056)
 
 ---
 
@@ -126,15 +121,11 @@ Asset Paywall access can be tied to a user’s DID, proving rights and preventin
 ### **A. Creating Your DID**
 
 1. Open the Florune Wallet
-2. Navigate to **Identity**
-3. Tap **Create DID**
-4. The wallet generates:
-
-   * A DID string
-   * Verification keys
-   * Controller information
-5. Confirm creation
-6. Your DID is now active and visible under **Identity → Details**
+2. Navigate to **Identifiers**
+3. Tap **Create DID** and choose DID type (Public Key DID or ERC-1056)
+4. The wallet generates DID string as decentralized identifier of EOA as user identifier
+5. Confirm transaction
+6. Your DID is now active and visible under **Identifiers**
 
 ---
 
@@ -143,37 +134,12 @@ Asset Paywall access can be tied to a user’s DID, proving rights and preventin
 Inside the DID details page, you can:
 
 * View DID Document
-* View public keys
+* View delegates
 * Add/Remove delegates (optional)
 * Rotate keys for security
 * Export DID metadata
 
 All sensitive operations stay local on your device unless explicitly broadcast onchain.
-
----
-
-### **C. Using DID With Services**
-
-#### **1. Verifiable Documents**
-
-* DID signs or authorizes document issuance
-* DID proves ownership of the document
-* DID is part of the certificate metadata
-
-#### **2. Pledge Contracts**
-
-* DID identifies seller or buyer
-* DID signs execution/completion steps
-* DID is required for disputes and approvals
-
-#### **3. Escrow Deposits**
-
-* DID represents the depositor or recipient
-
-#### **4. Verifiable Credentials**
-
-* DID can receive or verify credentials
-* Required for presentations and selective disclosure
 
 ---
 
@@ -215,12 +181,3 @@ A researcher anchors findings under a pseudonymous DID, later proving authorship
 * Identity recovery requires proper key backups
 * Cross-network DID document updates require gas fees
 
----
-
-## **Best Practices**
-
-* Enable key rotation for long-term identity protection
-* Back up your wallet securely
-* Use separate DIDs for public and private activities
-* Combine DID with Verifiable Credentials for strong attestations
-* Always verify DID controllers on incoming requests

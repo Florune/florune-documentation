@@ -6,7 +6,7 @@
 
 ## **Overview**
 
-The **Asset Paywall** service allows creators, businesses, and developers to **lock digital content behind a secure paywall** and grant access only when payment is confirmed.
+The **Asset Paywall** service allows creators, businesses, and developers to **register an digital content delivery contract**.
 It is designed to support:
 
 * **Digital content sales** (media, PDFs, files, videos, audio, images)
@@ -19,12 +19,9 @@ It is designed to support:
 The Asset Paywall integrates deeply with the Florune ecosystem, using:
 
 * **DIDs** for identity/authorship
-* **Verifiable Documents** for content metadata
-* **Document Registry** for anchoring
-* **Wallet-based decryption access**
-* **Rune, stablecoins, or supported assets** as payment
 
 It works fully **wallet-first**, ensuring users **retain local control** while publishers remain **sovereign owners** of their content.
+Issuers wont share ownership, they register an content delivery contract, customers approve the contract by payment and receive content identifier. 
 
 ---
 
@@ -34,71 +31,42 @@ It works fully **wallet-first**, ensuring users **retain local control** while p
 
 Most content monetization platforms:
 
-* Take high fees
 * Require central hosting
 * Control creator accounts
 * Can censor, block, or shadowban
 * Offer weak content protection
 * Depend on fragile credential-based logins
 
-Creators need **trustless payment**, **creator ownership**, and **secure access control** without relying on intermediaries.
+Creators need **trustless payment** and **ownership** without relying on intermediaries.
 
 ### **The Solution**
 
 Florune’s **Asset Paywall**:
 
 * Uses **smart-contract payments**
-* Grants **verifiable, cryptographic access** after payment
+* Deliver **content identifier** after payment
 * Stores protected assets via decentralized links or secure URLs
-* Uses **DID-based access control**, not centralized accounts
+* Uses **DID**, not centralized accounts
 * Runs entirely from the user's wallet (no platform custody)
-* Allows **revocable, transferable, permissioned** access control
 
 ---
 
 ## **Key Features**
 
-### 🧱 **1. Contract-Based Access Control**
-
-Access rules are enforced via smart contracts, not centralized servers.
-
-### 💸 **2. Multi-Asset Payments**
+### 💸 **1. Multi-Asset Payments**
 
 Publishers can charge:
 
-* Rune
 * Stablecoins
 * Other chain-native assets (where supported)
 
-### 🔐 **3. DID Gated Content**
+### 🎫 **2. Flexible Access Models**
 
-Only users with valid DID + payment signature can access the asset.
+* **One-time purchase means approve contract**
 
-### 🎫 **4. Flexible Access Models**
-
-* **One-time purchase**
-* **Timed access** (24h, 7d, 30d, custom)
-* **Subscription-like periodic renewal**
-* **Tiered access** (Basic, Pro, VIP)
-
-### 🗂️ **5. Multiple Asset Types Supported**
-
-* Documents
-* PDF
-* Audio
-* Images
-* Video
-* Encrypted files
-* Private URLs
-* API endpoints
-
-### 📍 **6. Onchain Proof of Purchase**
+### 📍 **3. Onchain Proof of Purchase**
 
 Proofs are stored as lightweight logs and anchored to the buyer’s DID.
-
-### 🔄 **7. Revocable Access**
-
-Creators can optionally revoke access manually or by rule triggers.
 
 ---
 
@@ -111,12 +79,6 @@ Creators can optionally revoke access manually or by rule triggers.
 * Photography, digital art, designs
 * Locked newsletters or research papers
 
-## **2. Developers & API Monetization**
-
-* API endpoints that unlock after payment
-* Tiered access for dev tools
-* Fair usage with onchain proofs
-
 ## **3. Media & Journalism**
 
 * Pay-per-article
@@ -125,45 +87,8 @@ Creators can optionally revoke access manually or by rule triggers.
 
 ## **4. Businesses & Enterprises**
 
-* Internal documents shared securely
+* Shared documents 
 * Monetized research reports
-* Document-based licensing
-
-## **5. Web3 Monetization**
-
-* NFT media backup paywalls
-* DAO-controlled content
-* Creator tokens integrated with paywall flows
-
----
-
-# **Technical Architecture**
-
-### **1. Asset**
-
-The actual content stored as:
-
-* Encrypted file
-* Direct URL
-* IPFS/Arweave link
-* Verifiable Document wrapper
-
-### **2. Access Contract**
-
-Blockchain contract managing:
-
-* Payment verification
-* Expiration time
-* Access rules
-* Revenue splits (future feature)
-
-### **3. User DID**
-
-Used to bind access permission to the buyer.
-
-### **4. Wallet Execution**
-
-All requests and decryptions run locally inside the user’s device.
 
 ---
 
@@ -216,16 +141,11 @@ After paying, users get a DID-bound decryption key.
 
 Teacher uploads course videos behind a paywall with 30-day access.
 
-### Example 3 — Private API
-
-Developers expose “Premium Quotes API” behind a blockchain-verified paywall.
-Users automatically renew access each week.
-
-### Example 4 — Premium Article
+### Example 3 — Premium Article
 
 A journalist publishes a pay-per-article story with a one-time purchase.
 
-### Example 5 — Photography Pack
+### Example 4 — Photography Pack
 
 A designer distributes a set of high-resolution files, protected by the paywall.
 
@@ -235,11 +155,10 @@ A designer distributes a set of high-resolution files, protected by the paywall.
 
 ### For Creators
 
-* Zero platform fees (creator keeps all revenue)
-* Full ownership of content
+* 1% platform fees
 * No censorship
 * Automated payments
-* DID-based control
+* Privacy first, no KYC
 
 ### For Users
 
@@ -250,10 +169,9 @@ A designer distributes a set of high-resolution files, protected by the paywall.
 
 ### For Businesses
 
-* Secure internal distribution
-* Reliable access logs
+* Internal distribution
 * Contract-based licensing
-* Easy integration with enterprise workflows
+* Easy integration
 
 ---
 
@@ -269,7 +187,4 @@ A designer distributes a set of high-resolution files, protected by the paywall.
 # **Best Practices**
 
 * **Always encrypt sensitive files** before uploading
-* Use **Document Registry** to timestamp ownership claims
-* Use **DID rotation** if upgrading identity keys
 * Offer **low-cost preview content** to improve user trust
-* Avoid embedding full content in URL — use encrypted storage

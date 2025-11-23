@@ -17,14 +17,7 @@ Florune exists to replace fragile intermediaries with verifiable execution, enab
 
 Our vision is to build a world of **sovereign agreements**—a global environment where interactions between individuals and enterprises are trustless, efficient, and fully programmable. Today, peer-to-peer work—whether freelance tasks, intellectual property transfers, or complex B2B collaborations—is constrained by manual processes, ambiguous terms, and reliance on traditional institutions.
 
-We believe the future is one where:
-
-* agreements execute themselves,
-* payments follow proven milestones,
-* documents validate their own authenticity, and
-* identity is controlled by users, not platforms.
-
-Florune aims to make this future universal.
+Florune aims to make future universal.
 The logic of cooperation—once enforced by bureaucracy—will now be enforced by transparent, unstoppable code.
 
 ---
@@ -38,8 +31,7 @@ But traditional systems cannot keep pace:
 * centralized platforms hold funds and data hostage,
 * intermediaries charge fees that outstrip transaction value,
 * cross-border payments remain slow and fragmented,
-* digital content is easily copied, altered, or disputed,
-* and users depend on institutions that can censor or fail.
+* users depend on institutions that can censor or fail.
 
 At the same time, decentralized technologies—cryptographic signatures, verifiable credentials, decentralized identity, and smart-contract infrastructure—have matured. What was once theoretical is now practical, accessible, and ready for mass adoption.
 
@@ -85,7 +77,7 @@ Florune is a **decentralized, non-custodial smart contract platform** designed f
 
 ### **1. Agreements Beyond Payments**
 
-Users can create conditional, milestone-based, revocable, or time-bound contracts—**no coding required**. Each agreement is fully automated and self-enforcing.
+Users can create conditional, progressive, revocable, or time-bound contracts—**no coding required**. Each agreement is fully automated and self-enforcing.
 
 ### **2. Your Keys. Your Assets. Always.**
 
@@ -93,7 +85,7 @@ Funds never leave the user’s wallet unless conditions are cryptographically ve
 
 ### **3. Proofs, Not Promises**
 
-Users can attach **verifiable documents**, signatures, and proofs of authenticity. The result is tamper-proof evidence tied directly into the agreement’s execution logic.
+Users can attach **verifiable documents** and proofs of verifications and authenticity. The result is tamper-proof evidence tied directly into the agreement’s execution logic.
 
 ### **4. Global, Borderless, and Unrestricted**
 
@@ -105,7 +97,7 @@ Florune turns trust into math—automated, transparent, and unbreakable.
 
 # **Mission**
 
-In an era shaped by digital uncertainty, Florune’s mission is to give individuals and organizations the ability to collaborate securely and autonomously. We offer the infrastructure for a new **social contract**, where:
+In an era shaped by digital uncertainty, Florune’s mission is to give individuals and organizations the ability to collaborate securely and autonomously. We offer the infrastructure and software application for a new **social contract**, where:
 
 * fairness is enforced by code,
 * transparency is inherent,
@@ -123,13 +115,13 @@ Florune is built on principles that make it uniquely capable of supporting sover
 
 ### **1. Non-Custodial Funds**
 
-Users control their assets at all times. Payments use native tokens or stablecoins, and funds never pass through platform custody.
+Users control their assets directly at all times. Payments use native tokens or stablecoins, and funds never pass through platform custody.
 
 ### **2. Non-Custodial Data Architecture**
 
-Users store their own files—on decentralized networks or their preferred centralized storage. Florune only verifies proofs, guaranteeing privacy and autonomy.
+Users store their own files—on decentralized networks or their preferred centralized storage. Florune verifies proofs, guaranteeing privacy and autonomy.
 
-### **3. On-Chain Digital Signatures**
+### **3. On-Chain Verification**
 
 Every action is cryptographically signed and recorded, creating:
 
@@ -143,12 +135,12 @@ Credentials originate from the user’s wallet and are validated against on-chai
 
 ### **5. Payments Bound to Agreements**
 
-Funds move only when signatures, proofs, and conditions match the contract logic.
-Your signature *is* your approval.
+Funds move only when verification proofs and conditions match the contract logic.
+Your wallet signature *is* your approval.
 
-### **6. Milestone-Based Execution**
+### **6. Progressive Execution**
 
-Agreements can unlock funds progressively as deliverables or phases are completed.
+Agreements can be funds progressively in flexible way.
 
 ### **7. Time-Bound Logic**
 
