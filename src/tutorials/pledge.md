@@ -128,7 +128,7 @@ Notes:
 | **Active**    | Seller Accepted agreement                                           |
 | **Executed**  | Terms fulfilled                                                     |
 | **Completed** | All deliverables + linked workflows finished, Buyer approve fulfillment|
-| **Disputed**  | A party flagged an issue requiring resolution, fund freezes         |
+| **Disputed**  | A party flagged an issue requiring resolution, funds won't release|
 | **Canceled**  | Contract voided before activation or execution, seller rejected the agreement|
 
 ---
