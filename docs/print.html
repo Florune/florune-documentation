@@ -2676,22 +2676,22 @@ Florune is designed with <strong>data minimalism</strong>, <strong>local-first i
 </ul>
 <p>No data is sold, shared, or monetized.</p>
 <hr />
-<h1 id="8-third-party-decentralized-integrations"><a class="header" href="#8-third-party-decentralized-integrations"><strong>8. Third-Party Decentralized Integrations</strong></a></h1>
+<h1 id="8-third-party-integrations"><a class="header" href="#8-third-party-integrations"><strong>8. Third-Party Integrations</strong></a></h1>
 <p>When interacting with:</p>
 <ul>
-<li>decentralized identity providers</li>
-<li>verifiable credential issuers</li>
-<li>blockchain networks</li>
-<li>smart contract systems</li>
+<li>identity providers</li>
+<li>blockchain RPC</li>
+<li>Event loggers</li>
+<li>Error trackers</li>
 </ul>
 <p>these integrations are:</p>
 <ul>
 <li><strong>optional</strong></li>
 <li><strong>user-initiated</strong></li>
-<li><strong>separate from Florune’s internal systems</strong></li>
+<li><strong>separate from Florune’s systems</strong></li>
 <li>governed by their <strong>own privacy policies</strong></li>
 </ul>
-<p>Florune does not control or store data from third-party decentralized services.</p>
+<p>Florune does not control or store data from third-party services.</p>
 <hr />
 <h1 id="9-escrow-and-smart-contract-interactions"><a class="header" href="#9-escrow-and-smart-contract-interactions"><strong>9. Escrow and Smart Contract Interactions</strong></a></h1>
 <p>Escrow operations and smart contract interactions may appear on public ledgers.
@@ -2830,11 +2830,11 @@ By design:</p>
 <li>store account seeds</li>
 <li>store encrypted backups</li>
 <li>provide cloud key recovery</li>
-<li>provide SRP-based recovery</li>
+<li>provide cloud SRP recovery</li>
 <li>store wallet secrets in any form</li>
 </ul>
 <p>The only way to recover your keys is through <strong>your locally stored passphrase or recovery phrase</strong>.</p>
-<p>If you lose your keys:</p>
+<p>If you lose your keys or SRP:</p>
 <ul>
 <li>Florune <strong>cannot</strong> restore access</li>
 <li>Florune <strong>cannot</strong> reset accounts</li>
@@ -2899,17 +2899,17 @@ By design:</p>
 <p>However:</p>
 <ul>
 <li>Florune does <strong>not</strong> mediate disputes</li>
-<li>Florune cannot modify smart contract behavior</li>
+<li>Florune cannot modify smart contract states</li>
 <li>Escrows may <strong>lock</strong> until all parties reach agreement</li>
-<li>Florune cannot reverse or override contract logic</li>
-<li>Locked funds cannot be forcibly released</li>
+<li>Florune cannot reverse or override contract states</li>
+<li>Locked funds cannot be released without action of parties</li>
 </ul>
 <p>Parties must resolve disputes independently.</p>
 <hr />
 <h1 id="9-prohibited-uses"><a class="header" href="#9-prohibited-uses"><strong>9. Prohibited Uses</strong></a></h1>
 <p>Users may <strong>not</strong> use Florune for:</p>
 <ul>
-<li>unlawful activity of any kind</li>
+<li>harmful unlawful activity of any kind</li>
 <li>dissemination of illegal or harmful content</li>
 <li>exploitation, abuse, or harm</li>
 <li>fraud or deception</li>

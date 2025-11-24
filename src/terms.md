@@ -87,12 +87,12 @@ Florune **does not**:
 * store account seeds
 * store encrypted backups
 * provide cloud key recovery
-* provide SRP-based recovery
+* provide cloud SRP recovery
 * store wallet secrets in any form
 
 The only way to recover your keys is through **your locally stored passphrase or recovery phrase**.
 
-If you lose your keys:
+If you lose your keys or SRP:
 
 * Florune **cannot** restore access
 * Florune **cannot** reset accounts
@@ -171,10 +171,10 @@ Florune provides smart-contract-based **escrow functionality**.
 However:
 
 * Florune does **not** mediate disputes
-* Florune cannot modify smart contract behavior
+* Florune cannot modify smart contract states
 * Escrows may **lock** until all parties reach agreement
-* Florune cannot reverse or override contract logic
-* Locked funds cannot be forcibly released
+* Florune cannot reverse or override contract states
+* Locked funds cannot be released without action of parties
 
 Parties must resolve disputes independently.
 
@@ -184,7 +184,7 @@ Parties must resolve disputes independently.
 
 Users may **not** use Florune for:
 
-* unlawful activity of any kind
+* harmful unlawful activity of any kind
 * dissemination of illegal or harmful content
 * exploitation, abuse, or harm
 * fraud or deception

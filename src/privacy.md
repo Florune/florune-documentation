@@ -117,23 +117,23 @@ No data is sold, shared, or monetized.
 
 ---
 
-# **8. Third-Party Decentralized Integrations**
+# **8. Third-Party Integrations**
 
 When interacting with:
 
-* decentralized identity providers
-* verifiable credential issuers
-* blockchain networks
-* smart contract systems
+* identity providers
+* blockchain RPC 
+* Event loggers
+* Error trackers
 
 these integrations are:
 
 * **optional**
 * **user-initiated**
-* **separate from Florune’s internal systems**
+* **separate from Florune’s systems**
 * governed by their **own privacy policies**
 
-Florune does not control or store data from third-party decentralized services.
+Florune does not control or store data from third-party services.
 
 ---
 
