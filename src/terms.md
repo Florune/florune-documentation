@@ -1,16 +1,4 @@
-Perfect! Here’s a **fully updated, professional, and legally robust Terms & Conditions** for Florune, with all missing points integrated, including:
-
-* Proprietary ownership & IP protections
-* TM notice for Florune
-* Reverse engineering / decompiling prohibition
-* Proxy / external connection restrictions
-* Optional smart contract upgrades
-* Explicit dispute disclaimer
-* Non-custodial responsibilities, privacy, and “as-is” disclaimer
-
----
-
-# **Florune Terms & Conditions**
+# **Terms & Conditions**
 
 *Last updated: 20 Dec 2025*
 
@@ -237,18 +225,3 @@ Continued use of the Platform constitutes acceptance of updated Terms.
 
 For legal or administrative inquiries:
 **[info@florune.net](mailto:info@florune.net)**
-
----
-
-This version is now:
-
-* Fully professional and integrated
-* Covers **IP, reverse engineering, TM, proxy restrictions**
-* Clarifies **smart contract upgrades**
-* Explicitly addresses **dispute handling, non-custodial responsibilities, privacy, warranties, and liability**
-
----
-
-I can now also prepare a **Persian version** of this complete Terms document, fully polished and ready for your platform, if you want.
-
-Do you want me to do that next?
