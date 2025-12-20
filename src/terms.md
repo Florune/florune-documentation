@@ -1,12 +1,26 @@
-# **Terms & Conditions**
+Perfect! Here’s a **fully updated, professional, and legally robust Terms & Conditions** for Florune, with all missing points integrated, including:
 
-*Last updated: 19 Nov 2025*
+* Proprietary ownership & IP protections
+* TM notice for Florune
+* Reverse engineering / decompiling prohibition
+* Proxy / external connection restrictions
+* Optional smart contract upgrades
+* Explicit dispute disclaimer
+* Non-custodial responsibilities, privacy, and “as-is” disclaimer
 
 ---
 
-# **1. Introduction**
+# **Florune Terms & Conditions**
 
-Florune (“Florune”, “the Platform”, “we”, “us”, “our”) is an independently operated decentralized application and software platform.
+*Last updated: 20 Dec 2025*
+
+By using Florune (“Florune”, “the Platform”, “we”, “us”, “our”), you agree to comply with these Terms & Conditions. If you do not agree, you must not use the Platform.
+
+---
+
+## **1. Introduction**
+
+Florune is an independently operated decentralized software platform providing **non-custodial services** for blockchain-based agreements, escrow, and asset management.
 
 Florune:
 
@@ -18,7 +32,7 @@ By using Florune, you acknowledge and accept these Terms & Conditions.
 
 ---
 
-# **2. “AS IS” and “AS AVAILABLE” Disclaimer**
+## **2. “As-Is” and “As-Available” Disclaimer**
 
 Florune and all related components—including smart contracts, escrow systems, APIs, SDKs, and UI—are provided strictly:
 
@@ -38,7 +52,7 @@ You use the Platform entirely at your own risk.
 
 ---
 
-# **3. No Legal Advice**
+## **3. No Legal Advice or Dispute Resolution**
 
 Florune does **not** provide:
 
@@ -47,21 +61,13 @@ Florune does **not** provide:
 * tax advice
 * compliance guidance
 * regulatory guidance
+* arbitration or dispute resolution
 
-Any documentation or information provided through the Platform is for **general and informational purposes only**.
-
-You are solely responsible for consulting **independent legal counsel** regarding:
-
-* local cryptocurrency or digital asset laws
-* contract enforcement rules
-* taxation
-* compliance with the laws applicable to you
-
-Florune assumes no responsibility for your legal decisions.
+Users are solely responsible for consulting **independent legal counsel** and resolving any disputes. Florune does **not intervene, mediate, or enforce** any agreements or external jurisdictional decisions.
 
 ---
 
-# **4. No Guarantee of Court Recognition**
+## **4. No Guarantee of Court Recognition**
 
 Florune does **not** guarantee that any court, arbitration body, or authority will accept or recognize:
 
@@ -76,7 +82,7 @@ Acceptance of such materials is outside Florune’s control.
 
 ---
 
-# **5. Non-Custodial Design & No Cloud Recovery**
+## **5. Non-Custodial Design & No Cloud Recovery**
 
 Florune is a **fully non-custodial** platform.
 
@@ -102,171 +108,147 @@ Users are fully responsible for secure storage and backup.
 
 ---
 
-# **6. Privacy & Data Protection (NO KYC, NO PERSONAL DATA)**
+## **6. Privacy & Data Protection (No KYC, No Personal Data)**
 
-Florune follows strict **data minimalism** and collects **no personal information**.
+Florune collects **no personal information**:
 
-Florune does **not** collect:
-
-* names
-* email addresses
-* phone numbers
-* national IDs or documents
-* biometric data
-* wallet keys or secrets
-* IP-linked identity
-* behavior tracking
-* KYC information
-* location information
+* names, email addresses, phone numbers, IDs, biometric data, wallet keys, IP-linked identity, or location
+* no KYC or tracking of user behavior
 
 ### **Authentication**
 
-Florune does **not** use:
-
-* traditional third-party authentication
-* OAuth
-* Firebase Authentication
-* email/password systems
-* phone number verification
-* cloud identity providers
-
-Your identity keys are generated and stored **locally on your device only**.
+* Identity keys are generated and stored **locally**
+* Florune does **not** use third-party authentication, OAuth, Firebase, email/password, or phone verification
 
 ### **Analytics**
 
-Florune may collect **non-personal diagnostic data** strictly for:
-
-* error reporting
-* crash analytics
-* performance improvement
-
-These analytics:
-
-* contain **no personal data**
-* contain **no identity information**
-* can be **disabled at any time** in the settings
-
-No sensitive information is ever transmitted.
+* Only non-personal diagnostic data may be collected for crash reports or performance monitoring
+* Analytics **do not contain personal data** and **can be disabled**
 
 ---
 
-# **7. User Responsibilities**
+## **7. User Responsibilities**
 
 By using Florune, you agree to:
 
-1. Secure your private keys, passphrases, and devices.
-2. Maintain your own backups.
-3. Ensure your usage complies with the laws applicable to **your own jurisdiction**.
-4. Understand that blockchain transactions are irreversible.
-5. Accept that smart contracts data cannot be undone or modified by Florune.
+1. Secure your private keys, passphrases, and devices
+2. Maintain your own backups
+3. Comply with local laws in your jurisdiction
+4. Understand that blockchain transactions are **irreversible**
+5. Accept that smart contract data cannot be modified by Florune
 
 You assume full responsibility for your digital assets.
 
 ---
 
-# **8. Escrow and Dispute Handling**
+## **8. Escrow, Smart Contracts & Upgrades**
 
-Florune provides smart-contract-based **escrow functionality**.
+Florune provides smart-contract-based escrow functionality.
 
 However:
 
 * Florune does **not** mediate disputes
 * Florune cannot modify smart contract states
 * Escrows may **lock** until all parties reach agreement
-* Florune cannot reverse or override contract states
 * Locked funds cannot be released without action of parties
 
-Parties must resolve disputes independently.
+**Smart Contract Upgrades**:
+
+* Florune may release updates or improvements to smart contracts
+* Users may **choose whether or not to adopt updates** at their own discretion
+* The Platform provides **no guarantee** regarding outcomes, performance, or compatibility of upgraded contracts
 
 ---
 
-# **9. Prohibited Uses**
+## **9. Limitations of Use & Intellectual Property**
+
+**Ownership & Protection**:
+
+* All components of Florune™, including smart contracts, dApps, ABIs, APIs, algorithms, documentation, and UI/UX, are the **sole property of Hassan Qasemi**, under copyright and the **Contract Foundry Project**, and are **patent pending**
+
+**User Obligations**:
+By using Florune, you agree that you will not:
+
+1. Modify, copy, prepare derivative works of, decompile, or reverse engineer any materials or software
+2. Remove, alter, or obscure copyright, patent, trademark, or other proprietary notices
+3. Transfer, distribute, or mirror materials to any other server, platform, or person
+4. Abuse, disrupt, or interfere with Florune services
+5. Connect unauthorized third-party proxies, clients, or external systems to Florune smart contracts or dApps
+
+---
+
+## **10. Prohibited Uses**
 
 Users may **not** use Florune for:
 
-* harmful unlawful activity of any kind
-* dissemination of illegal or harmful content
-* exploitation, abuse, or harm
-* fraud or deception
-* money laundering
-* malicious software distribution
-* hacking or attempting to exploit the Platform
-* bypassing technical restrictions
+* Illegal, harmful, or abusive activity
+* Fraud, deception, or money laundering
+* Exploitation or hacking attempts
+* Bypassing technical restrictions
 
-Violations may lead to restrictions within the technical limits of the Platform.
+Violations may lead to restrictions **within the technical limits of the Platform**.
 
 ---
 
-# **10. Age Restriction**
+## **11. Age Restriction**
 
-Florune is intended for users:
+Florune is intended for users **22 years of age or older**.
+Access by individuals under this age is prohibited.
 
-* **22 years of age or older**
-
-We do not knowingly allow access to individuals below this age.
 
 ---
 
-# **11. Intellectual Property**
+## **12. Jurisdiction**
 
-All intellectual property on Florune—including:
-
-* codebase
-* smart contracts
-* algorithms
-* protocols
-* branding
-* documentation
-* UI/UX
-
-is owned by and/or licensed to the **Contract Foundry Project**.
-
-All components are **copyright-protected** and **patent pending**.
-
-Unauthorized copying, alteration, reverse engineering, or distribution is strictly prohibited.
+Florune is governed exclusively by the laws applicable to its operational jurisdiction.
+The Platform does **not** recognize external jurisdiction except where legally required.
+Florune does **not provide legal, regulatory, or dispute resolution services**; users are solely responsible for resolving disputes.
 
 ---
 
-# **12. Jurisdiction**
-
-Florune is governed exclusively by the laws and regulations applicable to its operational jurisdiction.
-
-Florune does **not** accept or recognize external jurisdiction unless required by the applicable laws.
-
----
-
-# **13. Limitation of Liability**
+## **13. Limitation of Liability**
 
 Florune is **not liable** for:
 
-* lost private keys
-* lost access
-* lost assets
-* smart contract exploits
-* downtime
-* system failures
-* transaction errors
-* indirect, direct, incidental, or consequential damages
+* Lost private keys, access, or assets
+* Smart contract exploits
+* Downtime or system failures
+* Transaction errors
+* Indirect, direct, incidental, or consequential damages
 
 Use of the Platform is entirely **at your own risk**.
 
 ---
 
-# **14. Amendments**
+## **14. Amendments**
 
 Florune may update these Terms at any time due to:
 
-* technical changes
-* legal changes
-* new features
-* security improvements
+* Technical changes
+* Legal changes
+* New features
+* Security improvements
 
-Continued use of the Platform constitutes acceptance of any updated terms.
+Continued use of the Platform constitutes acceptance of updated Terms.
 
 ---
 
-# **15. Contact Information**
+## **15. Contact Information**
 
 For legal or administrative inquiries:
-
 **[info@florune.net](mailto:info@florune.net)**
+
+---
+
+This version is now:
+
+* Fully professional and integrated
+* Covers **IP, reverse engineering, TM, proxy restrictions**
+* Clarifies **smart contract upgrades**
+* Explicitly addresses **dispute handling, non-custodial responsibilities, privacy, warranties, and liability**
+
+---
+
+I can now also prepare a **Persian version** of this complete Terms document, fully polished and ready for your platform, if you want.
+
+Do you want me to do that next?
