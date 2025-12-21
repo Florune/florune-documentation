@@ -8,7 +8,7 @@ By using Florune (“Florune”, “the Platform”, “we”, “us”, “our�
 
 ## **1. Introduction**
 
-Florune is an independently operated decentralized software platform providing **non-custodial services** for blockchain-based agreements, escrow, and asset management.
+Florune is an independently operated decentralized software platform providing **non-custodial services** for blockchain-based agreements ecosystem.
 
 Florune:
 
@@ -22,7 +22,7 @@ By using Florune, you acknowledge and accept these Terms & Conditions.
 
 ## **2. “As-Is” and “As-Available” Disclaimer**
 
-Florune and all related components—including smart contracts, escrow systems, APIs, SDKs, and UI—are provided strictly:
+Florune and all related components—including smart contracts, APIs, ABIs, and UI—are provided strictly:
 
 * **“AS IS”**
 * **“AS AVAILABLE”**
@@ -129,15 +129,15 @@ You assume full responsibility for your digital assets.
 
 ---
 
-## **8. Escrow, Smart Contracts & Upgrades**
+## **8. Smart Contracts & Upgrades**
 
-Florune provides smart-contract-based escrow functionality.
+Florune provides smart-contract ecosystem.
 
 However:
 
 * Florune does **not** mediate disputes
 * Florune cannot modify smart contract states
-* Escrows may **lock** until all parties reach agreement
+* P2P Agreement Payments and Escrows may **lock** until all parties reach agreement
 * Locked funds cannot be released without action of parties
 
 **Smart Contract Upgrades**:

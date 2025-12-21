@@ -120,9 +120,9 @@ Florune does **not** control or store data from third-party services.
 
 ---
 
-## **9. Escrow and Smart Contract Interactions**
+## **9. Smart Contract Interactions**
 
-Escrow operations and smart contract interactions may appear on **public blockchains**.
+Smart contract interactions may appear on **public blockchains**.
 
 * Transactions are **irreversible**
 * Blockchain records are **public by default**
@@ -139,7 +139,7 @@ Escrow operations and smart contract interactions may appear on **public blockch
 
 ## **10. Intellectual Property & Platform Ownership**
 
-* All components of Florune—smart contracts, dApps, SDKs, APIs, algorithms, documentation, and UI/UX—are the **sole property of Hassan Qasemi**, under copyright and the **Contract Foundry Project**, and are **patent pending**
+* All components of Florune—smart contracts, dApps, ABIs, APIs, algorithms, documentation, and UI/UX—are the **sole property of Hassan Qasemi**, under copyright and the **Contract Foundry Project**, and are **patent pending**
 * Users must **not reverse engineer, decompile, copy, modify, or create derivative works** of any platform components
 * Users must **not connect unauthorized third-party proxies or clients** to Florune smart contracts
 
