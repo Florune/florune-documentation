@@ -82,10 +82,9 @@ This makes it suitable for **everything from small digital engagements to high-v
 * Supports refundable deposits
 * Automatically rolls back if conditions fail
 
-### **5. Content & Digital Asset Sales**
+### **5. Content & Digital Sales**
 
-* Protects both creators and buyers
-* Seamless integration with **Asset Paywall**
+* Protects both sellers and buyers
 
 ---
 
