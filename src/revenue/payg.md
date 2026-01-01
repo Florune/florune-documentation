@@ -69,15 +69,13 @@ Users stay in control of all assets and data.
 
 ## **Fee Examples**
 
-* **Escrow:** 0.0029 ETH deposit fee + 1% withdraw
+* **Escrow:** 0.00067 ETH deposit fee (prevent abuse) + 1% withdraw
 * **Document Registry:** 0.0019 ETH per entry
 * **Asset Paywall:** 0.029 ETH deployment
 
 (Chain-specific numbers may vary.)
 
 ---
-
-## **Summary**
 
 PAYG provides affordable access to Florune’s core services with no commitments, enabling casual users to leverage trustless agreements whenever needed.
 

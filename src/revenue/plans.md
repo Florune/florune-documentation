@@ -86,7 +86,5 @@ Only Flarion holders can subscribe, ensuring ecosystem integrity.
 
 ---
 
-## **Summary**
-
 Florune’s subscription system empowers medium-to-large users with predictable, scalable, and cost-efficient contract deployment capacity.
 It is the backbone for enterprise automation within the Florune ecosystem.

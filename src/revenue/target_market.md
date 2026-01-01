@@ -90,8 +90,6 @@ Florune empowers these users with secure, privacy-respecting financial tools.
 
 ---
 
-## **Summary**
-
 Florune’s target market includes anyone needing trustless agreements, verifiable documents, and non-custodial settlement.
 From individual freelancers to large enterprises, Florune delivers infrastructure that replaces intermediaries with automated, decentralized logic.
 
