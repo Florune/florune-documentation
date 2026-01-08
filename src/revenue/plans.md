@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-Florune offers subscription plans designed for teams, enterprises, and organizations that require **consistent, high-frequency contract creation**.
+SafePulse offers subscription plans designed for teams, enterprises, and organizations that require **consistent, high-frequency contract creation**.
 
 Subscriptions unlock predictable monthly or yearly operational capacity, reduced costs, and bonus RUNE rewards.
 
@@ -17,7 +17,7 @@ Subscriptions unlock predictable monthly or yearly operational capacity, reduced
 * Agencies and organizations running recurring workflows
 * Any user needing predictable cost structures
 
-Subscriptions convert Florune into an integral operational tool rather than pay-per-use tooling.
+Subscriptions convert SafePulse into an integral operational tool rather than pay-per-use tooling.
 
 ---
 
@@ -86,5 +86,5 @@ Only Flarion holders can subscribe, ensuring ecosystem integrity.
 
 ---
 
-Florune’s subscription system empowers medium-to-large users with predictable, scalable, and cost-efficient contract deployment capacity.
-It is the backbone for enterprise automation within the Florune ecosystem.
+SafePulse’s subscription system empowers medium-to-large users with predictable, scalable, and cost-efficient contract deployment capacity.
+It is the backbone for enterprise automation within the SafePulse ecosystem.

@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-Florune serves a diverse global user base across individuals, creators, professionals, and institutions.
+SafePulse serves a diverse global user base across individuals, creators, professionals, and institutions.
 The platform is designed for anyone who needs **secure, trustless, automated agreements** or **verifiable data flows**.
 
 Our target market spans consumer-level use cases all the way to enterprise-grade automation.
@@ -26,7 +26,7 @@ These users value:
 * Simple service agreements
 * Automation without intermediaries
 
-Florune provides tooling perfectly aligned with their ethos.
+SafePulse provides tooling perfectly aligned with their ethos.
 
 ---
 
@@ -50,7 +50,7 @@ Large organizations need scalable trust infrastructure across departments.
 * Contractual automation
 * Cross-border settlement
 
-Florune serves as a programmable infrastructure layer for digital trust.
+SafePulse serves as a programmable infrastructure layer for digital trust.
 
 ---
 
@@ -86,10 +86,10 @@ A rapidly growing segment driven by:
 * Global access to stable settlement
 * Cross-border operations without banks
 
-Florune empowers these users with secure, privacy-respecting financial tools.
+SafePulse empowers these users with secure, privacy-respecting financial tools.
 
 ---
 
-Florune’s target market includes anyone needing trustless agreements, verifiable documents, and non-custodial settlement.
-From individual freelancers to large enterprises, Florune delivers infrastructure that replaces intermediaries with automated, decentralized logic.
+SafePulse’s target market includes anyone needing trustless agreements, verifiable documents, and non-custodial settlement.
+From individual freelancers to large enterprises, SafePulse delivers infrastructure that replaces intermediaries with automated, decentralized logic.
 

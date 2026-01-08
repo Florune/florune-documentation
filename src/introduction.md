@@ -1,15 +1,15 @@
 # Introduction
 
-Florune is a **trustless, non-custodial smart contract platform** designed to power the next generation of digital agreements. It provides the infrastructure for automated, self-executing, on-chain collaborations—enabling users to manage payments, coordinate work, and verify data **without ever surrendering control of their assets or private information**.
+SafePulse is a **trustless, non-custodial smart contract platform** designed to power the next generation of digital agreements. It provides the infrastructure for automated, self-executing, on-chain collaborations—enabling users to manage payments, coordinate work, and verify data **without ever surrendering control of their assets or private information**.
 
 In the modern digital economy, the systems that promise security and reliability often introduce the very risks they aim to solve. Banks, escrow providers, marketplaces, and centralized platforms sit between users and their agreements, imposing rigid rules, high fees, opaque decision-making, and custodial vulnerabilities. These intermediaries have become chokepoints—gatekeepers of value, data, and trust.
 
-Florune presents a new paradigm:
+SafePulse presents a new paradigm:
 a world where **agreements are borderless**, **collaboration is automated**, and **fraud becomes mathematically impossible**.
 Here, sovereignty is restored to individuals and organizations.
 Here, the contract is not a PDF—**the contract is the code**.
 
-Florune exists to replace fragile intermediaries with verifiable execution, enabling anyone, anywhere, to transact directly with confidence.
+SafePulse exists to replace fragile intermediaries with verifiable execution, enabling anyone, anywhere, to transact directly with confidence.
 
 ---
 
@@ -17,7 +17,7 @@ Florune exists to replace fragile intermediaries with verifiable execution, enab
 
 Our vision is to build a world of **sovereign agreements**—a global environment where interactions between individuals and enterprises are trustless, efficient, and fully programmable. Today, peer-to-peer work—whether freelance tasks, intellectual property transfers, or complex B2B collaborations—is constrained by manual processes, ambiguous terms, and reliance on traditional institutions.
 
-Florune aims to make future universal.
+SafePulse aims to make future universal.
 The logic of cooperation—once enforced by bureaucracy—will now be enforced by transparent, unstoppable code.
 
 ---
@@ -35,7 +35,7 @@ But traditional systems cannot keep pace:
 
 At the same time, decentralized technologies—cryptographic signatures, verifiable credentials, decentralized identity, and smart-contract infrastructure—have matured. What was once theoretical is now practical, accessible, and ready for mass adoption.
 
-Florune bridges this gap, making advanced cryptographic security and automated agreements usable by anyone with a smartphone.
+SafePulse bridges this gap, making advanced cryptographic security and automated agreements usable by anyone with a smartphone.
 
 ---
 
@@ -73,7 +73,7 @@ These problems persist because trust is centralized, execution is manual, and ve
 
 # **The Solution**
 
-Florune is a **decentralized, non-custodial smart contract platform** designed for automated, programmable agreements. It transforms the way individuals and businesses collaborate by providing the tools to create and execute contracts without intermediaries.
+SafePulse is a **decentralized, non-custodial smart contract platform** designed for automated, programmable agreements. It transforms the way individuals and businesses collaborate by providing the tools to create and execute contracts without intermediaries.
 
 ### **1. Agreements Beyond Payments**
 
@@ -91,13 +91,13 @@ Users can attach **verifiable documents** and proofs of verifications and authen
 
 Anyone can transact using stablecoins or native cryptocurrencies, regardless of geography. There are no mandatory KYC barriers for core functionality and no minimum deal size.
 
-Florune turns trust into math—automated, transparent, and unbreakable.
+SafePulse turns trust into math—automated, transparent, and unbreakable.
 
 ---
 
 # **Mission**
 
-In an era shaped by digital uncertainty, Florune’s mission is to give individuals and organizations the ability to collaborate securely and autonomously. We offer the infrastructure and software application for a new **social contract**, where:
+In an era shaped by digital uncertainty, SafePulse’s mission is to give individuals and organizations the ability to collaborate securely and autonomously. We offer the infrastructure and software application for a new **social contract**, where:
 
 * fairness is enforced by code,
 * transparency is inherent,
@@ -109,9 +109,9 @@ Our goal is simple:
 
 ---
 
-# **Why Florune**
+# **Why SafePulse**
 
-Florune is built on principles that make it uniquely capable of supporting sovereign digital agreements:
+SafePulse is built on principles that make it uniquely capable of supporting sovereign digital agreements:
 
 ### **1. Non-Custodial Funds**
 
@@ -119,7 +119,7 @@ Users control their assets directly at all times. Payments use native tokens or 
 
 ### **2. Non-Custodial Data Architecture**
 
-Users store their own files—on decentralized networks or their preferred centralized storage. Florune verifies proofs, guaranteeing privacy and autonomy.
+Users store their own files—on decentralized networks or their preferred centralized storage. SafePulse verifies proofs, guaranteeing privacy and autonomy.
 
 ### **3. On-Chain Verification**
 
@@ -160,7 +160,7 @@ With a few taps, anyone can deploy secure smart contracts without writing code�
 
 ### **11. Jurisdiction & Responsibility**
 
-Florune is not a legal or financial intermediary.
+SafePulse is not a legal or financial intermediary.
 It provides **tools**, not **adjudication**:
 
 * users select their own jurisdictions,
@@ -168,4 +168,4 @@ It provides **tools**, not **adjudication**:
 * only the involved parties can resolve or complete contracts,
 * the platform operator has **zero access** to user funds or private data.
 
-Florune stands as a foundational layer for the next generation of digital collaboration: autonomous, verifiable, and truly sovereign.
+SafePulse stands as a foundational layer for the next generation of digital collaboration: autonomous, verifiable, and truly sovereign.

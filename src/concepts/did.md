@@ -188,7 +188,7 @@ Example:
 
 ## **Contract DID**
 
-**Decentralized Identifiers (DIDs)** are a cornerstone of identity in decentralized systems, enabling users, organizations, and digital assets to have **self-sovereign, verifiable identities**. In the context of smart contracts, Florune introduces **Contract DIDs** — a method of assigning globally unique identifiers to deployed contracts, registries, and other on-chain entities, while maintaining **privacy and controlled access**.
+**Decentralized Identifiers (DIDs)** are a cornerstone of identity in decentralized systems, enabling users, organizations, and digital assets to have **self-sovereign, verifiable identities**. In the context of smart contracts, SafePulse introduces **Contract DIDs** — a method of assigning globally unique identifiers to deployed contracts, registries, and other on-chain entities, while maintaining **privacy and controlled access**.
 
 Contract DIDs serve as **cryptographic handles** that represent deployed contracts or registries on a blockchain. They allow users to reference, interact with, or verify these entities without exposing sensitive internal data.
 
@@ -260,4 +260,4 @@ Registries can store mappings of **users to their Contract DIDs**, smart contrac
 
 ---
 
-This structure ensures that Florune users can **maintain self-sovereign identity for contracts and registries**, interact securely with encrypted smart contracts, and trust the authenticity of registry data without relying on centralized services.
+This structure ensures that SafePulse users can **maintain self-sovereign identity for contracts and registries**, interact securely with encrypted smart contracts, and trust the authenticity of registry data without relying on centralized services.

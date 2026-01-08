@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **Identity Layer** in Florune provides **self-sovereign, blockchain-backed digital identity and credentials**. It enables users, businesses, and organizations to **verify identity and credentials securely, privately, and without reliance on centralized authorities**.
+The **Identity Layer** in SafePulse provides **self-sovereign, blockchain-backed digital identity and credentials**. It enables users, businesses, and organizations to **verify identity and credentials securely, privately, and without reliance on centralized authorities**.
 
 This layer is designed for:
 
@@ -25,7 +25,7 @@ All services in this layer are built on **open standards** to ensure interoperab
 * Provide **user-controlled, portable digital identities**
 * Enable **secure verification without centralized intermediaries**
 * Support **verifiable presentations** for privacy-preserving data sharing
-* Integrate seamlessly with Florune’s contracts and document services
+* Integrate seamlessly with SafePulse’s contracts and document services
 
 ---
 
@@ -107,9 +107,9 @@ Provide **wallet-first, blockchain-backed digital credentials** that are tamper-
 1. **User-Controlled Identity** – Full autonomy over personal or organizational identity.
 2. **Secure Verification** – Blockchain ensures authenticity and prevents tampering.
 3. **Privacy & Selective Sharing** – Share only what is necessary.
-4. **Integration with Florune Services** – Identity and credentials can seamlessly interact with payment, document, and content layers.
+4. **Integration with SafePulse Services** – Identity and credentials can seamlessly interact with payment, document, and content layers.
 5. **Standardized & Interoperable** – Built on ERC-1056 and W3C standards for broad compatibility.
 
 ---
 
-The **Identity Layer** empowers users with **trustworthy, self-sovereign digital identity and credentials**, enabling **secure, verifiable interactions** across Florune’s ecosystem. By combining DIDs with verifiable credentials, Florune supports **privacy-preserving, interoperable, and blockchain-backed identity solutions** suitable for individuals, businesses, and developers alike.
+The **Identity Layer** empowers users with **trustworthy, self-sovereign digital identity and credentials**, enabling **secure, verifiable interactions** across SafePulse’s ecosystem. By combining DIDs with verifiable credentials, SafePulse supports **privacy-preserving, interoperable, and blockchain-backed identity solutions** suitable for individuals, businesses, and developers alike.

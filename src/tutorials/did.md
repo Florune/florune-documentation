@@ -1,19 +1,19 @@
 # DID
 
-*A self-sovereign, portable, Ethereum-based identity standard for secure, user-controlled interaction across Florune services.*
+*A self-sovereign, portable, Ethereum-based identity standard for secure, user-controlled interaction across SafePulse services.*
 
 ---
 
 ## **Overview**
 
-Florune’s **Decentralized Identity (DID)** system is built on the **ERC-1056** identity standard, allowing users to create a **self-sovereign digital identity** that is:
+SafePulse’s **Decentralized Identity (DID)** system is built on the **ERC-1056** identity standard, allowing users to create a **self-sovereign digital identity** that is:
 
 * **User-controlled** (no central authority)
 * **Portable** across services and networks
 * **Privacy-preserving**, with no forced disclosure
 * **Compatible with Verifiable Credentials and onchain contracts**
 
-A DID is the foundational element powering all advanced workflows in Florune, including:
+A DID is the foundational element powering all advanced workflows in SafePulse, including:
 
 * Verifiable Credentials
 * Document verification
@@ -41,7 +41,7 @@ Users need a secure identity they can use across agreements, documents, services
 
 ### **The Solution**
 
-Florune implements **ERC-1056 Decentralized Identity**, giving users:
+SafePulse implements **ERC-1056 Decentralized Identity**, giving users:
 
 * A cryptographic identity bound to their wallet
 * A globally resolvable DID Document
@@ -120,7 +120,7 @@ Asset Paywall access can be tied to a user’s DID, proving rights and preventin
 
 ### **A. Creating Your DID**
 
-1. Open the Florune Wallet
+1. Open the SafePulse Wallet
 2. Navigate to **Identifiers**
 3. Tap **Create DID** and choose DID type (Public Key DID or ERC-1056)
 4. The wallet generates DID string as decentralized identifier of EOA as user identifier
@@ -143,7 +143,7 @@ All sensitive operations stay local on your device unless explicitly broadcast o
 
 ---
 
-Florune applies the ERC-1056 standard, ensuring maximum interoperability.
+SafePulse applies the ERC-1056 standard, ensuring maximum interoperability.
 
 ---
 
@@ -170,7 +170,7 @@ A researcher anchors findings under a pseudonymous DID, later proving authorship
 * No personal data exposure
 * Secure and key-controlled
 * Interoperable with global standards
-* Works seamlessly across Florune services
+* Works seamlessly across SafePulse services
 * Ideal for anonymous or pseudonymous workflows
 
 ---

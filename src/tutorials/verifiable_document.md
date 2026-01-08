@@ -4,7 +4,7 @@
 
 **Verifiable Documents** allow users to create **tamper-proof, document verification contract** that let documents be stored locally or on decentralized storage networks, such as **IPFS** or **Arweave**. Each document can be **anchored on-chain**, providing an immutable proof of authenticity. Documents can also be **linked to Pledge Contracts**, enabling automated enforcement.
 
-> All operations are executed via the Florune Wallet, ensuring **self-sovereign, local execution**.
+> All operations are executed via the SafePulse Wallet, ensuring **self-sovereign, local execution**.
 
 ---
 
@@ -14,7 +14,7 @@
 Organizations and individuals often require tamper-proof documents for **legal, compliance, or intellectual property purposes**. Centralized solutions carry the risk of modification, loss, or lack of verifiability.
 
 **Solution:**
-Florune’s Verifiable Document service allows users to:
+SafePulse’s Verifiable Document service allows users to:
 
 * Anchor documents **on-chain** for immutability
 * **Link to Pledge contracts** for enforceable workflows
@@ -37,7 +37,7 @@ This ensures documents are trustworthy, verifiable, and usable in automated paym
 
 ### **Prerequisites**
 
-* Florune Wallet installed
+* SafePulse Wallet installed
 * Active EOA (Externally Owned Account) with subscription plan or usage credit
 * Issuer/Creator DID: an key DID (did:key) or an ERC-1056 DID with issuer key as its Delegate  
 * Network tokens (e.g., Rune) to pay deployment fees
@@ -78,7 +78,7 @@ This ensures documents are trustworthy, verifiable, and usable in automated paym
 **Benefits:**
 
 * Tamper-proof and auditable
-* Integrates with Florune contracts for automated enforcement
+* Integrates with SafePulse contracts for automated enforcement
 * Full control over document storage and access
 
 **Drawbacks:**

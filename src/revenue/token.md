@@ -2,11 +2,11 @@
 
 ## **Overview**
 
-Florune’s tokenomics are intentionally designed to avoid speculation and instead strengthen the integrity, security, and usability of the platform.
+SafePulse’s tokenomics are intentionally designed to avoid speculation and instead strengthen the integrity, security, and usability of the platform.
 The ecosystem revolves around **RUNE**, a non-tradable internal utility token used exclusively to deploy certain types of smart contracts.
 
 RUNE is not a currency, not a tradable asset, and not a revenue instrument.
-It is a **functional fuel** that powers creatable agreements across the Florune network.
+It is a **functional fuel** that powers creatable agreements across the SafePulse network.
 
 ---
 
@@ -18,9 +18,9 @@ RUNE exists to guarantee:
 * **Spam resistance**
 * **Decentralized execution integrity**
 * **Resource accountability** in contract deployment
-* **A stable, predictable unit of work** inside Florune
+* **A stable, predictable unit of work** inside SafePulse
 
-By tying contract creation to an internal, fixed-supply token, Florune avoids volatility and ensures that the cost of deploying agreements stays stable across time and market cycles.
+By tying contract creation to an internal, fixed-supply token, SafePulse avoids volatility and ensures that the cost of deploying agreements stays stable across time and market cycles.
 
 ---
 
@@ -31,7 +31,7 @@ RUNE is required for deploying all **creatable contracts**, including:
 * **Pledge Contracts**
 * **Verifiable Document Contracts**
 
-These contracts form the backbone of enterprise workflows, compliance systems, and automated agreements inside Florune.
+These contracts form the backbone of enterprise workflows, compliance systems, and automated agreements inside SafePulse.
 
 ---
 
@@ -65,5 +65,5 @@ RUNE is supplied to Flarion holders and via subscription rewards, giving users a
 
 ---
 
-Florune’s ecosystem tokens built for functionality and real value as an execution asset, not hype.
-RUNE powers the system with predictable, transparent, and fair access to smart contract creation—ensuring Florune remains sustainable, scalable, and trustless.
+SafePulse’s ecosystem tokens built for functionality and real value as an execution asset, not hype.
+RUNE powers the system with predictable, transparent, and fair access to smart contract creation—ensuring SafePulse remains sustainable, scalable, and trustless.

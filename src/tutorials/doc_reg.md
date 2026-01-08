@@ -6,7 +6,7 @@
 
 ## **Overview**
 
-The Document Registry provides a **fast, cost-efficient and immutable method** to prove that a document existed at a specific point in time. Instead of storing the full file onchain, Florune only records the **hash**, making the process cost-efficient while maintaining strong cryptographic guarantees.
+The Document Registry provides a **fast, cost-efficient and immutable method** to prove that a document existed at a specific point in time. Instead of storing the full file onchain, SafePulse only records the **hash**, making the process cost-efficient while maintaining strong cryptographic guarantees.
 
 This service is ideal for protecting **intellectual property**, **research**, **legal documents**, **design drafts**, **code**, and any other material where authorship and existence must be provably timestamped.
 
@@ -30,7 +30,7 @@ Organizations and creators need a way to **prove authorship**, **establish prior
 
 ### **The Solution**
 
-Florune Document Registry creates an **immutable onchain proof** that a specific document, identified by its hash, existed at a given moment. This proof is:
+SafePulse Document Registry creates an **immutable onchain proof** that a specific document, identified by its hash, existed at a given moment. This proof is:
 
 * Cryptographically verifiable
 * Public or private document identifier
@@ -104,7 +104,7 @@ Unlike Verifiable Documents, the record exists immediately after registration.
 
 ### **Prerequisites**
 
-* Florune Wallet installed
+* SafePulse Wallet installed
 * Native token balance for registration fees
 * Issuer/Creator DID: an key DID (did:key) or an ERC-1056 DID with issuer key as its Delegate  
 * File prepared and hashed automatically by the app

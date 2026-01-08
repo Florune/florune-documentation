@@ -2,13 +2,13 @@
 
 *Last updated: 20 Dec 2025*
 
-By using Florune (“Florune”, “the Platform”, “we”, “us”, “our”), you agree to the practices described in this Privacy Policy. If you do not agree, you must not use the Platform.
+By using SafePulse (“SafePulse”, “the Platform”, “we”, “us”, “our”), you agree to the practices described in this Privacy Policy. If you do not agree, you must not use the Platform.
 
 ---
 
 ## **1. Introduction**
 
-Florune is committed to protecting your privacy and ensuring that you maintain **full control over your data**.
+SafePulse is committed to protecting your privacy and ensuring that you maintain **full control over your data**.
 
 The Platform is designed with:
 
@@ -17,13 +17,13 @@ The Platform is designed with:
 * **Non-custodial architecture**
 * **User-controlled smart contract interactions**
 
-This Privacy Policy explains how Florune handles information, what is (and is not) collected, and your responsibilities as a user.
+This Privacy Policy explains how SafePulse handles information, what is (and is not) collected, and your responsibilities as a user.
 
 ---
 
 ## **2. Zero Personal Data Collection**
 
-Florune collects **no personal information whatsoever**.
+SafePulse collects **no personal information whatsoever**.
 
 We do **not** collect, store, or process:
 
@@ -34,7 +34,7 @@ We do **not** collect, store, or process:
 * Personal behavioral tracking
 * KYC information or verification data
 
-Florune performs **no KYC, no identity verification, and no account creation with personal data**.
+SafePulse performs **no KYC, no identity verification, and no account creation with personal data**.
 
 ---
 
@@ -42,19 +42,19 @@ Florune performs **no KYC, no identity verification, and no account creation wit
 
 All cryptographic materials—including identity keys, DID keys, private keys, credential keys, and signing keys—are generated and stored **exclusively on your device**.
 
-Florune:
+SafePulse:
 
 * Does **not** access, store, back up, or transmit your keys
 * Does **not** retain credential-related information
 
 You are solely responsible for securing your keys, recovery phrases, and devices.
-If keys are lost, Florune **cannot** recover them, reset them, or restore access.
+If keys are lost, SafePulse **cannot** recover them, reset them, or restore access.
 
 ---
 
 ## **4. No Cloud Backups & No Cloud Recovery**
 
-Florune does **not** provide:
+SafePulse does **not** provide:
 
 * Cloud backup or cloud key storage
 * SRP-based backups
@@ -67,7 +67,7 @@ All recovery is performed **locally by the user** using their own passphrase or 
 
 ## **5. No Traditional Authentication Services**
 
-Florune does **not** use or rely on:
+SafePulse does **not** use or rely on:
 
 * OAuth, email/password, phone verification
 * Firebase Authentication or centralized login systems
@@ -79,7 +79,7 @@ Authentication and identity generation occur entirely **on-device** and are **se
 
 ## **6. Optional Diagnostic Analytics**
 
-Florune may collect **non-personal diagnostic data** solely to improve:
+SafePulse may collect **non-personal diagnostic data** solely to improve:
 
 * Stability
 * Performance
@@ -98,7 +98,7 @@ Analytics may include device type, error logs, and crash traces—only for perfo
 
 ## **7. No Tracking Technologies**
 
-Florune does **not** use:
+SafePulse does **not** use:
 
 * Cookies, web beacons, or fingerprinting
 * Targeted advertising identifiers
@@ -113,10 +113,10 @@ No data is sold, shared, or monetized.
 Interactions with third-party services (e.g., blockchain RPCs, event loggers, error trackers) are:
 
 * **Optional** and user-initiated
-* **Separate from Florune systems**
+* **Separate from SafePulse systems**
 * Governed by the **third-party’s privacy policies**
 
-Florune does **not** control or store data from third-party services.
+SafePulse does **not** control or store data from third-party services.
 
 ---
 
@@ -126,12 +126,12 @@ Smart contract interactions may appear on **public blockchains**.
 
 * Transactions are **irreversible**
 * Blockchain records are **public by default**
-* Florune **cannot delete or alter blockchain data**
+* SafePulse **cannot delete or alter blockchain data**
 * Users must understand the **immutable nature of blockchain systems**
 
 **Smart Contract Upgrades:**
 
-* Florune may release updates or improvements
+* SafePulse may release updates or improvements
 * Users may **choose whether or not to adopt updates**, at their own discretion
 * The Platform provides **no guarantees** regarding performance, compatibility, or outcomes of upgraded contracts
 
@@ -139,9 +139,9 @@ Smart contract interactions may appear on **public blockchains**.
 
 ## **10. Intellectual Property & Platform Ownership**
 
-* All components of Florune—smart contracts, dApps, ABIs, APIs, algorithms, documentation, and UI/UX—are the **sole property of Hassan Qasemi**, under copyright and the **Contract Foundry Project**, and are **patent pending**
+* All components of SafePulse—smart contracts, dApps, ABIs, APIs, algorithms, documentation, and UI/UX—are the **sole property of Hassan Qasemi**, under copyright and the **Contract Foundry Project**, and are **patent pending**
 * Users must **not reverse engineer, decompile, copy, modify, or create derivative works** of any platform components
-* Users must **not connect unauthorized third-party proxies or clients** to Florune smart contracts
+* Users must **not connect unauthorized third-party proxies or clients** to SafePulse smart contracts
 
 ---
 
@@ -159,14 +159,14 @@ Users are responsible for their cryptographic materials and account security.
 
 ## **12. Age Restriction**
 
-Florune is intended for users **22 years of age or older**.
+SafePulse is intended for users **22 years of age or older**.
 No personal or non-personal data is knowingly collected from minors.
 
 ---
 
 ## **13. Data Sharing**
 
-Florune:
+SafePulse:
 
 * Does **not** share, sell, or monetize data
 * Does **not** profile users
@@ -179,7 +179,7 @@ All user activity remains private on your device.
 
 ## **14. Security Measures**
 
-Florune uses:
+SafePulse uses:
 
 * Local encryption and self-sovereign identity mechanisms
 * Decentralized architectures and secure cryptographic standards
@@ -190,13 +190,13 @@ However, no system is perfectly secure. Users must:
 * Use strong passphrases
 * Understand the risk of key loss
 
-Florune **cannot recover lost keys or compromised devices**.
+SafePulse **cannot recover lost keys or compromised devices**.
 
 ---
 
 ## **15. Updates to This Privacy Policy**
 
-Florune may update this Privacy Policy to reflect:
+SafePulse may update this Privacy Policy to reflect:
 
 * Changes in technology
 * Security improvements

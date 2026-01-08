@@ -32,7 +32,7 @@ They often require **third-party mediators**, which increases cost, reduces trus
 
 ### **The Solution**
 
-Florune’s Pledge Contract provides:
+SafePulse’s Pledge Contract provides:
 
 * **Immutable, on-chain agreements** verified by participants' cryptographic signatures
 * **Linked deliverables**, such as Verifiable Documents
@@ -74,7 +74,7 @@ Automatically transitions through states such as:
 
 ### **6. Wallet-First Operation**
 
-Everything is controlled in the Florune Wallet — no external software required.
+Everything is controlled in the SafePulse Wallet — no external software required.
 
 ---
 
@@ -82,7 +82,7 @@ Everything is controlled in the Florune Wallet — no external software required
 
 ### Prerequisites
 
-* Florune Wallet installed
+* SafePulse Wallet installed
 * Active subscription or usage credits
 * Issuer/Creator DID: an key DID (did:key) or an ERC-1056 DID with issuer key as its Delegate  
 * Network tokens for contract deployment
@@ -306,7 +306,7 @@ If linked to a **Verifiable Document**:
 
 * Requires users to understand decentralized storage
 * On-chain actions incur gas fees
-* All parties must use Florune Wallet for consistency
+* All parties must use SafePulse Wallet for consistency
 
 ---
 

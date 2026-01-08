@@ -1,8 +1,8 @@
 ## **Elysium Protocol**
 
-The Elysium Protocol represents the **premium Meta protocol** within the Florune ecosystem. While Florune itself is designed as a fully non-custodial infrastructure, Elysium provides an **exclusive high-tier environment** for users who require **maximum security, operational sovereignty, and access to advanced features**.
+The Elysium Protocol represents the **premium Meta protocol** within the SafePulse ecosystem. While SafePulse itself is designed as a fully non-custodial infrastructure, Elysium provides an **exclusive high-tier environment** for users who require **maximum security, operational sovereignty, and access to advanced features**.
 
-Unlike standard Florune services, Elysium is reserved exclusively for **Elysian Accounts**, which are verified through the possession of **Flarion Tokens**. This architecture ensures that access, permissions, and operations are fully tied to token ownership, granting users unparalleled control over their interactions.
+Unlike standard SafePulse services, Elysium is reserved exclusively for **Elysian Accounts**, which are verified through the possession of **Flarion Tokens**. This architecture ensures that access, permissions, and operations are fully tied to token ownership, granting users unparalleled control over their interactions.
 
 ---
 
@@ -35,7 +35,7 @@ An **Elysian Account** is the designation for authenticated holders of Flarion T
 
 ### **Key Components of Elysium Protocol**
 
-Elysium extends the capabilities of Florune through a set of **premium tools and infrastructure**, designed to support **high-security, high-value, non-custodial operations**.
+Elysium extends the capabilities of SafePulse through a set of **premium tools and infrastructure**, designed to support **high-security, high-value, non-custodial operations**.
 
 #### 1. **The Pledge Contract**
 
@@ -70,5 +70,5 @@ Elysium extends the capabilities of Florune through a set of **premium tools and
 ### **Rune (RUNE)**
 
 * Internal **transactional and execution token** for performing high-value on-chain actions.
-* Non-tradable, **operates exclusively within the Florune ecosystem**.
+* Non-tradable, **operates exclusively within the SafePulse ecosystem**.
 * Only **Flarion holders** can use Rune to execute premium services, ensuring authenticated, secure, and auditable operations.

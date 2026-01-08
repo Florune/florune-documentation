@@ -6,9 +6,9 @@
 
 ## **Overview**
 
-Florune Escrow is a **trustless, non-custodial onchain escrow service** that securely locks funds until both parties meet agreed-upon conditions. Designed for **buyers, sellers, freelancers, enterprises, and service providers** where trust and protection are critical.
+SafePulse Escrow is a **trustless, non-custodial onchain escrow service** that securely locks funds until both parties meet agreed-upon conditions. Designed for **buyers, sellers, freelancers, enterprises, and service providers** where trust and protection are critical.
 
-With transparent fees and guaranteed neutrality, Florune Escrow eliminates fraud risks and intermediaries — delivering a secure, automated environment for global payments of any size.
+With transparent fees and guaranteed neutrality, SafePulse Escrow eliminates fraud risks and intermediaries — delivering a secure, automated environment for global payments of any size.
 
 ---
 
@@ -39,10 +39,10 @@ For **large-value or cross-border transactions**, these risks become even more s
 
 ### **The Solution**
 
-Florune Escrow replaces intermediaries with **automation, transparency, and cryptography**:
+SafePulse Escrow replaces intermediaries with **automation, transparency, and cryptography**:
 
 * Smart contracts hold funds securely
-* Neither Florune nor any third party can access funds
+* Neither SafePulse nor any third party can access funds
 * Status is always transparent to both parties
 * Options for rollback, cancellation, and freeze under safe conditions and only by parties
 
@@ -92,7 +92,7 @@ This makes it suitable for **everything from small digital engagements to high-v
 
 ### **1. Trustless, Non-Custodial Fund Holding**
 
-Funds are locked in smart contracts — not controlled by Florune or any third party.
+Funds are locked in smart contracts — not controlled by SafePulse or any third party.
 
 ### **2. Safe for High-Value Transactions**
 
@@ -127,7 +127,7 @@ Every party always knows the exact state.
 
 ### **6. Wallet-First, On-Device Execution**
 
-All actions happen through the Florune Wallet — intuitive, secure, and verifiable.
+All actions happen through the SafePulse Wallet — intuitive, secure, and verifiable.
 
 ---
 
@@ -146,7 +146,7 @@ All actions happen through the Florune Wallet — intuitive, secure, and verifia
 
 ### **Prerequisites**
 
-* Florune Wallet installed
+* SafePulse Wallet installed
 * Gas tokens available
 * Payment token approved for use
 

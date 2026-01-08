@@ -1,12 +1,12 @@
 # Verifiable Credentials
 
-*Wallet-first, privacy-preserving credentials compliant with W3C VC v2.0 and anchored to Florune DIDs.*
+*Wallet-first, privacy-preserving credentials compliant with W3C VC v2.0 and anchored to SafePulse DIDs.*
 
 ---
 
 ## **Overview**
 
-Florune’s **Verifiable Credentials (VCs)** provide a secure, decentralized way to issue, verify, and present proofs of:
+SafePulse’s **Verifiable Credentials (VCs)** provide a secure, decentralized way to issue, verify, and present proofs of:
 
 * Skills & achievements
 * Education & training
@@ -43,7 +43,7 @@ Users and organizations need **trusted, private, standardized digital credential
 
 ### **The Solution**
 
-Florune VCs:
+SafePulse VCs:
 
 * Are **verified via blockchain + DID signatures**
 * Require **no central authority**
@@ -51,7 +51,7 @@ Florune VCs:
 * Allow **flexible proof presentations**
 * Can represent **any type of claim** — academic, corporate, legal, or personal
 
-VCs integrate deeply with Florune’s identity and document ecosystem, powering secure B2B and P2P verification workflows.
+VCs integrate deeply with SafePulse’s identity and document ecosystem, powering secure B2B and P2P verification workflows.
 
 ---
 
@@ -144,7 +144,7 @@ Issuers can revoke credentials using their DID keys (if issued with revocation r
 
 ## **A. Receiving a Credential**
 
-1. Open the Florune Wallet
+1. Open the SafePulse Wallet
 2. Navigate to **Identity → Credentials**
 3. Tap **Receive VC**
 4. Scan QR code / paste credential payload

@@ -16,7 +16,7 @@ It is designed to support:
 * **Onchain payment validation**
 * **DID-authenticated access**
 
-The Asset Paywall integrates deeply with the Florune ecosystem, using:
+The Asset Paywall integrates deeply with the SafePulse ecosystem, using:
 
 * **DIDs** for identity/authorship
 
@@ -41,7 +41,7 @@ Creators need **trustless payment** and **ownership** without relying on interme
 
 ### **The Solution**
 
-Florune’s **Asset Paywall**:
+SafePulse’s **Asset Paywall**:
 
 * Uses **smart-contract payments**
 * Deliver **content identifier** after payment

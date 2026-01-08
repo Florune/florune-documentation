@@ -1,18 +1,18 @@
 # Frequently Asked Questions (FAQ)
 
-### 1. What is Florune?
+### 1. What is SafePulse?
 
-Florune is a decentralized Web3 platform that empowers you to manage your digital identity, verify documents, and conduct secure transactions without intermediaries—giving you full control over your data and assets.
+SafePulse is a decentralized Web3 platform that empowers you to manage your digital identity, verify documents, and conduct secure transactions without intermediaries—giving you full control over your data and assets.
 
 ### 2. How do I create and manage my digital identity?
 
-Your digital identity and cryptographic keys are generated and stored locally on your device. This ensures only you have access—Florune never stores or controls your private keys.
+Your digital identity and cryptographic keys are generated and stored locally on your device. This ensures only you have access—SafePulse never stores or controls your private keys.
 
-### 3. Does Florune collect my personal data?
+### 3. Does SafePulse collect my personal data?
 
-No. We do not collect or store sensitive personal information. Some minimal data (like your email) may be handled by third-party authentication providers, but Florune itself does not access or keep this data.
+No. We do not collect or store sensitive personal information. Some minimal data (like your email) may be handled by third-party authentication providers, but SafePulse itself does not access or keep this data.
 
-### 4. How secure is my data on Florune?
+### 4. How secure is my data on SafePulse?
 
 Very secure. All your keys and credentials stay on your device. We do not track you, use cookies, or share your information. Plus, every transaction is cryptographically secured on the blockchain.
 
@@ -22,7 +22,7 @@ You can pay for services either by topping up your account with ETH for pay-as-y
 
 ### 6. Are there any fees besides the subscription or service charges?
 
-Yes. Ethereum network gas fees apply to on-chain transactions. These fees are set by the Ethereum network and are paid directly from your wallet. Florune does not mark up or control gas fees.
+Yes. Ethereum network gas fees apply to on-chain transactions. These fees are set by the Ethereum network and are paid directly from your wallet. SafePulse does not mark up or control gas fees.
 
 ### 7. Can I cancel my subscription or account?
 
@@ -30,12 +30,12 @@ Yes, you can cancel anytime. After cancellation, all your subscription benefits 
 
 ### 8. What happens if I lose my cryptographic keys?
 
-If you lose your keys, they cannot be recovered. It’s critical to back up your keys securely, as they control access to your identity and assets on Florune.
+If you lose your keys, they cannot be recovered. It’s critical to back up your keys securely, as they control access to your identity and assets on SafePulse.
 
-### 9. How does Florune handle disputes in escrow contracts?
+### 9. How does SafePulse handle disputes in escrow contracts?
 
-Florune does not mediate disputes. When there is a disagreement, relevant contract functions such as fund withdrawal are paused until all parties reach an agreement.
+SafePulse does not mediate disputes. When there is a disagreement, relevant contract functions such as fund withdrawal are paused until all parties reach an agreement.
 
-### 10. Who can use Florune?
+### 10. Who can use SafePulse?
 
-Florune is intended for users aged 22 and older, including individuals, creators, freelancers, businesses, and enterprises looking for secure, decentralized identity and transaction solutions.
+SafePulse is intended for users aged 22 and older, including individuals, creators, freelancers, businesses, and enterprises looking for secure, decentralized identity and transaction solutions.

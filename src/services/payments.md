@@ -2,7 +2,7 @@
 
 ## **Introduction**
 
-The **Payment & Agreement Layer** is the foundation of Florune’s trustless financial ecosystem. It provides **secure, automated, and transparent mechanisms** for managing funds, contracts, and conditional agreements between parties — all without relying on intermediaries or custodians.
+The **Payment & Agreement Layer** is the foundation of SafePulse’s trustless financial ecosystem. It provides **secure, automated, and transparent mechanisms** for managing funds, contracts, and conditional agreements between parties — all without relying on intermediaries or custodians.
 
 This layer is designed for a wide spectrum of users:
 
@@ -41,7 +41,7 @@ Escrow provides a **trustless, non-custodial payment mechanism** that securely h
 * Supports **revocable, time-bound, and rollback agreements**
 * **On-chain enforcement** ensures transparency and trust
 * **High-value capable**, yet simpler and cheaper than Pledge Contracts
-* Managed fully via the **Florune Wallet**
+* Managed fully via the **SafePulse Wallet**
 
 **How It Works:**
 
@@ -124,4 +124,4 @@ Note: Pledge contract is an sovereign contract and can operate without linking t
 
 ---
 
-The **Payment & Agreement Layer** is the backbone of Florune’s ecosystem. **Escrow for high-value payments** and **Pledge Contracts for flexible, milestone-driven agreements** provides a **secure, automated, and transparent financial infrastructure** that empowers individuals, businesses, and enterprises to transact confidently across borders and industries.
+The **Payment & Agreement Layer** is the backbone of SafePulse’s ecosystem. **Escrow for high-value payments** and **Pledge Contracts for flexible, milestone-driven agreements** provides a **secure, automated, and transparent financial infrastructure** that empowers individuals, businesses, and enterprises to transact confidently across borders and industries.

@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-The Pay-As-You-Go (PAYG) model is designed for individual users and small teams who need flexible access to Florune without subscriptions.
+The Pay-As-You-Go (PAYG) model is designed for individual users and small teams who need flexible access to SafePulse without subscriptions.
 
 Users pay only for what they use, using **native chain tokens** (ETH, POL, etc.).
 
@@ -77,5 +77,5 @@ Users stay in control of all assets and data.
 
 ---
 
-PAYG provides affordable access to Florune’s core services with no commitments, enabling casual users to leverage trustless agreements whenever needed.
+PAYG provides affordable access to SafePulse’s core services with no commitments, enabling casual users to leverage trustless agreements whenever needed.
 

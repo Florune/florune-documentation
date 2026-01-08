@@ -2,7 +2,7 @@
 
 ## **Introduction**
 
-The **Document & Verification Layer** enables **secure, tamper-proof, and verifiable document management** within the Florune ecosystem. It empowers individuals, businesses, and enterprises to **create, verify, and timestamp digital documents** on-chain, ensuring authenticity, integrity, and enforceability.
+The **Document & Verification Layer** enables **secure, tamper-proof, and verifiable document management** within the SafePulse ecosystem. It empowers individuals, businesses, and enterprises to **create, verify, and timestamp digital documents** on-chain, ensuring authenticity, integrity, and enforceability.
 
 This layer is ideal for:
 
@@ -86,7 +86,7 @@ Provide **low-cost, on-chain proof of document existence** for timestamping, aut
 **How It Works:**
 
 1. User store docuemnt and enter document identifier and registers the document.
-2. Data will be registered in Florune document registry smart contract and will be verifiable and managable.
+2. Data will be registered in SafePulse document registry smart contract and will be verifiable and managable.
 3. Anyone can verify the document’s existence and authenticity.
 
 **Use Case Example:**
@@ -124,4 +124,4 @@ Provide **low-cost, on-chain proof of document existence** for timestamping, aut
 
 ---
 
-The **Document & Verification Layer** provides Florune users with **secure, verifiable, and blockchain-backed document services**. By combining Verifiable Documents and a lightweight registry, this layer ensures **trust, proof of authenticity, and enforceability**, forming a reliable foundation for compliance, legal, and IP workflows.
+The **Document & Verification Layer** provides SafePulse users with **secure, verifiable, and blockchain-backed document services**. By combining Verifiable Documents and a lightweight registry, this layer ensures **trust, proof of authenticity, and enforceability**, forming a reliable foundation for compliance, legal, and IP workflows.
