@@ -210,4 +210,4 @@ Continued use constitutes acceptance of the updated policy.
 ## **16. Contact Information**
 
 For privacy questions or administrative matters:
-**[info@florune.net](mailto:info@florune.net)**
+**[info@flopulse.net](mailto:info@flopulse.net)**

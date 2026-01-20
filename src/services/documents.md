@@ -43,7 +43,7 @@ Create secure, **tamper-proof, revocable, and blockchain-backed** document verif
 * Stored locally or in decentralized storage (IPFS, Arweave, or centralized hosts)
 * On-chain **proof of authenticity**
 * Automated On-chain cryptographic verification
-* Example deployment: **9 Rune per document**
+* Example deployment: **9 Pulse per document**
 
 **How It Works:**
 
@@ -64,7 +64,7 @@ Create secure, **tamper-proof, revocable, and blockchain-backed** document verif
 **Drawbacks:**
 
 * Requires management of decentralized storage
-* Deployment may incur Rune token costs
+* Deployment may incur Pulse token costs
 
 **Related Services / Cross-links:**
 

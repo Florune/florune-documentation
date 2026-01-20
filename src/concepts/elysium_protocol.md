@@ -49,9 +49,9 @@ Elysium extends the capabilities of SafePulse through a set of **premium tools a
 * Supports binding **external legal documents and institutional credentials** to smart contracts.
 * Ensures documents act as **mandatory triggers** for contract execution, enhancing control and cryptographic auditability.
 
-#### 3. **Rune**
+#### 3. **Pulse**
 
-* Rune is a **premium execution asset** exclusive to Elysian Accounts.
+* Pulse is a **premium execution asset** exclusive to Elysian Accounts.
 * Powers advanced services including: pledge contracts, document processing, and high-value interactions.
 * Enhances **security, integrity, and tamper-proof execution** for all premium operations.
 * Provides **maximum user sovereignty**, ensuring that users maintain full control over complex contracts.
@@ -67,8 +67,8 @@ Elysium extends the capabilities of SafePulse through a set of **premium tools a
 
 ---
 
-### **Rune (RUNE)**
+### **Pulse (PULSE)**
 
 * Internal **transactional and execution token** for performing high-value on-chain actions.
 * Non-tradable, **operates exclusively within the SafePulse ecosystem**.
-* Only **Flarion holders** can use Rune to execute premium services, ensuring authenticated, secure, and auditable operations.
+* Only **Flarion holders** can use Pulse to execute premium services, ensuring authenticated, secure, and auditable operations.

@@ -224,4 +224,4 @@ Continued use of the Platform constitutes acceptance of updated Terms.
 ## **15. Contact Information**
 
 For legal or administrative inquiries:
-**[info@florune.net](mailto:info@florune.net)**
+**[info@flopulse.net](mailto:info@flopulse.net)**

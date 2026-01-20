@@ -77,7 +77,7 @@ Pledge Contracts extend escrow functionality to **larger, progressive, or comple
 * **Revocable & rollback options** for flexible risk management
 * **Document binding** — sync with document, automated on-chain verification and authentication, ensures enforceability and auditability
 * **One-time creation fee** with **0% ongoing fees**
-* Example: **33 Rune** per contract deployment
+* Example: **33 Pulse** per contract deployment
 * Fully integrates with **Verifiable Documents**, syncing payout conditions with document status
 
 **How It Works:**

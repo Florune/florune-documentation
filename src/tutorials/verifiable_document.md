@@ -40,7 +40,7 @@ This ensures documents are trustworthy, verifiable, and usable in automated paym
 * SafePulse Wallet installed
 * Active EOA (Externally Owned Account) with subscription plan or usage credit
 * Issuer/Creator DID: an key DID (did:key) or an ERC-1056 DID with issuer key as its Delegate  
-* Network tokens (e.g., Rune) to pay deployment fees
+* Network tokens (e.g., Pulse) to pay deployment fees
 
 ### **Steps**
 
@@ -84,7 +84,7 @@ This ensures documents are trustworthy, verifiable, and usable in automated paym
 **Drawbacks:**
 
 * Requires management of decentralized storage
-* Deployment may incur Rune token costs (can be created only by elysium members/elysian accounts)
+* Deployment may incur Pulse token costs (can be created only by elysium members/elysian accounts)
 
 ---
 

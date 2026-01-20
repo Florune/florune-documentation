@@ -3,9 +3,9 @@
 We’d love to hear from you!
 If you have questions, feedback, or need support, you can reach us through the following channels:
 
-* **Telegram Channel** → [@floruneapp](https://t.me/floruneapp)
-* **Bluesky** → [@florune.net](https://bsky.app/profile/florune.net)
-* **X (formerly Twitter)** → [@florune_dapp](https://x.com/florune_dapp)
+* **Telegram Channel** → [@flopulseapp](https://t.me/flopulseapp)
+* **Bluesky** → [@flopulse.net](https://bsky.app/profile/flopulse.net)
+* **X (formerly Twitter)** → [@flopulse_dapp](https://x.com/flopulse_dapp)
 
 ---
 

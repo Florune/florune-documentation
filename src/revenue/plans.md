@@ -4,7 +4,7 @@
 
 SafePulse offers subscription plans designed for teams, enterprises, and organizations that require **consistent, high-frequency contract creation**.
 
-Subscriptions unlock predictable monthly or yearly operational capacity, reduced costs, and bonus RUNE rewards.
+Subscriptions unlock predictable monthly or yearly operational capacity, reduced costs, and bonus PULSE rewards.
 
 ---
 
@@ -36,9 +36,9 @@ Each tier includes a specific number of deployments.
 
 Discount rates range from **25% to 40%** depending on the plan.
 
-### ✔ RUNE Rewards
+### ✔ PULSE Rewards
 
-Every plan provides bonus RUNE to support future workflow expansion.
+Every plan provides bonus PULSE to support future workflow expansion.
 
 ### ✔ Multi-Period Options
 
@@ -55,12 +55,12 @@ Longer commitments unlock deeper discounts.
 
 ## **Subscription Tiers**
 
-| Tier       | Contracts / Month     | Discounts | RUNE Rewards | Duration Options |
+| Tier       | Contracts / Month     | Discounts | PULSE Rewards | Duration Options |
 | ---------- | --------------------- | --------- | ------------ | ---------------- |
-| **Prime**  | 8 Pledge / 12 Docs    | 25%       | 66 RUNE      | 1 months      |
-| **Nexus**  | 20 Pledge / 30 Docs   | 30%       | 165 RUNE     | 3 months      |
-| **Elite**  | 40 Pledge / 60 Docs   | 35%       | 264 RUNE     | 6 months      |
-| **Vertex** | 100 Pledge / 200 Docs | 40%       | 363 RUNE     | 12 months      |
+| **Prime**  | 8 Pledge / 12 Docs    | 25%       | 66 PULSE      | 1 months      |
+| **Nexus**  | 20 Pledge / 30 Docs   | 30%       | 165 PULSE     | 3 months      |
+| **Elite**  | 40 Pledge / 60 Docs   | 35%       | 264 PULSE     | 6 months      |
+| **Vertex** | 100 Pledge / 200 Docs | 40%       | 363 PULSE     | 12 months      |
 
 Prices differ per chain (Arbitrum / Polygon), but the structure and value remain identical.
 
