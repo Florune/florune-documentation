@@ -139,7 +139,12 @@ Smart contract interactions may appear on **public blockchains**.
 
 ## **10. Intellectual Property & Platform Ownership**
 
-* All components of SafePulse™, including smart contracts, dApps, ABIs, APIs, algorithms, documentation, and UI/UX, are proprietary and constitute the exclusive intellectual property of the Platform Owner. Certain components developed under the Contract Foundry Project are subject to patent-pending protection.
+* All components of SafePulse™, including smart contracts, dApps, ABIs, APIs, algorithms, documentation, and UI/UX, are proprietary and are the exclusive intellectual property of the Platform Owner. Certain components developed under the Contract Foundry Project may also be subject to patent-pending protection.
+
+Nothing herein shall be construed as a transfer, license, or waiver of any intellectual property rights.
+
+Supporting intellectual property and technical certification documentation may be provided to qualified business partners upon request, subject to confidentiality obligations.
+
 * Users must **not reverse engineer, decompile, copy, modify, or create derivative works** of any platform components
 * Users must **not connect unauthorized third-party proxies or clients** to SafePulse smart contracts
 
