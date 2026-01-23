@@ -53,6 +53,8 @@ SafePulse does **not** provide:
 
 Users are solely responsible for consulting **independent legal counsel** and resolving any disputes. SafePulse does **not intervene, mediate, or enforce** any agreements or external jurisdictional decisions.
 
+Users are solely responsible for ensuring that their use of the Platform complies with applicable laws, regulations, and restrictions in their respective jurisdictions.
+
 ---
 
 ## **4. No Guarantee of Court Recognition**
@@ -152,7 +154,7 @@ However:
 
 **Ownership & Protection**:
 
-* All components of SafePulse™, including smart contracts, dApps, ABIs, APIs, algorithms, documentation, and UI/UX, are the **sole property of Hassan Qasemi**, under copyright and the **Contract Foundry Project**, and are **patent pending**
+All components of SafePulse™, including smart contracts, dApps, ABIs, APIs, algorithms, documentation, and UI/UX, are proprietary and constitute the exclusive intellectual property of the Platform Owner. Certain components developed under the Contract Foundry Project are subject to patent-pending protection.
 
 **User Obligations**:
 By using SafePulse, you agree that you will not:
@@ -224,4 +226,4 @@ Continued use of the Platform constitutes acceptance of updated Terms.
 ## **15. Contact Information**
 
 For legal or administrative inquiries:
-**[info@flopulse.net](mailto:info@flopulse.net)**
+**[info@safepulse.xyz](mailto:info@safepulse.xyz)**
