@@ -37,7 +37,7 @@ These contracts form the backbone of enterprise workflows, compliance systems, a
 
 ## **Access to PULSE**
 
-PULSE is **exclusive to Flarion holders**.
+PULSE is **exclusive to ElysianPulse holders**.
 This creates a premium access layer for users who need:
 
 * High-volume contract creation
@@ -61,7 +61,7 @@ Contract creation consumes PULSE, ensuring users deploy only meaningful agreemen
 
 ### **3. Predictable Economics**
 
-PULSE is supplied to Flarion holders and via subscription rewards, giving users a structured, clear cost model for repeated deployments.
+PULSE is supplied to ElysianPulse holders and via subscription rewards, giving users a structured, clear cost model for repeated deployments.
 
 ---
 

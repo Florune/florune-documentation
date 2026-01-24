@@ -2,13 +2,13 @@
 
 The Elysium Protocol represents the **premium Meta protocol** within the SafePulse ecosystem. While SafePulse itself is designed as a fully non-custodial infrastructure, Elysium provides an **exclusive high-tier environment** for users who require **maximum security, operational sovereignty, and access to advanced features**.
 
-Unlike standard SafePulse services, Elysium is reserved exclusively for **Elysian Accounts**, which are verified through the possession of **Flarion Tokens**. This architecture ensures that access, permissions, and operations are fully tied to token ownership, granting users unparalleled control over their interactions.
+Unlike standard SafePulse services, Elysium is reserved exclusively for **Elysian Accounts**, which are verified through the possession of **ElysianPulse Tokens**. This architecture ensures that access, permissions, and operations are fully tied to token ownership, granting users unparalleled control over their interactions.
 
 ---
 
-### **Elysian Accounts: The Flarion Token Access Standard**
+### **Elysian Accounts: The ElysianPulse Token Access Standard**
 
-An **Elysian Account** is the designation for authenticated holders of Flarion Tokens (FLR). Flarion Tokens are:
+An **Elysian Account** is the designation for authenticated holders of ElysianPulse Tokens (ELYPS). ElysianPulse Tokens are:
 
 * **Limited-supply ERC-20 tokens**
 * **Non-tradable** and not listed on exchanges
@@ -18,7 +18,7 @@ An **Elysian Account** is the designation for authenticated holders of Flarion T
 
 1. **Transferable Access**
 
-   * Ownership of a Flarion Token **directly grants access** to Elysium services.
+   * Ownership of a ElysianPulse Token **directly grants access** to Elysium services.
    * Transferring the token **instantly transfers account privileges**, making access fully token-based.
 
 2. **Access Standard**
@@ -28,7 +28,7 @@ An **Elysian Account** is the designation for authenticated holders of Flarion T
 
 3. **Explicit Payment Control**
 
-   * Flarion Tokens do **not automatically pay for services**.
+   * ElysianPulse Tokens do **not automatically pay for services**.
    * Users must explicitly approve any token usage for transactions, maintaining **full control over assets**.
 
 ---
@@ -58,12 +58,12 @@ Elysium extends the capabilities of SafePulse through a set of **premium tools a
 
 ---
 
-### **Flarion Token (FLR)**
+### **ElysianPulse Token (ELYPS)**
 
 * **Non-financial ERC-20 token**
 * Serves as the **access credential** to Elysium services.
 * Intentionally **non-tradable**, ensuring that access is **utility-focused**, not speculative.
-* Grants access only; **public users without FLR** can still use open services but cannot access Elysium services.
+* Grants access only; **public users without ELYPS** can still use open services but cannot access Elysium services.
 
 ---
 
@@ -71,4 +71,4 @@ Elysium extends the capabilities of SafePulse through a set of **premium tools a
 
 * Internal **transactional and execution token** for performing high-value on-chain actions.
 * Non-tradable, **operates exclusively within the SafePulse ecosystem**.
-* Only **Flarion holders** can use Pulse to execute premium services, ensuring authenticated, secure, and auditable operations.
+* Only **ElysianPulse holders** can use Pulse to execute premium services, ensuring authenticated, secure, and auditable operations.

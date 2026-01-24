@@ -82,7 +82,7 @@ Subscriptions remove friction and enable enterprise-wide adoption.
 
 ### **4. Access Control**
 
-Only Flarion holders can subscribe, ensuring ecosystem integrity.
+Only ElysianPulse holders can subscribe, ensuring ecosystem integrity.
 
 ---
 

@@ -1,0 +1,9 @@
+# ElysianPulse Token
+
+The **ElysianPulse Token (ELYPS)** is a **non-financial, ERC-20 utility token** that functions as the key to access **Elysium Protocol**’s services. Unlike typical blockchain tokens, ELYPS is **not designed for trading or speculation**. Instead, it serves purely as a **access credential**, ensuring that only authenticated users can access high-tier features within the SafePulse ecosystem.
+
+ELYPS is issued in **limited supply**. Holding a ElysianPulse Token designates the user as an **Elysian Account**, granting privileges such as access to Elysian section of ecosystem, the Pledge Contract system, the Verifiable Document Service, and the Pulse execution suite.
+
+The token provides **transferable access**: ownership of ELYPS directly correlates with Elysian Account privileges. When a token is transferred to another wallet, the new owner immediately receives full access rights, ensuring a **flexible and user-sovereign access model**. Importantly, ELYPS is not automatically consumed for payments. Users must **explicitly approve its use** for any transaction or service access within Elysium, giving them **absolute control over their assets**.
+
+Through ELYPS, the SafePulse ecosystem ensures a **secure, controlled, and high-value user experience**, where access to the most sophisticated services is **token-gated and permissioned**, rather than open to public or speculative trading.

@@ -59,7 +59,7 @@ Costs remain predictable and easy to understand.
 
 ### **3. Accessible to all users**
 
-No Flarion token or subscription required.
+No ElysianPulse token or subscription required.
 
 ### **4. Non-custodial and trustless**
 
