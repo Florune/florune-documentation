@@ -3,9 +3,8 @@
 We’d love to hear from you!
 If you have questions, feedback, or need support, you can reach us through the following channels:
 
-* **Telegram Channel** → [@flopulseapp](https://t.me/flopulseapp)
-* **Bluesky** → [@flopulse.net](https://bsky.app/profile/flopulse.net)
-* **X (formerly Twitter)** → [@flopulse_dapp](https://x.com/flopulse_dapp)
+* **Telegram** → [@safepulseapp](https://t.me/safepulseapp)
+* **X (formerly Twitter)** → [@safepulse_dapp](https://x.com/safepulse_dapp)
 
 ---
 

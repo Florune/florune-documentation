@@ -217,4 +217,4 @@ Continued use constitutes acceptance of the updated policy.
 ## **16. Contact Information**
 
 For privacy questions or administrative matters:
-**[info@flopulse.net](mailto:info@flopulse.net)**
+**[info@safepulse.xyz](mailto:info@safepulse.xyz)**

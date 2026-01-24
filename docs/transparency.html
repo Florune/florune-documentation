@@ -1,0 +1,436 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Transparency - SafePulse Docs</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">SafePulse Docs</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="transparency"><a class="header" href="#transparency">Transparency</a></h1>
+<p>This page describes how SafePulse operates, what it can and cannot do, and how user funds, data, and contracts are handled. It is intended to provide clear, verifiable information for users, developers, auditors, and regulators.</p>
+<hr />
+<h2 id="1-platform-status"><a class="header" href="#1-platform-status">1. Platform Status</a></h2>
+<p>SafePulse is live and operational.</p>
+<ul>
+<li><strong>Mainnet:</strong> Active</li>
+<li><strong>Testnet:</strong> Active</li>
+<li><strong>Environment:</strong> Production</li>
+</ul>
+<p>SafePulse provides smart-contract infrastructure for agreements, payments, and document verification.</p>
+<hr />
+<h2 id="2-custody--control-model"><a class="header" href="#2-custody--control-model">2. Custody &amp; Control Model</a></h2>
+<h3 id="non-custodial-by-design"><a class="header" href="#non-custodial-by-design">Non-Custodial by Design</a></h3>
+<p>SafePulse is a <strong>non-custodial platform</strong>.</p>
+<ul>
+<li>SafePulse <strong>does not hold user funds</strong></li>
+<li>SafePulse <strong>does not control private keys</strong></li>
+<li>SafePulse <strong>cannot move funds without user authorization</strong></li>
+<li>SafePulse <strong>cannot access or recover user assets</strong></li>
+</ul>
+<p>All asset movement requires cryptographic signatures from the relevant user wallets.</p>
+<h3 id="contracts-involving-deposits"><a class="header" href="#contracts-involving-deposits">Contracts Involving Deposits</a></h3>
+<p>In the following contracts, users deposit funds into <strong>SafePulse smart contracts</strong>:</p>
+<ul>
+<li>Escrow contracts</li>
+<li>Document Registry contracts</li>
+<li>Asset Paywall contracts</li>
+</ul>
+<p>These contracts are <strong>non-custodial</strong>:</p>
+<ul>
+<li>Funds are controlled exclusively by contract logic and user signatures</li>
+<li>Only depositors and contract parties can access or release funds</li>
+<li>SafePulse has <strong>no unilateral control</strong> over deposited assets</li>
+</ul>
+<h3 id="contracts-without-deposits"><a class="header" href="#contracts-without-deposits">Contracts Without Deposits</a></h3>
+<p>In the following contracts, SafePulse has <strong>no access or control</strong> at all:</p>
+<ul>
+<li>Pledge Contracts</li>
+<li>Verifiable Document contracts</li>
+</ul>
+<p>Each instance is deployed per user and operates independently.</p>
+<hr />
+<h2 id="3-private-keys--signatures"><a class="header" href="#3-private-keys--signatures">3. Private Keys &amp; Signatures</a></h2>
+<ul>
+<li>SafePulse <strong>never generates, stores, transmits, or recovers private keys</strong></li>
+<li>All interactions require <strong>direct wallet signatures</strong></li>
+<li>SafePulse servers cannot trigger on-chain actions independently</li>
+</ul>
+<hr />
+<h2 id="4-smart-contract-architecture"><a class="header" href="#4-smart-contract-architecture">4. Smart Contract Architecture</a></h2>
+<h3 id="upgradeability"><a class="header" href="#upgradeability">Upgradeability</a></h3>
+<ul>
+<li>
+<p>Smart contracts are <strong>upgradeable</strong></p>
+</li>
+<li>
+<p>Upgrade mechanisms exist to:</p>
+<ul>
+<li>Fix security vulnerabilities</li>
+<li>Patch bugs</li>
+<li>Add new features</li>
+</ul>
+</li>
+</ul>
+<p>Upgrades are <strong>not used</strong> to:</p>
+<ul>
+<li>Take custody of user funds</li>
+<li>Change ownership or withdrawal rights</li>
+<li>Introduce asset seizure or hidden controls</li>
+</ul>
+<p>User-deployed contracts can be upgraded <strong>only by the contract owner</strong>, at their discretion.</p>
+<h3 id="pausable-functions"><a class="header" href="#pausable-functions">Pausable Functions</a></h3>
+<p>Some contracts include <strong>limited pause mechanisms</strong>, strictly for protocol protection.</p>
+<ul>
+<li>Only specific functions (e.g., new deposits or new registrations) may be paused</li>
+<li>Existing user funds remain accessible to their owners</li>
+<li>Withdrawals and user-controlled actions remain available</li>
+<li>No pause function allows SafePulse to move or seize assets</li>
+</ul>
+<h4 id="asset-paywall-content-based-restrictions"><a class="header" href="#asset-paywall-content-based-restrictions">Asset Paywall: Content-Based Restrictions</a></h4>
+<p><strong>Only for Asset Paywall contracts</strong>, SafePulse includes a <strong>limited content-based restriction mechanism</strong> designed to mitigate the distribution of clearly illegal material.</p>
+<p>In response to <strong>credible reports of illegal content</strong> — for example, sexual exploitation, harassment, or any kind of illegal NSFW material— SafePulse may <strong>temporarily freeze access to funds</strong> held within the affected Asset Paywall contract and <strong>remove the associated media payment gate access</strong>.</p>
+<p>This mechanism:</p>
+<ul>
+<li>Applies <strong>exclusively</strong> to Asset Paywall contract</li>
+<li>Does <strong>not</strong> allow SafePulse to withdraw, transfer, or seize user funds</li>
+<li>Does <strong>not</strong> grant ownership or custodial control to SafePulse</li>
+<li>Restricts access <strong>only at the contract level</strong> and <strong>only temporarily</strong></li>
+<li>Includes removal of references to the offending asset from SafePulse’s off-chain database</li>
+<li>Exists solely for compliance with legal obligations related to unlawful material</li>
+</ul>
+<p>Frozen funds remain locked within the smart contract and <strong>cannot be accessed, moved, or repurposed by SafePulse</strong>.</p>
+<p>No other SafePulse contract types include content-based restrictions, freeze mechanisms, or discretionary intervention by SafePulse.</p>
+<p>This mechanism exists because SafePulse, as the operator of paid content gating, may have legal obligations concerning the distribution of unlawful material.</p>
+<hr />
+<h2 id="5-escrow--dispute-handling"><a class="header" href="#5-escrow--dispute-handling">5. Escrow &amp; Dispute Handling</a></h2>
+<ul>
+<li>Escrow contracts are <strong>fully peer-to-peer</strong></li>
+<li><strong>No arbitration layer</strong></li>
+<li><strong>No human intervention</strong></li>
+<li><strong>No dispute resolution by SafePulse</strong></li>
+</ul>
+<p>SafePulse does not:</p>
+<ul>
+<li>Act as an arbiter</li>
+<li>Provide legal advice</li>
+<li>Make judgments or rulings</li>
+</ul>
+<p>All outcomes are determined by smart-contract logic and cryptographic proofs.</p>
+<p>On-chain records and signatures may serve as <strong>cryptographic evidence</strong> that can be used externally (e.g., legal proceedings), but SafePulse does not participate in such processes.</p>
+<h4 id="dispute-prevention-by-design"><a class="header" href="#dispute-prevention-by-design">Dispute Prevention by Design:</a></h4>
+<p>SafePulse contracts are built with automated, rule-based logic that enforces agreement conditions. By encoding obligations, milestones, and verification requirements directly into the contracts, most potential conflicts are resolved automatically. This design minimizes the need for human intervention or arbitration, while ensuring that outcomes are predictable and verifiable by all parties.</p>
+<hr />
+<h2 id="6-source-code--intellectual-property"><a class="header" href="#6-source-code--intellectual-property">6. Source Code &amp; Intellectual Property</a></h2>
+<ul>
+<li>SafePulse software is <strong>closed-source</strong></li>
+<li>All components are protected under copyright</li>
+<li>The platform and its contracts are proprietary intellectual property of the platform owner</li>
+</ul>
+<p>No developed components are currently open-source.</p>
+<hr />
+<h2 id="7-user-accounts--data-collection"><a class="header" href="#7-user-accounts--data-collection">7. User Accounts &amp; Data Collection</a></h2>
+<h3 id="account-creation"><a class="header" href="#account-creation">Account Creation</a></h3>
+<ul>
+<li>No off-chain accounts are created</li>
+<li>No emails or usernames are collected</li>
+<li>Wallet connection is the only authentication method</li>
+</ul>
+<h3 id="data-collection"><a class="header" href="#data-collection">Data Collection</a></h3>
+<p>SafePulse does <strong>not</strong> collect:</p>
+<ul>
+<li>Emails</li>
+<li>Names</li>
+<li>Phone numbers</li>
+<li>IP addresses</li>
+<li>Device fingerprints</li>
+<li>Any Sensetive data</li>
+</ul>
+<p>SafePulse does <strong>not</strong> use:</p>
+<ul>
+<li>Cookies</li>
+<li>Tracking scripts</li>
+</ul>
+<h3 id="off-chain-data"><a class="header" href="#off-chain-data">Off-Chain Data</a></h3>
+<p>The only off-chain references stored are <strong>user-provided asset identifiers</strong>, such as:</p>
+<ul>
+<li>IPFS CIDs</li>
+<li>Arweave transaction IDs</li>
+<li>Web URLs</li>
+</ul>
+<p>These references may be encrypted in decentralized way. SafePulse does not have access to encrypted content.</p>
+<hr />
+<h2 id="8-identity-kyc--compliance"><a class="header" href="#8-identity-kyc--compliance">8. Identity, KYC &amp; Compliance</a></h2>
+<ul>
+<li><strong>No KYC</strong></li>
+<li><strong>No AML onboarding</strong></li>
+<li><strong>No identity verification</strong></li>
+</ul>
+<p>Authentication is performed using <strong>self-sovereign cryptographic identity</strong>, including:</p>
+<ul>
+<li>W3C Decentralized Identifiers (DIDs)</li>
+<li>ERC-1056 / uPort-compatible identities</li>
+<li>Public or pseudonymous wallet identities</li>
+</ul>
+<hr />
+<h2 id="9-jurisdiction--legal-requests"><a class="header" href="#9-jurisdiction--legal-requests">9. Jurisdiction &amp; Legal Requests</a></h2>
+<p>SafePulse operates as a <strong>software platform</strong>, not as a financial or legal intermediary.</p>
+<ul>
+<li>The platform itself is not bound to a specific jurisdiction</li>
+<li>The platform owner is registered as a sole legal business owner</li>
+</ul>
+<p>SafePulse policy:</p>
+<ul>
+<li>Publish transparency reports</li>
+<li>Notify users of legal requests when legally permitted</li>
+<li>Do not voluntarily share user data</li>
+</ul>
+<p>SafePulse cannot provide private keys, recover funds, or reverse transactions.</p>
+<hr />
+<h2 id="10-security--audits"><a class="header" href="#10-security--audits">10. Security &amp; Audits</a></h2>
+<ul>
+<li>Smart contracts have undergone security audits</li>
+<li>Audit reports are <strong>not publicly published</strong></li>
+<li>Security disclosures are accepted via:</li>
+</ul>
+<p><strong>Email:</strong> <code>security@safepulse.xyz</code>
+<strong>GitHub:</strong> Issues may be submitted to relevant repositories</p>
+<hr />
+<h2 id="11-platform-limitations"><a class="header" href="#11-platform-limitations">11. Platform Limitations</a></h2>
+<p>SafePulse explicitly does <strong>not</strong>:</p>
+<ul>
+<li>Hold custody of assets</li>
+<li>Reverse transactions</li>
+<li>Resolve disputes</li>
+<li>Enforce legal agreements</li>
+<li>Recover lost keys</li>
+<li>Freeze or confiscate funds</li>
+<li>Act on behalf of users</li>
+</ul>
+<p>Users retain full responsibility for:</p>
+<ul>
+<li>Key management</li>
+<li>Contract configuration</li>
+<li>Jurisdictional compliance</li>
+<li>Legal enforceability</li>
+</ul>
+<hr />
+<h2 id="12-changes-to-this-page"><a class="header" href="#12-changes-to-this-page">12. Changes to This Page</a></h2>
+<p>This Transparency page may be updated to reflect:</p>
+<ul>
+<li>New features</li>
+<li>Security updates</li>
+<li>Regulatory clarity</li>
+</ul>
+<p>Material changes will be documented publicly.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="terms.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="faq.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="terms.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="faq.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

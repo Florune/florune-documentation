@@ -26,6 +26,7 @@
   - [Target Market](./revenue/target_market.md)
 - [Privacy Policy](./privacy.md)
 - [Terms & Conditions](./terms.md)
+- [Transparency](./transparency.md)
 - [FAQ](./faq.md)
 - [Contact Us](./contact.md)
 
